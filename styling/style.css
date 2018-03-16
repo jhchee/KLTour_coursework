@@ -1,14 +1,33 @@
-
-
+/* logo style */
 header {
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 20px;
     text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px -2px rgba(0,0,0,0.2);    
 }
 
+/* set font style */
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* remove bullets */
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar layout*/
+#nav-bar li {
+    float: left;
+    width: 25%;
+}
+
+/* inactive link */
 #nav-button {
-    display: inline-block;
+    display: block;
     align-items: center;
     background-color: white;
     text-align: center;
@@ -21,20 +40,33 @@ header {
 }
 
 #nav-button:hover{
-    color: black;
+    border: 2px solid grey;
+    color: red;
+}
+
+/* active link */
+#nav-bar li a.active {
+    display: block;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    color: red;
+    padding: 8px;
+    font-weight: bold;
+    text-decoration:none;
+    font-size: 20px;
 }
 
 .img__img {
     height: auto;
-    width: auto;
     max-width: 100%;
+    width: auto;
 }
 
 /* card hover design */
 .img__wrap {
     position: relative;
-    height: 200px;
-    width: 257px;
+    height: auto;
 }
   
 .img__description {
@@ -47,14 +79,50 @@ header {
     color: #fff;
     visibility: hidden;
     opacity: 0;
-  
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
 }
   
 .img__wrap:hover .img__description {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.6;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    float: left;
+    width: 20%;
+    margin: 5%;
+    text-align: center;
+    border-color: coral;
 }
 
+.row:after {
+    /* content: ""; */
+    display: table;
+    clear: both;
+}
 
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 100%;
+    height:auto;
+    width:auto;
+    float:left;
+    display: block;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    outline: red solid 1px;
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
