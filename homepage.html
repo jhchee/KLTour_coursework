@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styling/style.css">
-    <script src="scripting/script.js"></script>
+    <link rel="stylesheet" href="styling/carousel.css">   
     <title>Home</title>
 </head>
 <body>
+
     <header>
         <p style="text-align:center;">
             <a href="#"><img src="images/KL Tour.png" alt="KLTour-logo" height="29" width="80"></a>
@@ -16,46 +17,86 @@
     </header>
 
     <br>
+
     <ul id="nav-bar">
         <li><a href="homepage.html" class="active">Home</a></li>
         <li><a href="packages.html" id="nav-button">Packages</a></li>
         <li><a href="contact.html" id="nav-button">Contact</a></li>
         <li><a href="login.html" id="nav-button" style="border: 2px solid red;">Login | Signup</a></li>
     </ul>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="http://placehold.it/700x300.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
         
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="http://placehold.it/700x300.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="http://placehold.it/700x300.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </div>
+
     <br>
-    <br>
-    <br>
-    
-    
+        
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+        
+    <script src="scripting/script.js"></script>
 
 
-    <h1 style="text-align: center">Packages</h1>
+    <br>
+    <br>
+    <h1 style="text-align: center"><u>Packages</u></h1>
+
     <!-- Card to display packages -->
     <div class="row">
         <div class="column">
             <div class="card">
-            <div class="img__wrap">
-                <img class="img__img" src="http://placehold.it/600x200.jpg"/>
-                <p class="img__description">description</p>
-            </div>
-            <div class="container">
-              <h4><b>KLCC</b></h4> 
-              <p>KLTour</p> 
+                <div class="img__wrap">
+                    <img class="img__img" src="http://placehold.it/600x200.jpg"/>
+                    <p class="img__description">description</p>
+                </div>
+                <div class="container">
+                    <h4><b>KLCC</b></h4> 
+                    <p>KLTour</p> 
+                </div>
             </div>
         </div>
-        </div>
+
         <div class="column">
             <div class="card">
-            <div class="img__wrap">
-                <img class="img__img" src="http://placehold.it/600x200.jpg"/>
-                <p class="img__description">description</p>
+                <div class="img__wrap">
+                    <img class="img__img" src="http://placehold.it/600x200.jpg"/>
+                    <p class="img__description">description</p>
+                </div>
+                <div class="container">
+                    <h4><b>KLCC</b></h4> 
+                    <p>KLTour</p> 
+                </div>
             </div>
-            <div class="container">
-              <h4><b>KLCC</b></h4> 
-              <p>KLTour</p> 
-            </div>
-        </div>
         </div>
         <div class="column">
             <div class="card">
@@ -63,14 +104,15 @@
                     <img class="img__img" src="http://placehold.it/600x200.jpg"/>
                     <p class="img__description">description</p>
                 </div>
-            <div class="container">
-              <h4><b>KLCC</b></h4> 
-              <p>KLTour</p> 
+                <div class="container">
+                    <h4><b>KLCC</b></h4> 
+                    <p>KLTour</p> 
+                </div>
             </div>
         </div>
-        </div>
     </div>
-
+        <a href="packages.html" id="nav-button" style="border: 2px solid red; width: 25%; margin: 0 auto">More packages</a>
+    
     <footer>
       <h2>company</h2>
       <h3>Superme</h3>
