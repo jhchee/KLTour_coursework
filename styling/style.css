@@ -57,9 +57,9 @@ body {
 }
 
 .img__img {
-    height: auto;
+    /* height: auto; */
     max-width: 100%;
-    width: auto;
+    /* width: auto; */
 }
 
 /* card hover design */
@@ -74,7 +74,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgb(255, 148, 148);
+    background: grey;
     color: #fff;
     visibility: hidden;
     opacity: 0;
@@ -116,7 +116,7 @@ body {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
     outline: red solid 1px;
 }
 
