@@ -1,13 +1,15 @@
 <?php
 $host = "localhost";
-$userName = "fyrhp";
-$password = "RTDE";
-$dbName = "fyrhp";
+$userName = "root";
+$password = "";
+$dbName = "kltour";
 
 // Create database connection
-$conn = new mysqli($host, $userName, $password, $dbName);
+$db = new mysqli($host, $userName, $password, $dbName);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
 }
+
+// else conn->query("SHOW TABLES");

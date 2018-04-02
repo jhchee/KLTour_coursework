@@ -139,7 +139,7 @@
                         <div class="col-xs-12">
                             <form id="login-form" action="php_snippets/login.php" method="post" role="form" style="display: block;">
                                 <div class="form-group">
-                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                    <input type="text" name="username/email" id="username/email" tabindex="1" class="form-control" placeholder="Username / Email" value="">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
@@ -162,15 +162,15 @@
                                     </div>
                                 </div>
                             </form>
-                            <form id="register-form" action="" method="post" role="form" style="display: none;">
+                            <form id="register-form" action="php_snippets/register.php" method="post" role="form" style="display: none;">
                                 <div class="form-group">
-                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" maxlength="20" value="">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" maxlength="30" value="">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" maxlength="20">
                                 </div>
                                 <div class="form-group">
                                     <div class="row">

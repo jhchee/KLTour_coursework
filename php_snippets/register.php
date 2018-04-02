@@ -1,21 +1,18 @@
 <?php
-// save username upon login
+include"config.php";
 
-$cookie_name = username;
-$cookie_value = "John Doe";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
-?>
-<html>
-<body>
+session_start();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // username and password sent from form
 
-<?php
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-    echo "Cookie '" . $cookie_name . "' is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
+    $myusername = mysqli_real_escape_string($db, $_POST['username']);
+    $myemail = mysqli_real_escape_string($db, $_POST['email']);
+    $mypassword = mysqli_real_escape_string($db, $_POST['password']);
+
+    
+    $sql = "INSERT INTO user(Username, Email, Password) Values ('$myusername', '$myemail', '$mypassword')";
+    $result = mysqli_query($db, $sql) or trigger_error("Query Failed! SQL: $sql - Error: ".mysqli_error(), E_USER_ERROR);
+    
 }
-?>
 
-</body>
-</html>
+?>
