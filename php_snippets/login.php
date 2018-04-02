@@ -24,6 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Your Login Name or Password is invalid";
         echo $error;
     }
+
+    echo '<script type="text/javascript">',
+     'parent.location.reload();',
+     '</script>';
+
+    echo "hello world";
+
 }
 
-?>
+
