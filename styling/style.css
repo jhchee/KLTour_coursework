@@ -127,15 +127,20 @@ body {
 }
 
 #login {
-    display: none;
-    /* z-index: 10; */
+    display: flex;
+    /* height: 96%; */
+    
 }
 
 #login embed {
     width:50%;
-    height:70%;
+    height:75%;
     margin-left: 25%;
     margin-right:25%;
+    padding-top: 9%;
+    padding-bottom: 5.1%;
+    /* margin:0; */
+    
 }
 
 #overlay {
