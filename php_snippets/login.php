@@ -20,17 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($count == 1) {
         // session_is_registered("myusername");
         $_SESSION['login_user'] = $myusername;
+        echo '<script type="text/javascript">',
+        'parent.location.reload();',
+        '</script>';
     } else {
-        $error = "Your Login Name or Password is invalid";
-        echo $error;
+        header('Location: http://localhost/tourtrip_assignment/login.html');
     }
-
-    echo '<script type="text/javascript">',
-     'parent.location.reload();',
-     '</script>';
-
-    echo "hello world";
-
 }
 
 

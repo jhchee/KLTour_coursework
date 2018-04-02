@@ -11,7 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     $sql = "INSERT INTO user(Username, Email, Password) Values ('$myusername', '$myemail', '$mypassword')";
-    $result = mysqli_query($db, $sql) or trigger_error("Query Failed! SQL: $sql - Error: ".mysqli_error(), E_USER_ERROR);
+    $result = mysqli_query($db, $sql);
+    
+    if (mysqli_error($db)) {
+        echo '<script type="text/javascript">',
+        'setTimeout(parent.alert("Username or email has been used"),1000);',
+        '</script>';
+        header('Refresh: 0; url=http://localhost/tourtrip_assignment/login.html');
+    }
     
 }
 
