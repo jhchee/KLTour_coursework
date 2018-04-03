@@ -24,7 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'parent.location.reload();',
         '</script>';
     } else {
-        header('Location: http://localhost/tourtrip_assignment/login.html');
+        echo '<script type="text/javascript">',
+        'setTimeout(parent.alert("Username or password is incorrect"),1000);',
+        '</script>';
+        header('Refresh: 0; url=http://localhost/tourtrip_assignment/login.html');
     }
 }
 
