@@ -24,7 +24,7 @@
         <a href="#" style="padding-right:60px;">
             <img src="images/KL Tour.png" alt="KLTour-logo" height="29" width="80">
         </a>
-        <a href="#">Home</a>
+        <a href="#" class="active">Home</a>
         <a onclick="hide_user_cart()" href="javascript:void(0);">Packages</a>
         <a onclick="hide_login_signup()" href="javascript:void(0);">Contact</a>
 
