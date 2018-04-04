@@ -8,6 +8,7 @@
 
     <!-- include Google font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- include Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- include personalised stylesheet -->
@@ -25,8 +26,8 @@
             <img src="images/KL Tour.png" alt="KLTour-logo" height="29" width="80">
         </a>
         <a href="#" class="active">Home</a>
-        <a onclick="hide_user_cart()" href="javascript:void(0);">Packages</a>
-        <a onclick="hide_login_signup()" href="javascript:void(0);">Contact</a>
+        <a href="packages.php">Packages</a>
+        <a href="contact.php">Contact</a>
 
         <div class="login-signup">
             <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;"> Login | Signup </a>
@@ -49,16 +50,20 @@
         </div>
         
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+   
     <!-- Read the guide section for better understanding of the city -->
     <div class="guide">
-        <text style="color:white; font-weight:bold;">Want To Know More About This City</text>
+        <text style="color:white;">Know More About This City</text>
         <a href="" style="margin-left:200px;">Guide</a>
         <a href="">Guide</a>
         <a href="">Guide</a>
         <a href="">Guide</a>
     </div>
-
+    
     <!-- login/signup form -->
     <div id="overlay" onclick="close_form()">
         <div id="login" >
@@ -69,12 +74,63 @@
 
     <!-- homepage image -->
     <div class="img-wrapper">
-        <div class="caption" style="font-size:40px; font-weight:100;" >Kuala Lumpur</div>
-        <div class="caption" style="margin-bottom:300px; font-size:25px; font-weight:100;">Malaysia's Most Iconic City</div>
-        <img src="images/homepage/Kuala_Lumpur-home.jpg" alt="Kuala Lumpur" style="max-width:100%; overflow: hidden;">
+    <img src="images/homepage/citycentre.jpg" alt="Kuala Lumpur" style="max-width:100%;">
+        <div class="caption1">Kuala Lumpur</div>
+        <div class="caption2">Malaysia's Most Iconic City<span class="blinking-cursor">|</span></div>
     </div>
+
+    <div class="description1">
+        <h1>Do You Know?</h1>
+        <p>
+        Kuala Lumpur is the capital city of Malaysia, boasting gleaming skyscrapers, 
+        colonial architecture, charming locals, and a myriad of natural attractions. 
+        Divided into numerous districts, its main hub is called the Golden Triangle which comprises 
+        <b>Bukit Bintang</b>, <b>KLCC</b> and <b>Chinatown</b>. KL is widely recognised for numerous
+         landmarks, including <b>Petronas Twin Towers</b> (the world’s tallest twin skyscrapers),
+         <b>Petaling Street flea market</b>, and <b>Batu Caves</b>, which is over 400 million years
+          old. With frequent sales events throughout the year, expansive shopping malls 
+          like <b>Pavilion KL</b> and <b>Suria KLCC</b> are also among the biggest tourist attractions 
+          in the city, hosting a wide range of upmarket labels from all over the world. 
+          Plus, if you need more reason to love Kuala Lumpur, there is the abundance of 
+          gastronomic delights – with thousands of hawker stalls, cafes, and restaurants 
+          serving every imaginable type of delicacies. Not convinced yet? Read our 10 Must See and Do list!
+        </p>
+    </div>
+
+    <div class="parallax-img"></div>
+    <div class="blank"></div>
+    <div class="parallax-img"></div>
+
+    <div class="description1">
+        <h1>What To Do?</h1>
+        <p>
+            The most popular and iconic attractions in Kuala Lumpur 
+            have come to define the city as a tourist destination – 
+            from the unmistakable outline of the <b>Petronas Twin Towers</b> to 
+            the colossal standing Buddha image found outside Batu Caves. 
+            However, Kuala Lumpur attractions comprise so much more for 
+            those who want to look deeper into this fascinating city.....
+            from the colourful <b>Petaling Street market</b> in <b>Chinatown</b> Kuala 
+            Lumpur and the famous <b>Sultan Abdul Samad Building</b> in the city’s 
+            colonial quarter, to the indoor <b>Aquaria KLCC oceanarium</b> 
+            and <b>Petrosains Art Gallery</b> in <b>Suria KLCC</b>. There is a lot 
+            of greenery in Kuala Lumpur, with the <b>Lake Gardens</b> home 
+            to popular bird and deer parks you can freely visit, 
+            or you can head to <b>i-City Shah Alam</b> to take cool 
+            photos of its nightly colourful display of LED-lit 
+            attractions. We have covered the traditional, popular 
+            and unconventional Kuala Lumpur attractions on offer, 
+            sorted by location and even theme, making it easy for 
+            you to choose where to visit first.
+        </p>
+    </div>
+
+
+
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 </body>
-<?php include 'php_snippets/session.php'; ?>
+<?php include 'php_snippets/session.php';?>
 
 
 

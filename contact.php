@@ -8,13 +8,14 @@
 
     <!-- include Google font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- include Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- include personalised stylesheet -->
     <link rel="stylesheet" href="styling/style.css">
     <!-- include personalised script -->
     <script src="scripting/loginform.js"></script>
-    <title>Contact</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -24,9 +25,9 @@
         <a href="#" style="padding-right:60px;">
             <img src="images/KL Tour.png" alt="KLTour-logo" height="29" width="80">
         </a>
-        <a href="#" class="active">Home</a>
-        <a onclick="hide_user_cart()" href="javascript:void(0);">Packages</a>
-        <a onclick="hide_login_signup()" href="javascript:void(0);">Contact</a>
+        <a href="homepage.php" >Home</a>
+        <a href="packages.php" >Packages</a>
+        <a href="#" class="active">Contact</a>
 
         <div class="login-signup">
             <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;"> Login | Signup </a>
@@ -49,16 +50,20 @@
         </div>
         
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+   
     <!-- Read the guide section for better understanding of the city -->
     <div class="guide">
-        <text style="color:white; font-weight:bold;">Want To Know More About This City</text>
+        <text style="color:white;">Know More About This City</text>
         <a href="" style="margin-left:200px;">Guide</a>
         <a href="">Guide</a>
         <a href="">Guide</a>
         <a href="">Guide</a>
     </div>
-
+    
     <!-- login/signup form -->
     <div id="overlay" onclick="close_form()">
         <div id="login" >
@@ -67,5 +72,12 @@
     </div>
     <script src="scripting/loginform.js"></script>
 
+
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 </body>
+<?php include 'php_snippets/session.php';?>
+
+
+
 </html>

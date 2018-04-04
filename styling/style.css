@@ -78,6 +78,9 @@ body {
     background-color: red;
     padding:20px;
     height:20px;
+    position: sticky;
+    top:0;
+    z-index:888;
 }
 
 .guide a{
@@ -123,27 +126,149 @@ body {
 /* login signup form */
 
 /* image wrapper */
-.img-wrapper img {
-    z-index: 1;
+.img-wrapper {
+    position: relative;
+    text-align:center;
 }
 /* Caption text */
-.caption {
+.caption1 {
+    padding:0.1rem;
     color: white;
-    max-width: auto;
-    background-color: rgba(17, 13, 13, 0.3);
-    margin-left: 42%;
-    margin-right: 25%;
-    margin-bottom: 400px;
-    padding: 8px 12px;
+    background-color: rgba(54, 45, 45, 0.705);     
+    top: 80%;
+    left:50%;
+    transform: translate(-50%, -50%); 
     position: absolute;
-    bottom: 8px;
-    text-align: center;
-    z-index: 2;
-    font-weight: 200;
-    z-index: 1;
+    font-weight: 100;
+    font-size: 40px;
+}
+.caption2 {
+    color: white;
+    padding:0.1rem;
+    background-color: rgba(54, 45, 45, 0.705);    
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    font-weight: 100;
+    font-size: 25px;
+    transform:translate(-50%,100%);
 }
 /* Caption text */
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+@keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: yellow;
+    }
+  }
+  
+@-moz-keyframes blink {
+from, to {
+    color: transparent;
+}
+50% {
+    color: yellow;
+}
+}
+
+@-webkit-keyframes "blink" {
+from, to {
+    color: transparent;
+}
+50% {
+    color: yellow;
+}
+}
+
+@-ms-keyframes "blink" {
+from, to {
+    color: transparent;
+}
+50% {
+    color: yellow;
+}
+}
+
+@-o-keyframes "blink" {
+from, to {
+    color: transparent;
+}
+50% {
+    color: yellow;
+}
+}
+
 /* image wrapper */
+
+.description1 {
+    margin-left: 25%;
+    max-width: 800px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    word-spacing: 2px;
+    vertical-align: baseline;
+    line-height: 1.6;
+}
+
+.parallax-img { 
+    /* The image used */
+    background-image: url("../images/homepage/KLCC.jpg");
+
+    /* Set a specific height */
+    height: 50px; 
+    margin-left:25%;
+    margin-right:22%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+blank {
+    background-color: white;
+    height:200px;
+}
+
+/* return to top button */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    /* border-radius: 10px; Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 100px;
+    height:50px;
+}
+
+#back-to-top:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/* return to top button */
+
 
 
 
