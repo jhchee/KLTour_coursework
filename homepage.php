@@ -39,7 +39,7 @@
             <div class="dropdown-content">
                 <a href="#">
                     <i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Profile</a>
-                <a href="#">
+                <a href="php_snippets/logout.php?logouttoken=true">
                     <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</a>
             </div>
         </div>
@@ -76,11 +76,6 @@
 </body>
 <?php include 'php_snippets/session.php'; ?>
 
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
 
 
 </html>

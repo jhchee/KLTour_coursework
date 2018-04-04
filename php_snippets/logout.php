@@ -1,5 +1,12 @@
 <?php
-   session_start();
-   session_destroy();
-   header('Refresh:0');
+    function executeLogout(){
+        session_start();
+        session_destroy();
+        
+    }
+
+    if (isset($_GET['logouttoken'])) {
+    executeLogout();
+    header("Location: {$_SERVER['HTTP_REFERER']}");
+    }
 ?>
