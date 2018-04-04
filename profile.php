@@ -27,18 +27,18 @@
         </a>
         <a href="homepage.php">Home</a>
         <a href="packages.php">Packages</a>
-        <a href="#" class="active">Contact</a>
+        <a href="contact.php">Contact</a>
 
         <div class="login-signup">
             <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;"> Login | Signup </a>
         </div>
 
         <div class="dropdown" style="display: block;">
-            <button class="dropbtn"><?php session_start(); echo $_SESSION['login_user'];?>
+            <button class="dropbtn"  style="color: red;"><?php session_start(); echo $_SESSION['login_user'];?>
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="profile.php">
+                <a href="#" style="color: red;>
                     <i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Profile</a>
                 <a href="php_snippets/logout.php?logouttoken=true">
                     <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</a>

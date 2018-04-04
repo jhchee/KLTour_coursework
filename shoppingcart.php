@@ -27,7 +27,7 @@
         </a>
         <a href="homepage.php">Home</a>
         <a href="packages.php">Packages</a>
-        <a href="#" class="active">Contact</a>
+        <a href="contact.php">Contact</a>
 
         <div class="login-signup">
             <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;"> Login | Signup </a>
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="cart">
-            <a href="shoppingcart.php" id="cart-link" style="float:right; display: block;">
+            <a href="#" id="cart-link" style="float:right; display: block; color:red;">
                 <i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Shopping Cart</a>
         </div>
         

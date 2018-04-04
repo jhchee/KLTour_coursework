@@ -38,14 +38,14 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">
+                <a href="profile.php">
                     <i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Profile</a>
                 <a href="php_snippets/logout.php?logouttoken=true">
                     <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</a>
             </div>
         </div>
         <div class="cart">
-            <a href="#" id="cart-link" style="float:right; display: block;">
+            <a href="shoppingcart.php" id="cart-link" style="float:right; display: block;">
                 <i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Shopping Cart</a>
         </div>
         
@@ -63,7 +63,8 @@
         <a href="">Guide</a>
         <a href="">Guide</a>
     </div>
-    
+    <div style="padding:1px;"></div>
+
     <!-- login/signup form -->
     <div id="overlay" onclick="close_form()">
         <div id="login" >
@@ -107,7 +108,7 @@
             The most popular and iconic attractions in Kuala Lumpur 
             have come to define the city as a tourist destination – 
             from the unmistakable outline of the <b>Petronas Twin Towers</b> to 
-            the colossal standing Buddha image found outside Batu Caves. 
+            the colossal standing Buddha image found outside <b>Batu Caves</b>. 
             However, Kuala Lumpur attractions comprise so much more for 
             those who want to look deeper into this fascinating city.....
             from the colourful <b>Petaling Street market</b> in <b>Chinatown</b> Kuala 

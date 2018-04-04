@@ -26,8 +26,8 @@
             <img src="images/KL Tour.png" alt="KLTour-logo" height="29" width="80">
         </a>
         <a href="homepage.php">Home</a>
-        <a href="packages.php">Packages</a>
-        <a href="#" class="active">Contact</a>
+        <a href="#" class="active">Packages</a>
+        <a href="contact.php">Contact</a>
 
         <div class="login-signup">
             <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;"> Login | Signup </a>
