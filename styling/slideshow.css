@@ -1,12 +1,7 @@
-/* * {
-  
-} */
-
 .slideshow {
-  max-width: 48%;
-  max-width: 40%;
+  max-width: 55%;
   box-sizing: border-box;
-  position:absolute;
+  float:left;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
