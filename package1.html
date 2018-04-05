@@ -78,32 +78,32 @@
                 <!-- Full-width images with number text -->
                 <div class="mySlides">
                     <div class="numbertext">1 / 6</div>
-                    <img src="http://placehold.it/1920x1080.jpg" style="width:100%">
+                    <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">2 / 6</div>
-                    <img src="http://placehold.it/1920x1080.jpg" style="width:100%">
+                    <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">3 / 6</div>
-                    <img src="http://placehold.it/1920x1080.jpg" style="width:100%">
+                    <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">4 / 6</div>
-                    <img src="http://placehold.it/1920x1080.jpg" style="width:100%">
+                    <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">5 / 6</div>
-                    <img src="http://placehold.it/1920x1080.jpg" style="width:100%">
+                    <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">6 / 6</div>
-                    <img src="http://placehold.it/1920x1080.jpg" style="width:100%">
+                    <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -118,22 +118,22 @@
                 <!-- Thumbnail images -->
                 <div class="row">
                     <div class="column">
-                        <img class="demo cursor" src="http://placehold.it/1920x1080.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="http://placehold.it/1920x1080.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="http://placehold.it/1920x1080.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="http://placehold.it/1920x1080.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="http://placehold.it/1920x1080.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="http://placehold.it/1920x1080.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                     </div>
                 </div>
             </div>
@@ -143,40 +143,58 @@
         <div style="width:10%;"></div>
         <div class="product-detail">
             <h1>Shopping Spree</h1>
+            <h4 style="font-weight:100;">Price: RM 80</h4>
             <div style="height:2px;"></div>
-            <h2>CHOOSE TIME</h2>
+            <h3>Time</h3>
+
+            <!-- form to create order -->
+            <form action="welcome.php" method="post">
             <!-- time button -->
-            <div class="group-time">
-                <ul>
-                    <a href="#" class="time-button">08.00</a>
-                </ul>
-                <ul>
-                    <a href="#" class="time-button">09.00</a>
-                </ul>
-                <ul>
-                    <a href="#" class="time-button">10.00</a>
-                </ul>
-            </div>
-            <div style="height:60px;"></div>  
-            <div class="group-time" style="margin-left: 102px">
-                <ul>
-                    <a href="#" class="time-button">11.00</a>
-                </ul>
-                <ul>
-                    <a href="#" class="time-button">13.00</a>
-                </ul>
-                <ul>
-                    <a href="#" class="time-button">14.00</a>
-                </ul>
-            </div>
+                <div class="group-item">
+                    <ul>
+                        <input type="submit" class="button-input" name="package_time" value="08.00"></input>                    
+                    </ul>
+                    <ul>
+                        <input type="submit" class="button-input" name="package_time" value="09.00"></input>                                 
+                    </ul>
+                    <ul>
+                        <input type="submit" class="button-input" name="package_time" value="10.00"></input>                
+                    </ul>
+                </div>
+                <div style="height:60px;"></div>  
+                <div class="group-item" style="margin-left: 82px">
+                    <ul>
+                        <input type="submit" class="button-input" name="package_time" value="11.00"></input>
+                    </ul>
+                    <ul>
+                        <input type="submit" class="button-input" name="package_time" value="13.00"></input>
+                    </ul>
+                    <ul>
+                        <input type="submit" class="button-input" name="package_time" value="14.00"></input>                
+                    </ul>
+                </div>
+                <div style="height:60px;"></div>
+                <h3>Meal (extra charge +RM10)</h3>
+                <input type="submit" class="meal-input" name="package_meal" value="No"></input>
+                <div style="height:60px;"></div>
+                <h3>Add to cart</h3>
+                <button type="submit" class="cart-submit">ADD TO CART</button>
 
-
+            </form>
         </div>
     </div>
 
-    <div style="height:700px;"></div>
-    <p>hello</p>
-
+    <div style="height:600px;"></div>
+    <div style="max-width: 55%;">
+        <p>hellovgefgfhbdsugfbhsdbfhj
+            fjkdsfslidkbfjlk
+            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
+            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
+            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
+            hjfgashlgfjsgfjlsgafhgsdhjlagfas
+            uifgwiasgfusagfjlhsg
+        </p>
+    </div>
 
 
 

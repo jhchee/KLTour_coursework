@@ -1,6 +1,6 @@
 .product-detail {
     margin-top: 7%;
-    margin-left:55%;
+    margin-left:57%;
     max-width: 800px;
     position: fixed;
     top:0;
@@ -9,24 +9,67 @@
 /* .product-detail h1{
     text-weight:
 } */
-.group-time {
-    margin-left:100px;
-    width:500px;
+.group-item {
+    margin-left:80px;
+    width:550px;
 }
 
-.time-button {
+.button-input {
     float: left;
     margin:5px;
+    background-color: white;
     margin-right:40px;
-    padding:10px 20px 10px 20px;
+    padding:10px 30px 10px 30px;
     text-decoration: none;
     color:black;
     font-size: 20px;
-    border: solid 2px red;
+    border: solid 1px silver;
 }
 
-.time-button:hover {
-    background-color: red;
+.button-input:hover {
+    background-color: black;
     color: white;
+    cursor:pointer;
+}
+/* pressed */
+
+.meal-input {
+    float: left;
+    margin-left:130px;
+    background-color: white;
+    margin-right:40px;
+    padding:10px 30px 10px 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    border: solid 1px silver;
+    font-weight:bold;
+}
+
+.meal-input:hover {
+    background-color: black;
+    color: white;
+    cursor:pointer;
+}
+
+.meal-input[value="No"]:hover {
+    color: 
+}
+
+.cart-submit {
+    float: left;
+    margin-left:130px;
+    background-color: black;
+    margin-right:40px;
+    padding:20px 60px 20px 60px;
+    text-decoration: none;
+    color:white;
+    font-size: 13px;
+    font-weight: bold;
+    border:none;
+}
+
+.cart-submit:hover {
+    cursor:pointer;
 }
 
