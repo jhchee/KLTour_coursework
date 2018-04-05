@@ -83,6 +83,10 @@ body {
     z-index:888;
 }
 
+.guide text {
+    font-weight:600;
+}
+
 .guide a{
     font-size: 16px;
     color: white;
