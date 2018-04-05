@@ -1,5 +1,5 @@
 .product-detail {
-    margin-top: 15%;
+    margin-top: 7%;
     margin-left:55%;
     max-width: 800px;
     position: fixed;
@@ -9,10 +9,24 @@
 /* .product-detail h1{
     text-weight:
 } */
+.group-time {
+    margin-left:100px;
+    width:500px;
+}
 
-time-button {
-    float:right; 
-    border:solid 2px red; 
-    display: block;
+.time-button {
+    float: left;
+    margin:5px;
+    margin-right:40px;
+    padding:10px 20px 10px 20px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    border: solid 2px red;
+}
+
+.time-button:hover {
+    background-color: red;
+    color: white;
 }
 
