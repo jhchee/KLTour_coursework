@@ -6,16 +6,18 @@
     top:0;
 }
 
-/* .product-detail h1{
-    text-weight:
-} */
 .group-item {
-    margin-left:80px;
+    margin-left:70px;
     width:550px;
 }
 
-.button-input {
-    float: left;
+input[type=radio] {
+    display: none;
+    margin: 10px;
+}
+
+input[type=radio] + label {
+    float:left;
     margin:5px;
     background-color: white;
     margin-right:40px;
@@ -26,12 +28,42 @@
     border: solid 1px silver;
 }
 
-.button-input:hover {
+input[type=radio]:hover + label {
     background-color: black;
-    color: white;
-    cursor:pointer;
+    color:white;
 }
-/* pressed */
+
+input[type=radio]:checked + label {
+    background-color: red;
+    color:white;
+}
+
+meal-button input[type=radio] {
+    display: none;
+    margin: 10px;
+}
+
+meal-button input[type=radio] + label {
+    float:left;
+    margin:5px;
+    background-color: white;
+    margin-right:40px;
+    padding:10px 30px 10px 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    border: solid 1px silver;
+}
+
+meal-button input[type=radio]:hover + label {
+    background-color: black;
+    color:white;
+}
+
+meal-button input[type=radio]:checked + label {
+    background-color: red;
+    color:white;
+}
 
 .meal-input {
     float: left;
@@ -46,15 +78,7 @@
     font-weight:bold;
 }
 
-.meal-input:hover {
-    background-color: black;
-    color: white;
-    cursor:pointer;
-}
 
-.meal-input[value="No"]:hover {
-    color: 
-}
 
 .cart-submit {
     float: left;

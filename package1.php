@@ -77,33 +77,45 @@
 
                 <!-- Full-width images with number text -->
                 <div class="mySlides">
-                    <div class="numbertext">1 / 6</div>
+                    <div class="numbertext">1 / 8</div>
                     <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">2 / 6</div>
+                    <div class="numbertext">2 / 8</div>
                     <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">3 / 6</div>
+                    <div class="numbertext">3 / 8</div>
                     <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">4 / 6</div>
+                    <div class="numbertext">4 / 8</div>
                     <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">5 / 6</div>
+                    <div class="numbertext">5 / 8</div>
                     <img src="http://placehold.it/1280x720.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">6 / 6</div>
+                    <div class="numbertext">6 / 8</div>
                     <img src="http://placehold.it/1280x720.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="http://placehold.it/1280x720.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <iframe width="823" height="462"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -135,6 +147,12 @@
                     <div class="column">
                         <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                     </div>
+                    <div class="column">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="http://placehold.it/1280x720.jpg" style="width:100%" onclick="currentSlide(8)" alt="Hello World">
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,34 +166,49 @@
             <h3>Time</h3>
 
             <!-- form to create order -->
-            <form action="welcome.php" method="post">
+            <form action="php_snippets/createpackage.php" method="post">
             <!-- time button -->
                 <div class="group-item">
                     <ul>
-                        <input type="submit" class="button-input" name="package_time" value="08.00"></input>                    
+                        <input type="radio" class="button-input" id="time1" name="package_time" value="08.00"></input>
+                        <label for="time1">0800</label>                    
                     </ul>
                     <ul>
-                        <input type="submit" class="button-input" name="package_time" value="09.00"></input>                                 
+                        <input type="radio" id="time2" name="package_time" value="09.00"></input>                                 
+                        <label for="time2">0900</label>  
                     </ul>
                     <ul>
-                        <input type="submit" class="button-input" name="package_time" value="10.00"></input>                
+                        <input type="radio" id="time3" name="package_time" value="10.00"></input>                
+                        <label for="time3">1000</label>  
                     </ul>
                 </div>
-                <div style="height:60px;"></div>  
-                <div class="group-item" style="margin-left: 82px">
+                <div style="height:62px;"></div>  
+                <div class="group-item" >
                     <ul>
-                        <input type="submit" class="button-input" name="package_time" value="11.00"></input>
+                        <input type="radio" id="time4" name="package_time" value="11.00"></input>
+                        <label for="time4" style="padding-right:31px">1100</label>  
                     </ul>
                     <ul>
-                        <input type="submit" class="button-input" name="package_time" value="13.00"></input>
+                        <input type="radio" id="time5" name="package_time" value="13.00"></input>
+                        <label for="time5">1300</label>  
                     </ul>
                     <ul>
-                        <input type="submit" class="button-input" name="package_time" value="14.00"></input>                
+                        <input type="radio" id="time6" name="package_time" value="14.00"></input>                
+                        <label for="time6">1400</label>  
                     </ul>
                 </div>
                 <div style="height:60px;"></div>
                 <h3>Meal (extra charge +RM10)</h3>
-                <input type="submit" class="meal-input" name="package_meal" value="No"></input>
+                <div class="meal-button" style="margin-left:74px;">
+                    <ul>
+                        <input type="radio" id="with-meal" name="package_meal" value="1"></input>
+                        <label for="with-meal">Yes</label>  
+                    </ul>
+                    <ul>
+                        <input type="radio" id="without-meal" name="package_meal" value="0"></input>                
+                        <label for="without-meal">No</label>  
+                    </ul>
+                </div>
                 <div style="height:60px;"></div>
                 <h3>Add to cart</h3>
                 <button type="submit" class="cart-submit">ADD TO CART</button>
@@ -186,6 +219,22 @@
 
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
+        <p>hellovgefgfhbdsugfbhsdbfhj
+            fjkdsfslidkbfjlk
+            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
+            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
+            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
+            hjfgashlgfjsgfjlsgafhgsdhjlagfas
+            uifgwiasgfusagfjlhsg
+        </p>
+        <p>hellovgefgfhbdsugfbhsdbfhj
+            fjkdsfslidkbfjlk
+            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
+            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
+            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
+            hjfgashlgfjsgfjlsgafhgsdhjlagfas
+            uifgwiasgfusagfjlhsg
+        </p>
         <p>hellovgefgfhbdsugfbhsdbfhj
             fjkdsfslidkbfjlk
             vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
