@@ -1,3 +1,4 @@
+/* package page */
 .product-detail {
     margin-top: 7%;
     margin-left:57%;
@@ -96,4 +97,56 @@ meal-button input[type=radio]:checked + label {
 .cart-submit:hover {
     cursor:pointer;
 }
+/* package page */
+
+/* food page */
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    max-width: 100%;
+    margin-left:6%;
+}
+
+.grid-item {
+    margin:25%;
+}
+
+.grid-item label{
+    width:200px;
+    margin:55%;
+    /* text-align: middle; */
+}
+.grid-item img {
+    margin:5%;
+}
+.grid-item input[type=number] {
+    margin-left: 10%;
+    margin-right: 1%;
+    width:50%;
+}
+
+
+
+
+/* food page */
+#overlay-food {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:white;
+    cursor: pointer;
+    z-index:9999;
+}
+.food-form {
+    display: flex;
+    z-index: 9999;
+}
+
+/* food page */
+
 

@@ -66,7 +66,47 @@
     </div>
     <script src="scripting/loginform.js"></script>
 
+    <!-- food catalogue -->
+    <div id="overlay-food" onclick="close_food()">
+        <div class="food-form">
+            <form action="php_snippets/testing.php" method="post">
+                <!-- <div style="height:0%;"></div> -->
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
+                        <label for="food4">food1</label>
+                        <input type="number" id="food1" name="food1" value="0" min="0" max="5">
+                        <button type="reset" value="Reset">Clear</button>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
+                        <label for="food4">food2</label>
+                        <input type="number" id="food2" name="food2" value="0" min="0" max="5">
+                        <button type="reset" value="Reset">Clear</button>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
+                        <!-- <div class="desciption"> -->
+                        <label for="food4">food3</label>
+                        <input type="number" id="food3" name="food3" value="0" min="0" max="5">
+                        <!-- </div> -->
+                        <button type="reset" value="Reset">Clear</button>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
+                        <label for="food4">food4</label>
+                        <input type="number" id="food4" name="food4" value="0" min="0" max="5">
+                        <button type="reset" value="Reset">Clear</button>
+                    </div>
+                    <a id="close-food">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripting/package.js"></script>
 
+
+    <!-- food catalogue -->
     <div class="info">
 
 
@@ -157,7 +197,7 @@
             </div>
         </div>
         <script src="scripting/slideshow.js"></script>
-
+        
         <div style="width:10%;"></div>
         <div class="product-detail">
             <h1>Shopping Spree</h1>
@@ -205,7 +245,7 @@
                         <label for="with-meal">Yes</label>  
                     </ul>
                     <ul>
-                        <input type="radio" id="without-meal" name="package_meal" value="0"></input>                
+                        <input type="radio" id="without-meal" name="package_meal" value="0" checked="checked"></input>                
                         <label for="without-meal">No</label>  
                     </ul>
                 </div>
@@ -219,6 +259,7 @@
 
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
+        <h1>Places</h1>
         <p>hellovgefgfhbdsugfbhsdbfhj
             fjkdsfslidkbfjlk
             vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
@@ -227,6 +268,8 @@
             hjfgashlgfjsgfjlsgafhgsdhjlagfas
             uifgwiasgfusagfjlhsg
         </p>
+
+        <h1>Description</h1>
         <p>hellovgefgfhbdsugfbhsdbfhj
             fjkdsfslidkbfjlk
             vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
@@ -235,6 +278,8 @@
             hjfgashlgfjsgfjlsgafhgsdhjlagfas
             uifgwiasgfusagfjlhsg
         </p>
+
+        <h1>What can you do</h1>
         <p>hellovgefgfhbdsugfbhsdbfhj
             fjkdsfslidkbfjlk
             vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
@@ -244,9 +289,16 @@
             uifgwiasgfusagfjlhsg
         </p>
     </div>
+    <p>hellovgefgfhbdsugfbhsdbfhj
+            fjkdsfslidkbfjlk
+            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
+            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
+            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
+            hjfgashlgfjsgfjlsgafhgsdhjlagfas
+            uifgwiasgfusagfjlhsg
+        </p>
 
-
-
+    <script src="scripting/package.js"></script>
 
     <!-- back to top button -->
     <button onclick="topFunction()" id="back-to-top" title="Go to top">
