@@ -69,7 +69,7 @@
     <!-- food catalogue -->
     <div id="overlay-food" onclick="close_food()">
         <div class="food-form">
-            <form action="php_snippets/testing.php" method="post">
+            <form action="php_snippets/createpackage.php" method="post" target="dummyframe">
                 <!-- <div style="height:0%;"></div> -->
                 <div class="grid-container">
                     <div class="grid-item">
@@ -98,12 +98,12 @@
                         <input type="number" id="food4" name="food4" value="0" min="0" max="5">
                         <button type="reset" value="Reset">Clear</button>
                     </div>
-                    <a id="close-food">Cancel</a>
+                    <a id="close-food">OK</a>
                 </div>
-            </form>
+            <!-- </form> -->
         </div>
     </div>
-    <script src="scripting/package.js"></script>
+    <!-- <script src="scripting/package.js"></script> -->
 
 
     <!-- food catalogue -->
@@ -206,34 +206,34 @@
             <h3>Time</h3>
 
             <!-- form to create order -->
-            <form action="php_snippets/createpackage.php" method="post">
+            <!-- <form action="php_snippets/createpackage.php" method="post"> -->
             <!-- time button -->
                 <div class="group-item">
                     <ul>
-                        <input type="radio" class="button-input" id="time1" name="package_time" value="0.1"></input>
+                        <input type="radio" id="time1" name="package_time" value="0.1" required></input>
                         <label for="time1">0800</label>                    
                     </ul>
                     <ul>
-                        <input type="radio" id="time2" name="package_time" value="0.2"></input>                                 
+                        <input type="radio" id="time2" name="package_time" value="0.2" required></input>                                 
                         <label for="time2">0900</label>  
                     </ul>
                     <ul>
-                        <input type="radio" id="time3" name="package_time" value="0.3"></input>                
+                        <input type="radio" id="time3" name="package_time" value="0.3" required></input>                
                         <label for="time3">1000</label>  
                     </ul>
                 </div>
                 <div style="height:62px;"></div>  
                 <div class="group-item" >
                     <ul>
-                        <input type="radio" id="time4" name="package_time" value="0.4"></input>
+                        <input type="radio" id="time4" name="package_time" value="0.4" required></input>
                         <label for="time4" style="padding-right:31px">1100</label>  
                     </ul>
                     <ul>
-                        <input type="radio" id="time5" name="package_time" value="0.5"></input>
+                        <input type="radio" id="time5" name="package_time" value="0.5" required></input>
                         <label for="time5">1300</label>  
                     </ul>
                     <ul>
-                        <input type="radio" id="time6" name="package_time" value="0.6"></input>                
+                        <input type="radio" id="time6" name="package_time" value="0.6" required></input>                
                         <label for="time6">1400</label>  
                     </ul>
                 </div>
@@ -251,12 +251,12 @@
                 </div>
                 <div style="height:60px;"></div>
                 <h3>Add to cart</h3>
-                <button type="submit" class="cart-submit">ADD TO CART</button>
+                <button type="submit" class="cart-submit" onclick="showSnackbar()">ADD TO CART</button>
 
             </form>
         </div>
     </div>
-
+    <!-- <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe> -->
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
         <h1>Places</h1>
@@ -298,8 +298,12 @@
             uifgwiasgfusagfjlhsg
         </p>
 
+
+    <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
 
+
+    
     <!-- back to top button -->
     <button onclick="topFunction()" id="back-to-top" title="Go to top">
         <i class="fa fa-chevron-up"></i>

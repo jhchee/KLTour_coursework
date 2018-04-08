@@ -22,3 +22,21 @@ $(document).ready(function(){
       $("food-form").show();
   });
 });
+
+function showSnackbar() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  // document.getElementByName("package_time").required = true;
+  // var time = document.getElementByName("package_time")
+  // var i = document.getElementByName("package_time");
+  // alert(i);
+  var radios = document.getElementsByName("package_time");
+    for( i = 0; i < radios.length; i++ ) {
+        if( radios[i].checked ) {
+            return radios[i].value;
+        }
+    }
+    return null;
+
+}
