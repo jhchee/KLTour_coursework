@@ -15,6 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $package_ID = $mytime + $package_type;
 
     echo ("$package_ID\n");
+
+    
     // echo $food4;
 
     // header("location: $lasturl");

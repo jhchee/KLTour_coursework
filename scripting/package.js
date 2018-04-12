@@ -1,6 +1,6 @@
 window.addEventListener("scroll", notsticky);
 function notsticky() {
-  if (window.pageYOffset >= 10) {
+  if (window.pageYOffset >= 500) {
     var i = document.getElementsByClassName("product-detail");
     for (var a = 0; a < i.length; a += 1) {
       i[a].style.display = "none";
@@ -13,30 +13,33 @@ function notsticky() {
   }
 }
 
-$(document).ready(function(){
-  $("#close-food").click(function(){
-      $("#overlay-food").hide();
+$(document).ready(function() {
+  $("#close-food").click(function() {
+    $("#overlay-food").hide();
   });
-  $("#with-meal").click(function(){
-      $("#overlay-food").show();
-      $("food-form").show();
+  $("#with-meal").click(function() {
+    $("#overlay-food").show();
+    $("food-form").show();
   });
 });
 
 function showSnackbar() {
-  var x = document.getElementById("snackbar");
-  x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  // document.getElementByName("package_time").required = true;
-  // var time = document.getElementByName("package_time")
-  // var i = document.getElementByName("package_time");
-  // alert(i);
   var radios = document.getElementsByName("package_time");
-    for( i = 0; i < radios.length; i++ ) {
-        if( radios[i].checked ) {
-            return radios[i].value;
-        }
+  nbchecked = 0;
+  for (i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      nbchecked++;
     }
-    return null;
-
+  }
+  
+  if (nbchecked==0){
+    alert("Must select time");
+  }
+  else{
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function() {
+      x.className = x.className.replace("show", "");
+    }, 3000);
+  }
 }

@@ -1,5 +1,6 @@
 /* package page */
 .product-detail {
+    display: block;
     margin-top: 7%;
     margin-left:57%;
     max-width: 800px;

@@ -37,7 +37,7 @@
         </div>
 
         <div class="dropdown" style="display: block;">
-            <button class="dropbtn">
+            <button class="dropbtn" type="button">
                 <?php session_start(); echo $_SESSION['login_user'];?>
                 <i class="fa fa-caret-down"></i>
             </button>
@@ -210,35 +210,35 @@
             <!-- time button -->
                 <div class="group-item">
                     <ul>
-                        <input type="radio" id="time1" name="package_time" value="0.1" required></input>
+                        <input type="radio" id="time1" name="package_time" value="0.1"></input>
                         <label for="time1">0800</label>                    
                     </ul>
                     <ul>
-                        <input type="radio" id="time2" name="package_time" value="0.2" required></input>                                 
+                        <input type="radio" id="time2" name="package_time" value="0.2"></input>                                 
                         <label for="time2">0900</label>  
                     </ul>
                     <ul>
-                        <input type="radio" id="time3" name="package_time" value="0.3" required></input>                
+                        <input type="radio" id="time3" name="package_time" value="0.3"></input>                
                         <label for="time3">1000</label>  
                     </ul>
                 </div>
                 <div style="height:62px;"></div>  
                 <div class="group-item" >
                     <ul>
-                        <input type="radio" id="time4" name="package_time" value="0.4" required></input>
+                        <input type="radio" id="time4" name="package_time" value="0.4"></input>
                         <label for="time4" style="padding-right:31px">1100</label>  
                     </ul>
                     <ul>
-                        <input type="radio" id="time5" name="package_time" value="0.5" required></input>
+                        <input type="radio" id="time5" name="package_time" value="0.5"></input>
                         <label for="time5">1300</label>  
                     </ul>
                     <ul>
-                        <input type="radio" id="time6" name="package_time" value="0.6" required></input>                
+                        <input type="radio" id="time6" name="package_time" value="0.6"></input>                
                         <label for="time6">1400</label>  
                     </ul>
                 </div>
                 <div style="height:60px;"></div>
-                <h3>Meal (extra charge +RM10)</h3>
+                <h3>Meal</h3>
                 <div class="meal-button" style="margin-left:74px;">
                     <ul>
                         <input type="radio" id="with-meal" name="package_meal" value="1"></input>
