@@ -51,10 +51,7 @@
         
     </div>
     <br>
-    <br>
-    <br>
-    <br>
-   
+
     <!-- Read the guide section for better understanding of the city -->
     <div class="guide">
         <text style="color:white;">Know More About This City</text>
