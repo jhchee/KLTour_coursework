@@ -127,8 +127,6 @@ meal-button input[type=radio]:checked + label {
 }
 
 
-
-
 /* food page */
 #overlay-food {
     position: fixed;

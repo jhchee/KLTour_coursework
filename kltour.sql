@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2018 at 05:12 PM
+-- Generation Time: Apr 12, 2018 at 11:05 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -32,8 +32,7 @@ CREATE TABLE `food` (
   `Food_order_ID` int(10) NOT NULL,
   `Food_ID` int(11) NOT NULL,
   `Food_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `Price` float DEFAULT NULL,
-  `Quantity_in_stock` int(11) DEFAULT NULL
+  `Price` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -57,10 +56,19 @@ CREATE TABLE `food_order` (
 CREATE TABLE `main_order` (
   `Username` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `Main_order_ID` int(11) NOT NULL,
-  `Package_ID` int(11) NOT NULL,
+  `Package_ID` float NOT NULL,
   `Total_price` float DEFAULT NULL,
-  `Paid/Unpaid` varchar(10) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Unpaid'
+  `Paid` tinyint(1) NOT NULL DEFAULT '0',
+  `Meal` tinyint(1) NOT NULL DEFAULT '0',
+  `time_created` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `main_order`
+--
+
+INSERT INTO `main_order` (`Username`, `Main_order_ID`, `Package_ID`, `Total_price`, `Paid`, `Meal`, `time_created`) VALUES
+('Chee ', 7, 1.2, 11, 0, 1, '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -69,13 +77,19 @@ CREATE TABLE `main_order` (
 --
 
 CREATE TABLE `package` (
-  `Main_order_ID` int(11) NOT NULL,
-  `Package_ID` int(20) NOT NULL,
+  `Package_ID` float NOT NULL,
   `Package_name` varchar(30) CHARACTER SET utf32 COLLATE utf32_unicode_ci NOT NULL,
-  `Time` datetime NOT NULL,
+  `Time` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `Package_price` float NOT NULL,
   `Quantity_in_stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `package`
+--
+
+INSERT INTO `package` (`Package_ID`, `Package_name`, `Time`, `Package_price`, `Quantity_in_stock`) VALUES
+(1.2, 'Shopping Spree', '10.00am', 80, 15);
 
 -- --------------------------------------------------------
 
@@ -87,12 +101,26 @@ CREATE TABLE `user` (
   `Username` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `Email` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `Phone` int(11) DEFAULT NULL,
-  `First_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `Last_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `Address` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Payment_card` int(11) DEFAULT NULL,
-  `Password` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+  `Payment_card` int(12) DEFAULT NULL,
+  `Password` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `Full_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`Username`, `Email`, `Phone`, `Address`, `Payment_card`, `Password`, `Full_name`) VALUES
+('Chee', '', NULL, NULL, NULL, '123', ''),
+('ffffffffffffffffffff', 'ioi@gmail.comfefwfewfewfewf', NULL, NULL, NULL, 'ffffffffffffff', ''),
+('fsdfdsf', 'fdsfdsfsd@gmail.com', NULL, NULL, NULL, '123', ''),
+('Hey', 'hey@gmail.com', NULL, NULL, NULL, '123', ''),
+('hlee', 'lee@gmail.com', NULL, NULL, NULL, '123', ''),
+('ioi', 'ioi@gmail.com', NULL, NULL, NULL, '123', ''),
+('vdsvsdc', 'cheehong05090@gmail.com', NULL, NULL, NULL, '123', ''),
+('Vincent', 'Vincent', NULL, NULL, NULL, '123', ''),
+('zc', 'qw@hotmail.com', NULL, NULL, NULL, '123', '');
 
 --
 -- Indexes for dumped tables
@@ -117,14 +145,14 @@ ALTER TABLE `food_order`
 --
 ALTER TABLE `main_order`
   ADD PRIMARY KEY (`Main_order_ID`),
-  ADD KEY `FK` (`Username`,`Package_ID`);
+  ADD KEY `FK` (`Username`),
+  ADD KEY `Package_Details` (`Package_ID`);
 
 --
 -- Indexes for table `package`
 --
 ALTER TABLE `package`
-  ADD PRIMARY KEY (`Package_ID`),
-  ADD KEY `Package_Type` (`Main_order_ID`);
+  ADD PRIMARY KEY (`Package_ID`);
 
 --
 -- Indexes for table `user`
@@ -135,32 +163,25 @@ ALTER TABLE `user`
   ADD UNIQUE KEY `Email` (`Email`);
 
 --
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `main_order`
+--
+ALTER TABLE `main_order`
+  MODIFY `Main_order_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `food`
---
-ALTER TABLE `food`
-  ADD CONSTRAINT `Food_Type` FOREIGN KEY (`Food_order_ID`) REFERENCES `food_order` (`Food_order_ID`);
-
---
--- Constraints for table `food_order`
---
-ALTER TABLE `food_order`
-  ADD CONSTRAINT `Food_Order` FOREIGN KEY (`Main_order_ID`) REFERENCES `main_order` (`Main_order_ID`);
 
 --
 -- Constraints for table `main_order`
 --
 ALTER TABLE `main_order`
-  ADD CONSTRAINT `Has_Order` FOREIGN KEY (`Username`) REFERENCES `user` (`Username`);
-
---
--- Constraints for table `package`
---
-ALTER TABLE `package`
-  ADD CONSTRAINT `Package_Type` FOREIGN KEY (`Main_order_ID`) REFERENCES `main_order` (`Main_order_ID`);
+  ADD CONSTRAINT `Has_Order` FOREIGN KEY (`Username`) REFERENCES `user` (`Username`),
+  ADD CONSTRAINT `Package_Details` FOREIGN KEY (`Package_ID`) REFERENCES `package` (`Package_ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

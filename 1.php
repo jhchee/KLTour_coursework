@@ -75,27 +75,27 @@
                     <div class="grid-item">
                         <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
                         <label for="food4">food1</label>
-                        <input type="number" id="food1" name="food1" value="0" min="0" max="5">
+                        <input type="number" id="food1" name="food[1]" value="0" min="0" max="5">
                         <button type="reset" value="Reset">Clear</button>
                     </div>
                     <div class="grid-item">
                         <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
                         <label for="food4">food2</label>
-                        <input type="number" id="food2" name="food2" value="0" min="0" max="5">
+                        <input type="number" id="food2" name="food[2]" value="0" min="0" max="5">
                         <button type="reset" value="Reset">Clear</button>
                     </div>
                     <div class="grid-item">
                         <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
                         <!-- <div class="desciption"> -->
                         <label for="food4">food3</label>
-                        <input type="number" id="food3" name="food3" value="0" min="0" max="5">
+                        <input type="number" id="food3" name="food[3]" value="0" min="0" max="5">
                         <!-- </div> -->
                         <button type="reset" value="Reset">Clear</button>
                     </div>
                     <div class="grid-item">
                         <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
                         <label for="food4">food4</label>
-                        <input type="number" id="food4" name="food4" value="0" min="0" max="5">
+                        <input type="number" id="food4" name="food[4]" value="0" min="0" max="5">
                         <button type="reset" value="Reset">Clear</button>
                     </div>
                     <a id="close-food">OK</a>
@@ -289,37 +289,10 @@
             uifgwiasgfusagfjlhsg
         </p>
     </div>
-    <p>hellovgefgfhbdsugfbhsdbfhj
-            fjkdsfslidkbfjlk
-            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
-            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
-            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
-            hjfgashlgfjsgfjlsgafhgsdhjlagfas
-            uifgwiasgfusagfjlhsg
-        </p>
 
 
     <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
-
-
-    
-    <!-- back to top button -->
-    <button onclick="topFunction()" id="back-to-top" title="Go to top">
-        <i class="fa fa-chevron-up"></i>
-    </button>
-</body>
-<?php include 'php_snippets/session.php';?>
-
-</html>
-
-
-
-
-
-
-
-
 
 
 
