@@ -16,12 +16,10 @@
     <link rel="stylesheet" href="styling/slideshow.css">
     <link rel="stylesheet" href="styling/productpackage.css">
     <!-- include personalised script -->
-    <script src="scripting/loginform.js"></script>
     <title>Home</title>
 </head>
 
 <body>
-
     <!-- navigation bar -->
     <div class="navbar">
         <a href="#" style="padding-right:60px;">
@@ -104,7 +102,6 @@
         </div>
     </div>
     <!-- <script src="scripting/package.js"></script> -->
-
 
     <!-- food catalogue -->
     <div class="info">
@@ -206,7 +203,6 @@
             <h3>Time</h3>
 
             <!-- form to create order -->
-            <!-- <form action="php_snippets/createpackage.php" method="post"> -->
             <!-- time button -->
                 <div class="group-item">
                     <ul>
@@ -251,7 +247,15 @@
                 </div>
                 <div style="height:60px;"></div>
                 <h3>Add to cart</h3>
-                <button type="submit" class="cart-submit" onclick="showSnackbar()">ADD TO CART</button>
+
+                <button type="submit" class="cart-submit" id="addtocart" onclick="display_form()">ADD TO CART</button>
+                <?php 
+                if (isset($_SESSION['login_user'])) {
+                    echo '<script> 
+                    $(".cart-submit").removeAttr("onclick");
+                    $(".cart-submit").attr("onclick","showSnackbar()");
+                    </script>';} 
+                ?>
 
             </form>
         </div>
@@ -260,13 +264,15 @@
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
         <h1>Places</h1>
-        <p>hellovgefgfhbdsugfbhsdbfhj
-            fjkdsfslidkbfjlk
-            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
-            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
-            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
-            hjfgashlgfjsgfjlsgafhgsdhjlagfas
-            uifgwiasgfusagfjlhsg
+        <p>young dump and broke young dump and broke young dump and broke
+        young dump and broke young dump and broke young dump and broke
+        young dump and broke young dump and broke
+        young dump and broke young dump and broke
+        young dump and broke young dump and broke
+        young dump and broke young dump and broke
+        young dump and broke young dump and broke
+        young dump and broke young dump and broke
+        young dump and broke young dump and broke
         </p>
 
         <h1>Description</h1>
@@ -301,6 +307,7 @@
     <i class="fa fa-chevron-up"></i>
 </button>
 </body>
+<script src="scripting/loginform.js"></script>
 <?php include 'php_snippets/session.php';?>
 
 
