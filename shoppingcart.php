@@ -14,8 +14,6 @@
     <!-- include personalised stylesheet -->
     <link rel="stylesheet" href="styling/style.css">
     <link rel="stylesheet" href="styling/cart.css">
-    <!-- include personalised script -->
-    <script src="scripting/loginform.js"></script>
     <title>Home</title>
 </head>
 
@@ -64,11 +62,12 @@
         </div>
     </div>
     <script src="scripting/loginform.js"></script>
+    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
     <div class="checkout">
         <div class="row">
             <div class="col-75">
                 <div class="container">
-                    <form action="/action_page.php">
+                    <form action="php_snippets/checkout.php" method="post" target="dummyframe">
                         <div class="row">
                             <div class="col-50">
                                 <h3>Billing Address</h3>
@@ -147,8 +146,8 @@
                             <b>4</b>
                         </span>
                     </h4>
-                    <div class="list-of-item" style="max-height:400px; overflow:auto;">
-                        <div class="cart-empty"> 
+                    <div id="list-of-item" style="max-height:400px; overflow:auto;">
+                        <div id="cart-empty"> 
                             <p style="text-align:center;">
                                 The cart is empty
                             </p>
@@ -159,7 +158,45 @@
                             <span class="price">$15</span>
                         </p> -->
                     </div>
-                    
+                    <?php include 'php_snippets/checkout.php'; ?>
+                    <script type="text/javascript">
+                    function init(){
+                        setTimeout(function listpackage(){
+                            var a = <?php echo json_encode($a); ?>; //main_order_ID
+                            var b = <?php echo json_encode($b); ?>; //package_name
+                            var c = <?php echo json_encode($c); ?>; //package_time
+                            var d = <?php echo json_encode($d); ?>; //total_price
+                            for(var i; i<a.length; i++){
+                                var price = document.createElement("SPAN");
+                                price.classList.add("price");
+                                price.innerHTML = d[i];
+                                //create list
+                                //href and link content
+                                base_url = "localhost/php_snippets/details?Main_order_ID="
+                                order_link = base_url.concat(a[i]);
+                                var temp_link = document.createElement("a");
+                                temp_link.href = order_link; //"http://test.com"
+                                temp_link.target = '_blank';
+                                temp_link.innerHTML = b[i]; 
+                                temp_link.title = "click for more details";
+                                //paragraph
+                                var para = document.createElement("p");
+                                para.appendChild(temp_link);
+                                para.appendChild(price);
+
+                                var attacher = document.getElementById("list-of-item");
+                                attacher.appendChild(para);
+                                
+
+                                if(document.getElementById("cart-empty")!==null) {
+                                    var i = document.getElementById("cart-empty");
+                                    i.remove();
+                                }    
+                            }
+                        }, 1000);
+                    } 
+                    addEventListener("load", init);
+                    </script>
                     <hr>
                     <p>Total
                         <span class="price" style="color:black">
@@ -176,7 +213,7 @@
         <i class="fa fa-chevron-up"></i>
     </button>
 </body>
-<?php include 'php_snippets/session.php';?>
+<?php include 'php_snippets/session.php'; ?>
 
 
 
