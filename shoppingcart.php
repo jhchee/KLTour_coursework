@@ -160,42 +160,41 @@
                     </div>
                     <?php include 'php_snippets/checkout.php'; ?>
                     <script type="text/javascript">
-                    function init(){
-                        setTimeout(function listpackage(){
-                            var a = <?php echo json_encode($a); ?>; //main_order_ID
-                            var b = <?php echo json_encode($b); ?>; //package_name
-                            var c = <?php echo json_encode($c); ?>; //package_time
-                            var d = <?php echo json_encode($d); ?>; //total_price
-                            for(var i; i<a.length; i++){
-                                var price = document.createElement("SPAN");
-                                price.classList.add("price");
-                                price.innerHTML = d[i];
-                                //create list
-                                //href and link content
-                                base_url = "localhost/php_snippets/details?Main_order_ID="
-                                order_link = base_url.concat(a[i]);
-                                var temp_link = document.createElement("a");
-                                temp_link.href = order_link; //"http://test.com"
-                                temp_link.target = '_blank';
-                                temp_link.innerHTML = b[i]; 
-                                temp_link.title = "click for more details";
-                                //paragraph
-                                var para = document.createElement("p");
-                                para.appendChild(temp_link);
-                                para.appendChild(price);
+                    
+                    function listpackage(){
+                        var a = <?php echo json_encode($a); ?>; //main_order_ID
+                        var b = <?php echo json_encode($b); ?>; //package_name
+                        var c = <?php echo json_encode($c); ?>; //total_price
+                        for(var i=0; i<a.length; i++){
+                            var price = document.createElement("SPAN");
+                            price.classList.add("price");
+                            price.innerHTML = c[i];
+                            //create list
+                            //href and link content
+                            base_url = "localhost/php_snippets/details?Main_order_ID=";
+                            order_link = base_url.concat(a[i]);
+                            var temp_link = document.createElement("a");
+                            temp_link.href = order_link; //"http://test.com"
+                            temp_link.target = '_blank';
+                            temp_link.innerHTML = b[i]; 
+                            temp_link.title = "click for more details";
+                            //paragraph
+                            var para = document.createElement("p");
+                            para.appendChild(temp_link);
+                            para.appendChild(price);
 
-                                var attacher = document.getElementById("list-of-item");
-                                attacher.appendChild(para);
-                                
+                            var attacher = document.getElementById("list-of-item");
+                            attacher.appendChild(para);
+                            
 
-                                if(document.getElementById("cart-empty")!==null) {
-                                    var i = document.getElementById("cart-empty");
-                                    i.remove();
-                                }    
-                            }
-                        }, 1000);
-                    } 
-                    addEventListener("load", init);
+                            if(document.getElementById("cart-empty")!==null) {
+                                var j = document.getElementById("cart-empty");
+                                j.remove();
+                            }    
+                        }
+                    }
+                    
+                    window.addEventListener("load", listpackage);
                     </script>
                     <hr>
                     <p>Total

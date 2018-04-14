@@ -10,10 +10,11 @@ $asking_unpaid_order = $db ->query($ask_unpaid_order);
 
 $a = array(); //main_order id
 $b = array(); //name
-$c = array(); //time
-$d = array(); //price
-
+$c = array(); //price
+$sum_up_price = 0;
+$index=0;
 while($row = $asking_unpaid_order->fetch_assoc()){
+    $index++;
     foreach($row as $key => $value){
         $link = "localhost/tourtrip_assignment/php_snippets/details.php?Main_order_ID=" . $value;
         $ask_package_name = "SELECT Package_name FROM package WHERE Package_ID = (SELECT Package_ID FROM main_order WHERE Main_order_ID = $value)";
@@ -31,10 +32,10 @@ while($row = $asking_unpaid_order->fetch_assoc()){
         $package_time_row = $asking_package_time -> fetch_assoc();
         $package_time = $package_time_row["Time"];
 
+        $order_name = "#" . "$index" . "-" . "$package_name" . " [$package_time]"; 
         array_push($a, $value);
-        array_push($b, $package_name);
-        array_push($c, $package_time);
-        array_push($d, $total_price);
+        array_push($b, $order_name);
+        array_push($c, $total_price);  
     }
 }
 // print_r($a);
