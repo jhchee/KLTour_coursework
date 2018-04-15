@@ -189,7 +189,7 @@
                             price.innerHTML = c[i];
                             //create list
                             //href and link content
-                            base_url = "localhost/php_snippets/details?Main_order_ID=";
+                            base_url = "packagedetails?Main_order_ID=";
                             order_link = base_url.concat(a[i]);
                             var temp_link = document.createElement("a");
                             temp_link.href = order_link; //"http://test.com"

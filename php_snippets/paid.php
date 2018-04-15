@@ -16,7 +16,6 @@ $index=0;
 while($row = $asking_unpaid_order->fetch_assoc()){
     $index++;
     foreach($row as $key => $value){
-        $link = "localhost/tourtrip_assignment/php_snippets/details.php?Main_order_ID=" . $value;
         $ask_package_name = "SELECT Package_name FROM package WHERE Package_ID = (SELECT Package_ID FROM main_order WHERE Main_order_ID = $value)";
         $asking_package_name = $db ->query($ask_package_name);
         $package_name_row = $asking_package_name -> fetch_assoc();
