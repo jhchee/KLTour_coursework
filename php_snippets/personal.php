@@ -11,6 +11,7 @@ $details_row = $asking_details -> fetch_assoc();
 
 // empty detail
 $full_name="";
+$phone="";
 $address="";
 $city="";
 $state="";
@@ -20,6 +21,9 @@ $payment_card="";
 
 if($details_row["Full_name"]){
     $full_name = $details_row["Full_name"];
+}
+if($details_row["Phone"]){
+    $phone = $details_row["Phone"];
 }
 if($details_row["Address"]){
     $address = $details_row["Address"];

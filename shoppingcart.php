@@ -75,7 +75,10 @@
                                 <h3>Billing Address</h3>
                                 <label for="fname">
                                     <i class="fa fa-user"></i> Full Name</label>
-                                <input type="text" id="fname" value="<?php echo $full_name; ?>" name="firstname" placeholder="David Johnson" required>
+                                <input type="text" id="fname" value="<?php echo $full_name; ?>" name="fullname" placeholder="David Johnson" required>
+                                <label for="phone">
+                                    <i class="fa fa-mobile-phone" style="font-size:23px" ></i> Phone</label>
+                                <input type="text" id="phone" value="<?php echo $phone; ?>" name="phone" placeholder="0106578941">
                                 <label for="adr">
                                     <i class="fa fa-address-card-o"></i> Address</label>
                                 <input type="text" id="adr" value="<?php echo $address; ?>" name="address" placeholder="No 13, Jalan Damansara 8" required>
@@ -107,7 +110,7 @@
                                 <label for="cname">Name on Card</label>
                                 <input type="text" id="cname" value="<?php echo $name_on_card; ?>" name="cardname" required>
                                 <label for="ccnum">Credit card number</label>
-                                <input type="text" id="ccnum" value="<?php echo $payment_card; ?>" name="cardnumber" placeholder="0000-0000-0000-0000" required>
+                                <input type="text" id="ccnum" value="<?php echo $payment_card; ?>" name="cardnumber" placeholder="0000111100001111"  maxlength="16" required>
                                 <label for="expmonth">Exp Month</label>
                                 <select name="expmonth" selected="<?php echo $expire_month; ?>">
                                     <option value="January">January</option>
