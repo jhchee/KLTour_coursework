@@ -63,6 +63,8 @@
     </div>
     <script src="scripting/loginform.js"></script>
     <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
+    <?php include 'php_snippets/personal.php'; ?>
+    <?php include 'php_snippets/unpaid.php'; ?>
     <div class="checkout">
         <div class="row">
             <div class="col-75">
@@ -73,22 +75,22 @@
                                 <h3>Billing Address</h3>
                                 <label for="fname">
                                     <i class="fa fa-user"></i> Full Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="David Johnson">
+                                <input type="text" id="fname" value="<?php echo $full_name; ?>" name="firstname" placeholder="David Johnson" required>
                                 <label for="adr">
                                     <i class="fa fa-address-card-o"></i> Address</label>
-                                <input type="text" id="adr" name="address" placeholder="No 13, Jalan Damansara 8">
+                                <input type="text" id="adr" value="<?php echo $address; ?>" name="address" placeholder="No 13, Jalan Damansara 8" required>
                                 <label for="city">
                                     <i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="city" name="city" placeholder="Kuala Lumpur">
+                                <input type="text" id="city" value="<?php echo $city; ?>" name="city" placeholder="Kuala Lumpur" required>
 
                                 <div class="row">
                                     <div class="col-50">
                                         <label for="state">State</label>
-                                        <input type="text" id="state" name="state" placeholder="Selangor">
+                                        <input type="text" id="state" value="<?php echo $state; ?>" name="state" placeholder="Selangor" required>
                                     </div>
                                     <div class="col-50">
                                         <label for="zip">Zip</label>
-                                        <input type="text" id="zip" name="zip" placeholder="43200">
+                                        <input type="text" id="zip" value="<?php echo $zip; ?>" name="zip" placeholder="43200" required>
                                     </div>
                                 </div>
                             </div>
@@ -103,11 +105,11 @@
                                     <i class="fa fa-cc-discover" style="color:orange;"></i>
                                 </div>
                                 <label for="cname">Name on Card</label>
-                                <input type="text" id="cname" name="cardname">
+                                <input type="text" id="cname" value="<?php echo $name_on_card; ?>" name="cardname" required>
                                 <label for="ccnum">Credit card number</label>
-                                <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+                                <input type="text" id="ccnum" value="<?php echo $payment_card; ?>" name="cardnumber" placeholder="0000-0000-0000-0000" required>
                                 <label for="expmonth">Exp Month</label>
-                                <select name="expmonth">
+                                <select name="expmonth" selected="<?php echo $expire_month; ?>">
                                     <option value="January">January</option>
                                     <option value="February">February</option>
                                     <option value="March">March</option>
@@ -124,11 +126,11 @@
                                 <div class="row">
                                     <div class="col-50">
                                         <label for="expyear">Exp Year</label>
-                                        <input type="text" id="expyear" name="expyear">
+                                        <input type="text" value="<?php echo $expire_year; ?>" id="expyear" name="expyear" required>
                                     </div>
                                     <div class="col-50">
                                         <label for="cvv">CVV</label>
-                                        <input type="text" id="cvv" name="cvv">
+                                        <input type="text" id="cvv" name="cvv" required>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +145,7 @@
                     <h4>Cart
                         <span class="price" style="color:black">
                             <i class="fa fa-shopping-cart"></i>
-                            <b>4</b>
+                            <b><?php echo $index; ?></b>
                         </span>
                     </h4>
                     <div id="list-of-item" style="max-height:400px; overflow:auto;">
@@ -158,7 +160,7 @@
                             <span class="price">$15</span>
                         </p> -->
                     </div>
-                    <?php include 'php_snippets/checkout.php'; ?>
+                    
                     <script type="text/javascript">
                     
                     function listpackage(){
@@ -190,7 +192,7 @@
                             if(document.getElementById("cart-empty")!==null) {
                                 var j = document.getElementById("cart-empty");
                                 j.remove();
-                            }    
+                            }  
                         }
                     }
                     
@@ -199,7 +201,7 @@
                     <hr>
                     <p>Total
                         <span class="price" style="color:black">
-                            <b>$30</b>
+                            <b>RM <?php echo $sum_up_price; ?></b>
                         </span>
                     </p>
                 </div>
