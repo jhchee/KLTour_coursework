@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- include Bootstrap css and Js -->
-
     <!-- include Google font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -62,9 +60,19 @@
         </div>
     </div>
     <script src="scripting/loginform.js"></script>
+
+    <!-- dummy iframe to receive post -->
     <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
+    
+    <!-- user details -->
     <?php include 'php_snippets/personal.php'; ?>
     <?php include 'php_snippets/unpaid.php'; ?>
+    <script type="text/javascript"> 
+                    function refresh(){
+                        setTimeout(function(){window.location.reload(true);}, 2000);
+                    }
+                    </script>
+    <?php include 'php_snippets/checkout.php'; ?>
     <div class="checkout">
         <div class="row">
             <div class="col-75">
@@ -139,11 +147,12 @@
                             </div>
 
                         </div>
-                        <input type="submit" onclick="refresh" value="Continue to checkout" class="btn">
+                        <input type="submit" value="Continue to checkout" class="btn">
                     </form>
-                    <script type="text/javascript"> function refresh(){setTimeout(function(){window.location.reload(true);}, 2000);}</script>
                 </div>
             </div>
+
+            <!-- package list -->
             <div class="col-25">
                 <div class="container">
                     <h4>Cart
@@ -159,9 +168,8 @@
                             </p>
                         </div>
                     </div>
-                    
+                    <!-- function of adding list of package -->
                     <script type="text/javascript">
-                    
                     function listpackage(){
                         var a = <?php echo json_encode($a); ?>; //main_order_ID
                         var b = <?php echo json_encode($b); ?>; //package_name
@@ -187,7 +195,6 @@
                             var attacher = document.getElementById("list-of-item");
                             attacher.appendChild(para);
                             
-
                             if(document.getElementById("cart-empty")!==null) {
                                 var j = document.getElementById("cart-empty");
                                 j.remove();
@@ -213,7 +220,5 @@
     </button>
 </body>
 <?php include 'php_snippets/session.php'; ?>
-
-
 
 </html>

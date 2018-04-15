@@ -1,7 +1,10 @@
 <?php
 include "config.php";
 
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $myusername = $_SESSION['login_user'];
 
@@ -29,6 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else {
         $checkout = "UPDATE main_order SET Paid=1 WHERE Username='$myusername'";
         $checking_out = $db ->query($checkout);
+         echo '<script type="text/javascript">',
+         'setTimeout(function(){parent.location.reload(true);}, 2000); ',
+         '</script>';
     }
 
 
