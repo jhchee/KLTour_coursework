@@ -92,7 +92,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
+// username or password incorrect
 function promptAgain() {
     alert("Username or Password is incorrect");
 }

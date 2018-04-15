@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- include Bootstrap css and Js -->
-
     <!-- include Google font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -106,7 +104,6 @@
     <!-- food catalogue -->
     <div class="info">
 
-
         <!-- slideshow -->
         <div class="slideshow">
             <!-- Container for the image gallery -->
@@ -158,12 +155,10 @@
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
                 <!-- Image text -->
                 <div class="caption-container">
                     <p id="caption"></p>
                 </div>
-
                 <!-- Thumbnail images -->
                 <div class="row">
                     <div class="column">
@@ -260,46 +255,25 @@
             </form>
         </div>
     </div>
-    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
+    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="position:absolute;"></iframe>
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
         <h1>Places</h1>
-        <p>young dump and broke young dump and broke young dump and broke
-        young dump and broke young dump and broke young dump and broke
-        young dump and broke young dump and broke
-        young dump and broke young dump and broke
-        young dump and broke young dump and broke
-        young dump and broke young dump and broke
-        young dump and broke young dump and broke
-        young dump and broke young dump and broke
-        young dump and broke young dump and broke
+        <p>
         </p>
 
         <h1>Description</h1>
-        <p>hellovgefgfhbdsugfbhsdbfhj
-            fjkdsfslidkbfjlk
-            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
-            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
-            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
-            hjfgashlgfjsgfjlsgafhgsdhjlagfas
-            uifgwiasgfusagfjlhsg
+        <p>
         </p>
 
         <h1>What can you do</h1>
-        <p>hellovgefgfhbdsugfbhsdbfhj
-            fjkdsfslidkbfjlk
-            vhjsdbhjkbsdhkjvbhksdvbhsdbvhj
-            bsdhfvhjbsdjhkvbsdfhkjvbhjdfsb
-            bhvsdbhubshvbashjfgjsgfjsaghfgsahlfg
-            hjfgashlgfjsgfjlsgafhgsdhjlagfas
-            uifgwiasgfusagfjlhsg
+        <p>
         </p>
     </div>
 
 
     <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
-
 
 
 <!-- back to top button -->
@@ -309,7 +283,5 @@
 </body>
 <script src="scripting/loginform.js"></script>
 <?php include 'php_snippets/session.php';?>
-
-
 
 </html>

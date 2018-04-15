@@ -37,7 +37,7 @@
             <div class="dropdown-content">
                 <a href="#" style="color: red;">
                     <i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Profile</a>
-                <a href="php_snippets/logout.php?logouttoken=true">
+                <a href="php_snippets/speciallogout.php?logouttoken=true">
                     <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</a>
             </div>
         </div>
@@ -64,7 +64,7 @@
     
     <!-- loader -->
     <div id="loader-box">
-        <div id="message" style="margin-left:5%; margin-top:72%; display:none;">Verifying...</div>
+        <div id="message" style="margin-left:5%; margin-top:72%; display:none;">Updating...</div>
     </div>
     <div id="loader"></div>
     
@@ -147,22 +147,20 @@
                                         <input type="text" value="<?php echo $expire_year; ?>" id="expyear" name="expyear" required>
                                     </div>
                                     <div class="col-50">
-                                        <label for="cvv">CVV</label>
-                                        <input type="text" id="cvv" name="cvv" required>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                         <input type="submit" value="Update your details" class="btn">
-                        <!-- <style>
+                        <style>
                         .btn {
                             background-color: rgb(47, 172, 47);
                         }
                         .btn:hover {
                             background-color: green;
                         }
-                        </style> -->
+                        </style>
                     </form>
                 </div>
             </div>
@@ -170,9 +168,9 @@
             <!-- package list -->
             <div class="col-25">
                 <div class="container">
-                    <h4>Cart
+                    <h4>Paid
                         <span class="price" style="color:black">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-check-square-o"></i>
                             <b><?php echo $index; ?></b>
                         </span>
                     </h4>
@@ -218,12 +216,6 @@
                     }
                     window.addEventListener("load", listpackage);
                     </script>
-                    <hr>
-                    <p>Total
-                        <span class="price" style="color:black">
-                            <b>RM <?php echo $sum_up_price; ?></b>
-                        </span>
-                    </p>
                 </div>
             </div>
         </div>
