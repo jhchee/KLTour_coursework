@@ -64,15 +64,24 @@
     <!-- dummy iframe to receive post -->
     <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
     
+    <!-- loader -->
+    <div id="loader-box">
+        <div id="message" style="margin-left:5%; margin-top:72%; display:none;">Verifying...</div>
+    </div>
+    <div id="loader"></div>
+    
+
     <!-- user details -->
     <?php include 'php_snippets/personal.php'; ?>
     <?php include 'php_snippets/unpaid.php'; ?>
-    <script type="text/javascript"> 
-                    function refresh(){
-                        setTimeout(function(){window.location.reload(true);}, 2000);
-                    }
-                    </script>
     <?php include 'php_snippets/checkout.php'; ?>
+    <script>
+        function loader(){
+            document.getElementById("loader-box").style.display = 'block';
+            document.getElementById("loader").style.display = 'block';
+            document.getElementById("message").style.display = 'block';
+        }
+    </script>
     <div class="checkout">
         <div class="row">
             <div class="col-75">

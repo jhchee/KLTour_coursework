@@ -33,7 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $checkout = "UPDATE main_order SET Paid=1 WHERE Username='$myusername'";
         $checking_out = $db ->query($checkout);
          echo '<script type="text/javascript">',
-         'setTimeout(function(){parent.location.reload(true);}, 2000); ',
+         'parent.loader();',
+         'setTimeout(function(){parent.location.reload(true);}, 2000);',
          '</script>';
     }
 
