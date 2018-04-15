@@ -41,7 +41,7 @@
             <div class="dropdown-content">
                 <a href="profile.php">
                     <i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Profile</a>
-                <a href="php_snippets/logout.php?logouttoken=true">
+                <a href="php_snippets/speciallogout.php?logouttoken=true">
                     <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</a>
             </div>
         </div>
@@ -139,8 +139,9 @@
                             </div>
 
                         </div>
-                        <input type="submit" value="Continue to checkout" class="btn">
+                        <input type="submit" onclick="refresh" value="Continue to checkout" class="btn">
                     </form>
+                    <script type="text/javascript"> function refresh(){setTimeout(function(){window.location.reload(true);}, 2000);}</script>
                 </div>
             </div>
             <div class="col-25">
@@ -157,11 +158,6 @@
                                 The cart is empty
                             </p>
                         </div>
-                       
-                        <!-- <p>
-                            <a href="#" title="click for more details">Product 1 with meal</a>
-                            <span class="price">$15</span>
-                        </p> -->
                     </div>
                     
                     <script type="text/javascript">
@@ -198,7 +194,6 @@
                             }  
                         }
                     }
-                    
                     window.addEventListener("load", listpackage);
                     </script>
                     <hr>
