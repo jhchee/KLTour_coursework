@@ -11,8 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- include personalised stylesheet -->
     <link rel="stylesheet" href="styling/style.css">
-    <link rel="stylesheet" href="styling/cart.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="styling/profile-cart.css">
+    <title>Cart</title>
 </head>
 
 <body>

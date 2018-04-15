@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $checking_out = $db ->query($checkout);
          echo '<script type="text/javascript">',
          'parent.loader();',
-         'setTimeout(function(){parent.location.reload(true);}, 2000);',
+         'setTimeout(function(){parent.location.reload(true);}, 3000);',
          '</script>';
     }
 
