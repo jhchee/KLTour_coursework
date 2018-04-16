@@ -79,7 +79,7 @@ body {
 .guide {
     background-color: red;
     padding:20px;
-    height:20px;
+    height:15px;
     position: sticky;
     top:0;
     z-index:888;

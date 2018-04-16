@@ -13,9 +13,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- include personalised stylesheet -->
     <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="styling/packages.css">
     <!-- include personalised script -->
     <script src="scripting/loginform.js"></script>
-    <title>Home</title>
+    <title>Packages</title>
 </head>
 
 <body>
@@ -30,11 +31,13 @@
         <a href="contact.php">Contact</a>
 
         <div class="login-signup">
-            <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;"> Login | Signup </a>
+            <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;">
+            Login | Signup </a>
         </div>
 
         <div class="dropdown" style="display: block;">
-            <button class="dropbtn"><?php session_start(); echo $_SESSION['login_user'];?>
+            <button class="dropbtn">
+                <?php session_start(); echo $_SESSION['login_user'];?>
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -48,11 +51,11 @@
             <a href="shoppingcart.php" id="cart-link" style="float:right; display: block;">
                 <i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Shopping Cart</a>
         </div>
-        
+
     </div>
     <br>
-    
-   
+
+
     <!-- Read the guide section for better understanding of the city -->
     <div class="guide">
         <text style="color:white;">Know More About This City</text>
@@ -62,17 +65,75 @@
         <a href="">Guide</a>
     </div>
     <div style="padding:1px;"></div>
-    
+
     <!-- login/signup form -->
     <div id="overlay" onclick="close_form()">
-        <div id="login" >
-            <embed src="login.html" >
+        <div id="login">
+            <embed src="login.html">
         </div>
     </div>
     <script src="scripting/loginform.js"></script>
-    
-    
 
+    <div style="height:5%;"></div>
+    
+    <div class="card-group">
+        <div class="card-box">
+            <br>
+            <div class="card">
+                <div class="container">
+                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <div class="overlay2">
+                        <div class="text">Hello World</div>
+                    </div>
+                    <a href="">Find more</a>
+                    <p style="float:left;">Hello</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-box">
+            <br>
+            <div class="card">
+                <div class="container">
+                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <div class="overlay2">
+                        <div class="text">Hello World</div>
+                    </div>
+                    <a href="">Find more</a>
+                    <p style="float:left;">Hello</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card-group">
+        <div class="card-box">
+            <br>
+            <div class="card">
+                <div class="container">
+                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <div class="overlay2">
+                        <div class="text">Hello World</div>
+                    </div>
+                    <a href="">Find more</a>
+                    <p style="float:left;">Hello</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-box">
+            <br>
+            <div class="card">
+                <div class="container">
+                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <div class="overlay2">
+                        <div class="text">Hello World</div>
+                    </div>
+                    <a href="">Find more</a>
+                    <p style="float:left;">Hello</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
 
@@ -81,7 +142,9 @@
 
 
     <!-- back to top button -->
-    <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">
+        <i class="fa fa-chevron-up"></i>
+    </button>
 </body>
 <?php include 'php_snippets/session.php';?>
 
