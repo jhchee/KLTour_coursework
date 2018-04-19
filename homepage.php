@@ -127,6 +127,11 @@
         <h1 style="text-align:middle;">Hear What They Said</h1>
     </div>
 
+    <div class="comment">
+        <p class="item-1">This is your last chance. After this, there is no turning back.</p>
+        <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
+        <p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
+    </div>
 
 
     <!-- back to top button -->
