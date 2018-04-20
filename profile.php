@@ -194,7 +194,7 @@
                             //create list
                             //href and link content
                             base_url = "packagedetails.php?Main_order_ID=";
-                            order_link = base_url.concat(a[i]);
+                            order_link = base_url.concat(a[i], "&Change=0");
                             var temp_link = document.createElement("a");
                             temp_link.href = order_link; //"http://test.com"
                             temp_link.target = '_blank';

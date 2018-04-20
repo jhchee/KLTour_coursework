@@ -167,5 +167,23 @@ $foodname_quantity_table = $db ->query($join_food_table);
         <td>Status</td>
         <td><?php echo $paid ?></td>
     </tr>
-  
+
+
+    <script>
+        function hide_change_delete_button(){
+            var i = document.getElementById('changepackage');
+            var j = document.getElementById('deletepackage');
+            i.style.display = 'none'; 
+            j.style.display = 'none'; 
+        }
+    </script>
+
+    <?php
+        if(isset($_GET['Change'])){
+            echo "<script>";
+            echo "hide_change_delete_button()";
+            echo "</script>";
+        }
+    ?>
+    </body>
 </html>
