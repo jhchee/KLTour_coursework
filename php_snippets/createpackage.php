@@ -19,12 +19,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = $db->query($ask_package_price);
             $package_price = $sql->fetch_assoc();
             $total_price = $package_price["Package_price"];
-            $create_package_order_query = "INSERT INTO main_order (Username, Package_ID) VALUES ('$myusername', '$package_ID')";
-            $creating_package_order = mysqli_query($db, $create_package_order_query);
-    
-            // Get last main_order_id
-            $mainid = $db->insert_id;
+            
+            //change package
+            if (!empty($_POST['Main_order_ID'])){
+                $mainid = $_POST['Main_order_ID'];
+                $update_main_order = "UPDATE main_order SET Package_ID='$package_ID' WHERE Main_order_ID=$mainid";
+                $updating_main_order = $db->query($update_main_order);
 
+                $delete_previous_food_order = "DELETE FROM food_order WHERE Main_order_ID=$mainid";
+                $deleting_previous_food_order = $db->query($delete_previous_food_order);
+            }
+            else {
+                $create_package_order_query = "INSERT INTO main_order (Username, Package_ID) VALUES ('$myusername', '$package_ID')";
+                $creating_package_order = mysqli_query($db, $create_package_order_query);
+                // Get last main_order_id
+                $mainid = $db->insert_id;
+            }
+            
             // if meal is selected
             if($mymeal == 1){
                 foreach($_POST['food'] as $key => $value) {

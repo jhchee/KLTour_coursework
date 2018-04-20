@@ -24,7 +24,7 @@
             <img src="images/KL Tour.png" alt="KLTour-logo" height="29" width="80">
         </a>
         <a href="homepage.php">Home</a>
-        <a href="package1.php" class="active">Packages</a>
+        <a href="packages.php" class="active">Packages</a>
         <a href="contact.php">Contact</a>
 
         <div class="login-signup">
@@ -64,6 +64,7 @@
 
     <!-- food catalogue -->
     <div id="overlay-food" onclick="close_food()">
+    <!-- XXX -->
         <div class="food-form">
             <form action="php_snippets/createpackage.php" method="post" target="dummyframe">
                 <!-- <div style="height:0%;"></div> -->
@@ -96,8 +97,8 @@
                     </div>
                     <a id="close-food">OK</a>
                 </div>
-            <!-- </form> -->
         </div>
+    <!-- XXX -->
     </div>
     <!-- <script src="scripting/package.js"></script> -->
 
@@ -243,7 +244,8 @@
                 <div style="height:60px;"></div>
                 <h3>Add to cart</h3>
 
-                <button type="submit" class="cart-submit" id="addtocart" onclick="display_form()">ADD TO CART</button>
+                
+                <button type="submit" name="Main_order_ID" class="cart-submit" id="addtocart" onclick="display_form()" value="<?php if(isset($_GET['Main_order_ID'])){echo $_GET['Main_order_ID'];} ?>">ADD TO CART</button>
                 <?php 
                 if (isset($_SESSION['login_user'])) {
                     echo '<script> 

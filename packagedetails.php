@@ -6,6 +6,11 @@ if (session_status() == PHP_SESSION_NONE) {
 $myusername = $_SESSION['login_user'];
 $mymainorderID = $_GET['Main_order_ID'];
 
+$ask_purchaser = "SELECT Full_name FROM user WHERE Username='$myusername'";
+$asking_purchaser = $db ->query($ask_purchaser);
+$purchaser_row = $asking_purchaser -> fetch_assoc();
+$purchaser = $purchaser_row["Full_name"];
+
 $ask_order_paid = "SELECT Paid FROM main_order WHERE Main_order_ID=$mymainorderID";
 $asking_order_paid = $db ->query($ask_order_paid);
 $order_paid_row = $asking_order_paid -> fetch_assoc();
@@ -15,7 +20,14 @@ if($order_paid) {
 }
 else $paid = "Unpaid";
 
-$ask_package_name = "SELECT Package_name FROM package WHERE Package_ID = (SELECT Package_ID FROM main_order WHERE Main_order_ID = $mymainorderID)";
+$ask_package_ID = "SELECT Package_ID FROM main_order WHERE Main_order_ID = $mymainorderID";
+$asking_package_ID = $db ->query($ask_package_ID);
+$package_ID_row = $asking_package_ID -> fetch_assoc();
+$package_ID = $package_ID_row["Package_ID"]; 
+
+$base_package = $package_ID[0];
+
+$ask_package_name = "SELECT Package_name FROM package WHERE Package_ID = $package_ID";
 $asking_package_name = $db ->query($ask_package_name);
 $package_name_row = $asking_package_name -> fetch_assoc();
 $package_name = $package_name_row["Package_name"];
@@ -101,7 +113,7 @@ $foodname_quantity_table = $db ->query($join_food_table);
         <form action="php_snippets/deletepackage.php" method="get">
             <button name="Main_order_ID" id="deletepackage" type="submit" value="<?php echo $mymainorderID; ?>">Delete Package</button>
         </form>
-        <form action="php_snippets/changepackage.php" method="get">
+        <form action="<?php echo $base_package . '.php'?>" method="get">
             <button name="Main_order_ID" id="changepackage" type="submit" style="margin-right:20px;" value="<?php echo $mymainorderID; ?>">Change Package</button>
         </form>   
     <div> 
@@ -116,6 +128,10 @@ $foodname_quantity_table = $db ->query($join_food_table);
         <td># <?php echo $mymainorderID ?></td>
     </tr>
     <tr>
+        <td>Buyer</td>
+        <td><?php echo $purchaser ?></td>
+    </tr>
+    <tr>
         <td>Time</td>
         <td><?php echo $package_time ?></td>
     </tr>
@@ -128,7 +144,7 @@ $foodname_quantity_table = $db ->query($join_food_table);
             while ($row = $foodname_quantity_table->fetch_assoc()){
                 echo "<p>";
                 echo  $row['Food_name'];
-                echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+                echo "&nbsp;&nbsp;-&nbsp;&nbsp;";
                 echo $row['Quantity'];
                 echo "</p>";
                 $counter = 1;
@@ -144,11 +160,11 @@ $foodname_quantity_table = $db ->query($join_food_table);
 
     <tr>
         <td>Price</td>
-        <td>RM 	&nbsp; <?php echo $total_price ?></td>
+        <td>RM 	&nbsp;<?php echo $total_price ?></td>
     </tr>
 
     <tr>
-        <td>Paid</td>
+        <td>Status</td>
         <td><?php echo $paid ?></td>
     </tr>
   

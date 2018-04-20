@@ -15,45 +15,48 @@
     <link rel="stylesheet" href="styling/productpackage.css">
     <!-- include personalised script -->
     <script src="scripting/loginform.js"></script>
+    
     <title>Food</title>
 </head>
 
 <body>
     <div class="food-form">
-        <form action="php_snippets/testing.php" method="post">
+        <form action="php_snippets/createpackage.php" method="post" target="dummyframe">
             <!-- <div style="height:0%;"></div> -->
             <div class="grid-container">
                 <div class="grid-item">
-                    <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
-                    <label for="food4">food1</label>
-                    <input type="number" id="food1" name="food1" value="0" min="0" max="5">
-                    <button type="reset" value="Reset">Clear</button>
+                    <img class="food-pic" src="http://placehold.it/250x200.jpg" alt="food">
+                    <div class="quantity">
+                        <input type="number" id="food1" name="food[1]" min="0" max="10" step="1" value="0">
+                    </div>
+                    <!-- <label for="food4">food1</label> -->
+                    <!-- <input type="number" id="food1" name="food[1]" value="0" min="0" max="5"> -->
+                    <!-- <button type="reset" value="Reset">Clear</button> -->
                 </div>
                 <div class="grid-item">
-                    <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
+                    <img class="food-pic" src="http://placehold.it/250x200.jpg" alt="food">
                     <label for="food4">food2</label>
-                    <input type="number" id="food2" name="food2" value="0" min="0" max="5">
+                    <input type="number" id="food2" name="food[2]" value="0" min="0" max="5">
                     <button type="reset" value="Reset">Clear</button>
                 </div>
                 <div class="grid-item">
-                    <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
+                    <img class="food-pic" src="http://placehold.it/250x200.jpg" alt="food">
                     <!-- <div class="desciption"> -->
                     <label for="food4">food3</label>
-                    <input type="number" id="food3" name="food3" value="0" min="0" max="5">
+                    <input type="number" id="food3" name="food[3]" value="0" min="0" max="5">
                     <!-- </div> -->
                     <button type="reset" value="Reset">Clear</button>
                 </div>
                 <div class="grid-item">
-                    <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
+                    <img class="food-pic" src="http://placehold.it/250x200.jpg" alt="food">
                     <label for="food4">food4</label>
-                    <input type="number" id="food4" name="food4" value="0" min="0" max="5">
+                    <input type="number" id="food4" name="food[4]" value="0" min="0" max="5">
                     <button type="reset" value="Reset">Clear</button>
                 </div>
-                <button type="submit" value="Submit">Submit</button>
+                <a id="close-food">OK</a>
             </div>
-        </form>
     </div>
-
+    <script src="scripting/package.js"></script>
 
 </body>
 

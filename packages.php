@@ -85,7 +85,7 @@
                     <div class="overlay2">
                         <div class="text">Hello World</div>
                     </div>
-                    <a href="" title = "click for more details">Find more</a>
+                    <a href="1.php" title = "click for more details">Find more</a>
                     <p style="float:left;">Hello</p>
                 </div>
             </div>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styling/style.css">
     <link rel="stylesheet" href="styling/profile-cart.css">
     <script src="scripting/loginform.js"></script>
-    <title>Home</title>
+    <title>Profile</title>
 </head>
 
 <body>
