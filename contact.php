@@ -160,7 +160,7 @@
                 <p style="color:#b4b4b4;">
                     <b>Monday - Friday</b> 09:00am - 06:00pm
                     <br>
-                    <b>Saturday</b> 09:00am - 05:00pm
+                    <b>Saturday&nbsp;&nbsp;</b> 09:00am - 05:00pm
                     <br>
                     <b>Sunday and Public Holidays</b> Closed
                     <br>
