@@ -33,11 +33,13 @@ input[type="radio"] + label {
 input[type="radio"]:hover + label {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 input[type="radio"]:checked + label {
   background-color: red;
   color: white;
+  border: none;
 }
 
 meal-button input[type="radio"] {
@@ -95,6 +97,9 @@ meal-button input[type="radio"]:checked + label {
 
 .cart-submit:hover {
   cursor: pointer;
+  background: white;
+  color: black;
+  border: solid 2px black;
 }
 /* package page */
 
@@ -206,8 +211,6 @@ input[type="number"] {
   color: red;
 }
 
-
-
 /* food page */
 #overlay-food {
   position: fixed;
@@ -293,4 +296,22 @@ input[type="number"] {
     bottom: 0;
     opacity: 0;
   }
+}
+
+.changebutton {
+  background: white;
+  color: black;
+  border: solid 2px black;
+  float: left;
+  margin-left: 130px;
+  margin-right: 40px;
+  padding: 20px 60px 20px 60px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.changebutton:hover {
+  background: black;
+  color: white;
 }

@@ -34,7 +34,7 @@
 
         <div class="dropdown" style="display: block;">
             <button class="dropbtn" type="button">
-                <?php session_start(); echo $_SESSION['login_user'];?>
+                <?php session_start(); if(isset($_SESSION['login_user'])) echo $_SESSION['login_user'];?>
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -242,7 +242,7 @@
                     </ul>
                 </div>
                 <div style="height:60px;"></div>
-                <h3>Add to cart</h3>
+                <h3 id="action">Add to cart</h3>
 
                 
                 <button type="submit" name="Main_order_ID" class="cart-submit" id="addtocart" onclick="display_form()" value="<?php if(isset($_GET['Main_order_ID'])){echo $_GET['Main_order_ID'];} ?>">ADD TO CART</button>
@@ -276,7 +276,16 @@
 
     <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
-
+    <?php if(isset($_GET['Main_order_ID'])){
+    echo '<script>',
+     'var i = document.getElementById("addtocart");',
+     'i.classList.add("changebutton");',
+     'i.innerHTML="CHANGE PACKAGE";',
+     'document.getElementById("action").innerHTML="Change";',
+     'document.getElementById("snackbar").innerHTML="PACKAGE CHANGED";',
+     '</script>';
+} 
+?>
 
 <!-- back to top button -->
 <button onclick="topFunction()" id="back-to-top" title="Go to top">
@@ -286,4 +295,6 @@
 <script src="scripting/loginform.js"></script>
 <?php include 'php_snippets/session.php';?>
 
+
+</script>
 </html>
