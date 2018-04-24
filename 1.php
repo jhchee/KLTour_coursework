@@ -63,44 +63,180 @@
     <script src="scripting/loginform.js"></script>
 
     <!-- food catalogue -->
-    <div id="overlay-food" onclick="close_food()">
-    <!-- XXX -->
+    <div id="overlay-food" onclick="close_food()"  style="overflow:scroll; overflow-x:hidden;">
         <div class="food-form">
             <form action="php_snippets/createpackage.php" method="post" target="dummyframe">
-                <!-- <div style="height:0%;"></div> -->
                 <div class="grid-container">
                     <div class="grid-item">
-                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
-                        <label for="food4">food1</label>
-                        <input type="number" id="food1" name="food[1]" value="0" min="0" max="5">
-                        <button type="reset" value="Reset">Clear</button>
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>Twisties</h6>
+                            <p>RM 1.20</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[1]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
-                        <label for="food4">food2</label>
-                        <input type="number" id="food2" name="food[2]" value="0" min="0" max="5">
-                        <button type="reset" value="Reset">Clear</button>
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[2]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
-                        <!-- <div class="desciption"> -->
-                        <label for="food4">food3</label>
-                        <input type="number" id="food3" name="food[3]" value="0" min="0" max="5">
-                        <!-- </div> -->
-                        <button type="reset" value="Reset">Clear</button>
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[3]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://placehold.it/200x200.jpg" alt="food">
-                        <label for="food4">food4</label>
-                        <input type="number" id="food4" name="food[4]" value="0" min="0" max="5">
-                        <button type="reset" value="Reset">Clear</button>
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[4]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <a id="close-food">OK</a>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[5]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[6]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[7]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[8]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[9]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <div class="card-container">
+                            <h6>London Choco Roll</h6>
+                            <p>RM 1.60</p>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                        <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" name="food[10]" value="0" maxlength=15>
+                                <span class="ns-btn">
+                                        <a data-dir="up"><span class="icon-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
                 </div>
+                
         </div>
+        <a id="close-food">OK</a>
     <!-- XXX -->
     </div>
-    <!-- <script src="scripting/package.js"></script> -->
+    <script src="scripting/quantity.js"></script>
 
     <!-- food catalogue -->
     <div class="info">

@@ -106,36 +106,84 @@ meal-button input[type="radio"]:checked + label {
 /* food page */
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   padding: 10px;
+  width: 100%;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   margin: 20px;
   font-size: 30px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
+.card-container h6 {
+  margin-bottom:10px;
+  font-weight: 300;
+}
+.card-container p {
+  font-size: 18px;
+  float:left;
+  margin: 0;
+  font-weight: 100;
+}
+
+.grid-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 .grid-item label {
-  width: 200px;
-  margin: 55%;
-  /* text-align: middle; */
+  float:left;
 }
-.grid-item img {
-  margin: 5%;
-}
-/* .grid-item input[type="number"] {
-  margin-left: 10%;
-  margin-right: 1%;
-  width: 50%;
-} */
 
-.quantity {
-  position: relative;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
 }
+.food-pic {
+  padding-top: -5px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card-container {
+  margin-top: -50px;
+}
+
+.card-container input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#close-food {
+  margin-left: 76.8%;
+  padding: 10px 30px 13px 30px;
+  max-height: 20px;
+  position: absolute;
+  display: inline-block;
+  color: white;
+  background: rgb(47, 172, 47);
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+#close-food:hover {
+  cursor: pointer;
+}
+
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -147,69 +195,82 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.quantity input {
-  width: 100px;
-  height: 43px;
-  line-height: 1.65;
-  float: left;
-  display: block;
-  padding-left: 30px;
-  border: 1px solid #eee;
-}
-
-.quantity input:focus {
-  outline: 0;
-}
-
-.quantity-nav {
-  float: left;
+.number-spinner {
+  max-width: 100px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  border: 2px solid #e2e2e2;
+  overflow: hidden;
   position: relative;
-  height: 42px;
+  display: table;
+  float: right;
+  margin-bottom: 20px;
 }
-
-.quantity-button {
+.number-spinner input {
+  height: 40px;
+  max-height: 40px;
+  line-height: 30px;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  border: none;
   position: relative;
-  cursor: pointer;
-  border-left: 1px solid #eee;
+  float: left;
   width: 30px;
   text-align: center;
-  color: #333;
-  font-size: 13px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-  line-height: 1.7;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+  font-size: 18px;
 }
-
-.quantity-button.quantity-up {
-  position: absolute;
-  height: 50%;
-  /* top:6px; */
-  border-bottom: 1px solid #eee;
-  font-size: 16px;
-  font-weight: 700;
+.number-spinner input:focus {
+  outline: none;
 }
-
-.quantity-button.quantity-down {
-  position: absolute;
-  bottom: 2px;
-  height: 48%;
-  font-size: 16px;
-  font-weight: 700;
+.number-spinner .ns-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+  cursor: pointer;
 }
-
-.quantity-button.quantity-up:hover {
+.number-spinner .ns-btn a {
+  height: 30px;
+  min-height: 30px;
+  width: 30px;
+  padding: 0;
+  max-width: 30px;
+  line-height: 30px;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  position: relative;
+  background: white;
+  color: rgba(51, 51, 51, 0.37);
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.number-spinner .ns-btn .icon-minus:after {
+  content: "\002212";
+  font-size: 25px;
+  line-height: 32px;
+  color: black;
+  /* color: red; */
+}
+.number-spinner .ns-btn .icon-minus:hover:after {
   color: red;
 }
 
-.quantity-button.quantity-down:hover {
-  color: red;
+.number-spinner .ns-btn .icon-plus:after {
+  content: "\00002B";
+  font-size: 25px;
+  line-height: 30px;
+  color: black;
 }
+.number-spinner .ns-btn .icon-plus:hover:after {
+  color: rgb(47, 172, 47);
+}
+
 
 /* food page */
 #overlay-food {
@@ -222,7 +283,6 @@ input[type="number"] {
   right: 0;
   bottom: 0;
   background-color: white;
-  cursor: pointer;
   z-index: 9999;
 }
 .food-form {
@@ -315,3 +375,5 @@ input[type="number"] {
   background: black;
   color: white;
 }
+
+

@@ -61,8 +61,10 @@
 .caption-container {
   text-align: center;
   background-color: #222;
-  padding: 2px 16px;
+  /* padding: 2px 16px; */
   color: white;
+  max-height: 50px;
+  padding: 2px;
 }
 
 .row:after {
