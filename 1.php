@@ -63,7 +63,7 @@
     <script src="scripting/loginform.js"></script>
 
     <!-- food catalogue -->
-    <div id="overlay-food" onclick="close_food()"  style="overflow:scroll; overflow-x:hidden;">
+    <div id="overlay-food" style="overflow:scroll; overflow-x:hidden;">
         <div class="food-form">
             <form action="php_snippets/createpackage.php" method="post" target="dummyframe">
                 <div class="grid-container">
@@ -233,7 +233,7 @@
                 </div>
                 
         </div>
-        <a id="close-food">OK</a>
+        <a id="close-food" onclick="emptyfood()">OK</a>
     <!-- XXX -->
     </div>
     <script src="scripting/quantity.js"></script>

@@ -33,7 +33,6 @@ function showSnackbar() {
       nbchecked++;
     }
   }
-
   if (nbchecked == 0) {
     alert("Must select time");
   } else {
@@ -44,4 +43,18 @@ function showSnackbar() {
     }, 3000);
   }
 }
+
+function emptyfood() {
+  var i = document.getElementsByClassName("pl-ns-value");
+  var counter = 0;
+  for(var j=0; j<i.length; j++){
+    if(i[j].value>0){
+      counter=1;
+    }
+  }
+  if(counter==0){
+    document.getElementById("without-meal").checked = true;
+  }
+}
+
 
