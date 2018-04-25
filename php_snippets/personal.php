@@ -18,6 +18,10 @@ $state="";
 $zip="";
 $name_on_card="";
 $payment_card="";
+$expire_month="";
+$expire_year="";
+
+
 
 if($details_row["Full_name"]){
     $full_name = $details_row["Full_name"];

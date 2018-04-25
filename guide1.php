@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Article: 10 Best Attractions In Kuala Lumpur</title>
@@ -10,9 +9,10 @@
     <!--Script APIs..-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripting/guide1.js"></script>
+    <script src="scripting/loginform.js"></script>
     <style>
         div{
-            display: block;
+            /* display: block; */
         }
         .parallax {
             background-image: url('images/Guides/KL.jpg');
@@ -165,9 +165,58 @@
         }
 
     </style>
-
+     <link rel="stylesheet" href="styling/style.css">
 </head>
 <body>
+     <!-- navigation bar -->
+     <div class="navbar">
+            <a href="#" style="padding-right:60px;">
+                <img src="images/KL Tour.png" alt="KLTour-logo" style="height:29px; width:80px;">
+            </a>
+            <a href="#" class="active">Home</a>
+            <a href="packages.php">Packages</a>
+            <a href="contact.php">Contact</a>
+    
+            <div class="login-signup">
+                <a onclick="display_form()" id="login-signup-link" href="javascript:void(0);" style="float:right; border:solid 2px red; display: block;"> Login | Signup </a>
+            </div>
+    
+            <div class="dropdown" style="display: block;">
+                <button class="dropbtn"><?php session_start(); echo $_SESSION['login_user'];?>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="profile.php">
+                        <i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Profile</a>
+                    <a href="php_snippets/logout.php?logouttoken=true">
+                        <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</a>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="shoppingcart.php" id="cart-link" style="float:right; display: block;">
+                    <i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Shopping Cart</a>
+            </div>
+            
+        </div>
+        <br>
+    
+        <!-- Read the guide section for better understanding of the city -->
+        <div class="guide">
+            <text style="color:white;">Know More About This City</text>
+            <a href="" style="margin-left:200px;">Guide</a>
+            <a href="">Guide</a>
+            <a href="">Guide</a>
+            <a href="">Guide</a>
+        </div>
+        <div style="padding:1px;"></div>
+    
+        <!-- login/signup form -->
+        <div id="overlay" onclick="close_form()">
+            <div id="login" >
+                <embed src="login.html" >
+            </div>
+        </div>
+        <script src="scripting/loginform.js"></script>
     <div class="parallax">
         <div class="caption">
             <span class="border">10 BEST ATTRACTIONS IN KUALA LUMPUR</span>
@@ -913,8 +962,12 @@
                     </div>
                 </div>
     </div>
-
-
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+    
+    <?php include 'php_snippets/session.php';?>
 </body>
 
 </html>
