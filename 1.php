@@ -60,7 +60,6 @@
             <embed src="login.html">
         </div>
     </div>
-    <script src="scripting/loginform.js"></script>
 
     <!-- food catalogue -->
     <div id="overlay-food" style="overflow:scroll; overflow-x:hidden;">
@@ -227,20 +226,14 @@
                             </div>
                         </div>
                     </div>
-                    
-
-                    
                 </div>
-                
         </div>
         <a id="close-food" onclick="emptyfood()">Proceed</a>
-    <!-- XXX -->
     </div>
-    <script src="scripting/quantity.js"></script>
+    <!-- <script src="scripting/quantity.js"></script> -->
 
-    <!-- food catalogue -->
+
     <div class="info">
-
         <!-- slideshow -->
         <div class="slideshow">
             <!-- Container for the image gallery -->
