@@ -68,7 +68,7 @@
             <form action="php_snippets/createpackage.php" method="post" target="dummyframe">
                 <div class="grid-container">
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Twisties.jpg" alt="food" style="height:200px; width:200px;">
                         <div class="card-container">
                             <h6>Twisties</h6>
                             <p>RM 1.20</p>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/London_choco_roll.jpg" alt="food" style="height:200px; width:200px;">
                         <div class="card-container">
                             <h6>London Choco Roll</h6>
                             <p>RM 1.60</p>
@@ -100,10 +100,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Tiger_biscuits.jpg" alt="food" style="height:200px; width:200px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Tiger Biscuit</h6>
+                            <p>RM 2.60</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -116,10 +116,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Snickers.jpg" alt="food" style="height:70px; width:200px; margin-top:65px; margin-bottom:65px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Snickers Bar</h6>
+                            <p>RM 3.00</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -132,10 +132,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Kitkat.jpg" alt="food" style="height:200px; width:200px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Kitkat</h6>
+                            <p>RM 3.20</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -148,10 +148,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Mamee.jpg" alt="food" style="height:200px; width:200px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Mamee Noodles</h6>
+                            <p>RM 1.50</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -164,10 +164,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Rice_crackers.jpg" alt="food" style="margin-top:20px; margin-bottom:15px;height:170px; width:180px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Rice Cracker</h6>
+                            <p>RM 3.30</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -180,10 +180,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Lipton_green_tea.jpg" alt="food" style="margin-top:20px; margin-bottom: 20px; height:170px; width:180px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Lipton Green Tea</h6>
+                            <p>RM 2.70</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -196,10 +196,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Coca-cola.jpg" alt="food" style="margin-bottom:20px; margin-top: 20px; height:170px; width:170px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Coca-cola</h6>
+                            <p>RM 2.50</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -212,10 +212,10 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img class="food-pic" src="http://ikw.com.my/images/product/195/002170-1-1.jpg" alt="food" style="height:200px; width:200px;">
+                        <img src="images/Food catalogue/Mineral_water.jpg" alt="food" style="margin-top:20px; margin-bottom:20px; height:170px; width:170px;">
                         <div class="card-container">
-                            <h6>London Choco Roll</h6>
-                            <p>RM 1.60</p>
+                            <h6>Mineral Water</h6>
+                            <p>RM 1.10</p>
                             <div class="number-spinner">
                                 <span class="ns-btn">
                                         <a data-dir="dwn"><span class="icon-minus"></span></a>
@@ -233,7 +233,7 @@
                 </div>
                 
         </div>
-        <a id="close-food" onclick="emptyfood()">OK</a>
+        <a id="close-food" onclick="emptyfood()">Proceed</a>
     <!-- XXX -->
     </div>
     <script src="scripting/quantity.js"></script>

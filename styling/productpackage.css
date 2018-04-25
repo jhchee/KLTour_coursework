@@ -108,6 +108,7 @@ meal-button input[type="radio"]:checked + label {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   padding: 10px;
+  margin-left:2%;
   width: 100%;
 }
 
@@ -169,15 +170,15 @@ img {
 }
 
 #close-food {
-  margin-left: 76.8%;
-  padding: 10px 30px 13px 30px;
-  max-height: 20px;
+  margin-left:44%;
+  padding: 15px 48px 15px 48px;
   position: absolute;
   display: inline-block;
   color: white;
   background: rgb(47, 172, 47);
   font-size: 20px;
   margin-bottom: 5%;
+  border-radius: 5px;
 }
 
 #close-food:hover {
