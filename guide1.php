@@ -1,18 +1,21 @@
+<?php
+    session_start(); 
+?>
+
 <html>
 <head>
     <title>Article: 10 Best Attractions In Kuala Lumpur</title>
     <!--Reference to Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Reference to font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!--Script APIs..-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripting/guide1.js"></script>
-    <script src="scripting/loginform.js"></script>
     <style>
-        div{
-            /* display: block; */
+        div {
+            display: block;
         }
         .parallax {
             background-image: url('images/Guides/KL.jpg');
@@ -23,7 +26,7 @@
             background-size: cover;
 	    }
 
-        .caption{
+        .caption {
             position: absolute;
             left: 0;
             top: 35%;
@@ -32,7 +35,7 @@
             color: #000;
         }
 
-        .caption span.border{
+        .caption span.border {
 	        background-color:rgb(168, 21, 21);
             color:#fff;
             padding:18px;
@@ -43,18 +46,18 @@
             }
 
         /* content */
-        .row{
+        .row {
             margin-left: -15px;
             margin-right: -15px;
         }
 
-        .content{
+        .content {
             width: 100%;
             padding-left:15px;
             padding-right:15px;
         }
 
-        .container{
+        .container {
             margin-left: auto;
             margin-right: auto;
             padding-left: 15px;
@@ -62,11 +65,11 @@
         }
 
         /* top10 */
-        .top10wrapper .top10itemwrapper{
+        .top10wrapper .top10itemwrapper {
             display: block;
         }
 
-        .top10itemwrapper{
+        .top10itemwrapper {
             padding: 4%;
             margin-bottom: 3%;
             margin-left: 1px;
@@ -75,21 +78,23 @@
         }
 
         /* img */
-        img{
+        .itemheaderpic img {
             width:100%;
             height: 100%;
             vertical-align: middle;
             object-fit: contain;
+            margin-top: -140px;
+            margin-bottom: -140px;  
         }
 
         /* text */
-        h1{
+        h1 {
             display: block;
             letter-spacing: 0;
             font-weight: 900;
         }
 
-        h2{
+        h2 {
             display: block;
             margin: 30px 0px 15px;
             font-size: 24px;
@@ -103,42 +108,42 @@
             letter-spacing: 0;
         }
         
-        #subtitle{
+        #subtitle {
             margin-top: -15px;
             color:rgb(97, 93, 93);
         }
 
-        #p1,#b1-2,#p2,#b2-2,#p3,#b3-2,#p4,#b4-2,#p5,#b5-2,#p6,#b6-2,#p7,#b7-2,#p8,#b8-2,#p9,#b9-2,#p10,#b10-2{
+        #p1,#b1-2,#p2,#b2-2,#p3,#b3-2,#p4,#b4-2,#p5,#b5-2,#p6,#b6-2,#p7,#b7-2,#p8,#b8-2,#p9,#b9-2,#p10,#b10-2 {
             display: none;
         }
 
         /* button */
         button {
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        cursor: pointer;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
         }
-        .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b10{
+        .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b10 {
             background-color: white;
             color: black;
             border: 2px solid #e7e7e7;
         }
 
-        .b1:hover,.b2:hover,.b3:hover,.b4:hover,.b5:hover,.b6:hover,.b7:hover,.b8:hover,.b9:hover,.b10:hover{
+        .b1:hover,.b2:hover,.b3:hover,.b4:hover,.b5:hover,.b6:hover,.b7:hover,.b8:hover,.b9:hover,.b10:hover {
             background-color: #e7e7e7;
             color: white;
         }
 
         /* restrictions */
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: 768px) {
             .row {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 18px;
@@ -146,14 +151,14 @@
                 }
             }
         
-        @media (min-width: 992px){
-            #outercontent{
+        @media (min-width: 992px) {
+            #outercontent {
                 width: 750px;
             }
         }
 
-        @media only screen and (min-width: 768px){
-            .h1{
+        @media only screen and (min-width: 768px) {
+            .h1 {
                 font-size: 32px;
                 font-weight: 500;
                 margin-top: 42px;
@@ -165,7 +170,7 @@
         }
 
     </style>
-     <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="styling/style.css">
 </head>
 <body>
      <!-- navigation bar -->
@@ -173,7 +178,7 @@
             <a href="#" style="padding-right:60px;">
                 <img src="images/KL Tour.png" alt="KLTour-logo" style="height:29px; width:80px;">
             </a>
-            <a href="#" class="active">Home</a>
+            <a href="homepage.php" class="active">Home</a>
             <a href="packages.php">Packages</a>
             <a href="contact.php">Contact</a>
     
@@ -182,7 +187,8 @@
             </div>
     
             <div class="dropdown" style="display: block;">
-                <button class="dropbtn"><?php session_start(); echo $_SESSION['login_user'];?>
+                <button class="dropbtn">
+                <?php echo $_SESSION['login_user'];?>
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -203,17 +209,17 @@
         <!-- Read the guide section for better understanding of the city -->
         <div class="guide">
             <text style="color:white;">Know More About This City</text>
-            <a href="" style="margin-left:200px;">Guide</a>
-            <a href="">Guide</a>
-            <a href="">Guide</a>
-            <a href="">Guide</a>
+            <a href="guide1.php" style="margin-left:200px;">Attraction sites</a> 
+            <a href="guide2.php">Restaurants</a>
+            <a href="guide3.php">Hotels</a>
+            <a href="guide4.php">Travel Info</a>
         </div>
         <div style="padding:1px;"></div>
     
         <!-- login/signup form -->
         <div id="overlay" onclick="close_form()">
             <div id="login" >
-                <embed src="login.html" >
+                <embed src="login.html">
             </div>
         </div>
         <script src="scripting/loginform.js"></script>
@@ -966,7 +972,6 @@
     <button onclick="topFunction()" id="back-to-top" title="Go to top">
         <i class="fa fa-chevron-up"></i>
     </button>
-    
     <?php include 'php_snippets/session.php';?>
 </body>
 
