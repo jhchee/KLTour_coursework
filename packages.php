@@ -59,10 +59,10 @@
     <!-- Read the guide section for better understanding of the city -->
     <div class="guide">
         <text style="color:white;">Know More About This City</text>
-        <a href="" style="margin-left:200px;">Guide</a>
-        <a href="">Guide</a>
-        <a href="">Guide</a>
-        <a href="">Guide</a>
+        <a href="guide1.php" style="margin-left:200px;">Attraction sites</a> 
+        <a href="guide2.php">Restaurants</a>
+        <a href="guide3.php">Hotels</a>
+        <a href="guide4.php">Travel Info</a>
     </div>
     <div style="padding:1px;"></div>
 

@@ -29,7 +29,7 @@
         .caption {
             position: absolute;
             left: 0;
-            top: 35%;
+            top: 50%;
             width: 100%;
             text-align: center;
             color: #000;
