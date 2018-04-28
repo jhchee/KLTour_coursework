@@ -77,8 +77,27 @@
         <div class="caption2">Malaysia's Most Iconic City<span class="blinking-cursor">|</span></div>
     </div>
 
+    <div class="banner" style="text-align:center; font-size: 30px;">Popular Packages</div>
+
+    <div class="popular-package">
+            <div class="card-holder">
+                <div class="package-card">
+                    <img src="http://placehold.it/200x200.jpg" alt="Avatar">
+                    <div class="package-word">
+                        <h4><b>John Doe</b></h4> 
+                    </div>
+                </div>    
+                <div class="package-card">
+                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" >
+                    <div class="package-word">
+                        <h4><b>John Doe</b></h4> 
+                    </div>
+                </div>    
+            </div>
+        </div>
     <div class="promo-section">
-        <div class="card-holder">
+        <p style="text-align: center; font-size: 38px; margin:0; color:rgba(0, 0, 0, 0.733); padding-top:20px;">Why choose us?</p>
+        <div class="card-holder" style="padding-top:20px;">
             <div class="promo-card">
                 <div class="fafa-symbol">
                     <i class="fa fa-list-ul"></i>
@@ -108,7 +127,7 @@
             </div>
         </div>
 
-        <div class="card-holder">
+        <div class="card-holder" style="padding-bottom:20px;">
             <div class="promo-card">
                 <div class="fafa-symbol">
                     <i class="fa fa-thumbs-o-up"></i>
@@ -124,7 +143,7 @@
                 </div>
                 <div class="promote_desp">
                     <h5><b>No hassle</b></h5> 
-                    <p>Our system records your purchase history and details so it won't a hassle during the tour.</p> 
+                <p>Our system records your purchase history and details so it won't be a hassle during the tour.</p> 
                 </div>
             </div>
             <div class="promo-card">
@@ -133,21 +152,40 @@
                 </div>
                 <div class="promote_desp">
                     <h5><b>Satisfied customer</b></h5> 
-                    <p>Of all customer we served, they rank our services the best</p> 
+                    <p>Of all customer we served, they rank our services the best. After all, customer is our first priority.</p> 
                 </div>
             </div>
-            
-
-            
         </div>
-        
-        
-
-
-
-
     </div>
     
+    
+
+    <div class="follow-superme">
+        <text1>Follow Superme</text1>
+        <br>
+        <text2>Follow us on social media for special offers</text2>
+        <br>
+        
+        <a href="https://fb.com" target="_blank" class="white-text">
+            <i class="fa fa-facebook-official" id="fafa-social"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="white-text">
+            <i class="fa fa-twitter" id="fafa-social"></i>
+        </a>
+        <a href="https://plus.google.com" target="_blank" class="white-text">
+            <i class="fa fa-google-plus" id="fafa-social"></i>
+        </a>
+        <a href="https://github.com/jhchee/KLTour_coursework" target="_blank" class="white-text">
+            <i class="fa fa-github" id="fafa-social"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="white-text">
+            <i class="fa fa-youtube-play" id="fafa-social"></i>
+        </a>
+        <br>
+        <br>
+        <div id="superme-text">Superme <i class="fa fa-copyright" style="font-size:28px; "></i> <span style="font-style:normal;">2018</span></div>
+        
+    </div>
 
     <!-- back to top button -->
     <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
