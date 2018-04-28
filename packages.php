@@ -141,13 +141,34 @@
             </div>
         </div>
     </div>
-    
+    <div style="height:80px;"></div>
 
-
-
-
-
-
+    <div class="follow-superme">
+        <text1>Follow Superme</text1>
+        <br>
+        <text2>Follow us on social media for special offers</text2>
+        <br>
+        
+        <a href="https://fb.com" target="_blank" class="white-text">
+            <i class="fa fa-facebook-official" id="fafa-social"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="white-text">
+            <i class="fa fa-twitter" id="fafa-social"></i>
+        </a>
+        <a href="https://plus.google.com" target="_blank" class="white-text">
+            <i class="fa fa-google-plus-official" id="fafa-social"></i>
+        </a>
+        <a href="https://github.com/jhchee/KLTour_coursework" target="_blank" class="white-text">
+            <i class="fa fa-github" id="fafa-social"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="white-text">
+            <i class="fa fa-youtube-play" id="fafa-social"></i>
+        </a>
+        <br>
+        <br>
+        <div id="superme-text">Superme <i class="fa fa-copyright" style="font-size:28px; "></i> <span style="font-style:normal;">2018</span></div>
+        
+    </div>
 
     <!-- back to top button -->
     <button onclick="topFunction()" id="back-to-top" title="Go to top">

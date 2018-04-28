@@ -28,6 +28,7 @@ input[type="radio"] + label {
   color: black;
   font-size: 20px;
   border: solid 1px silver;
+  border-radius: 200px;
 }
 
 input[type="radio"]:hover + label {
@@ -39,7 +40,7 @@ input[type="radio"]:hover + label {
 input[type="radio"]:checked + label {
   background-color: red;
   color: white;
-  border: none;
+  border: solid 1px red;
 }
 
 meal-button input[type="radio"] {
@@ -87,12 +88,12 @@ meal-button input[type="radio"]:checked + label {
   margin-left: 130px;
   background-color: black;
   margin-right: 40px;
-  padding: 20px 60px 20px 60px;
+  padding: 18px 58px 18px 58px;
   text-decoration: none;
   color: white;
   font-size: 13px;
   font-weight: bold;
-  border: none;
+  border: solid 2px black;
 }
 
 .cart-submit:hover {

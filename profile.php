@@ -220,7 +220,10 @@
             </div>
         </div>
     </div>
-
+    <div style="height:50px;"></div>
+    <div class="follow-superme">
+        <div id="superme-text"><b>Superme</b> <i class="fa fa-copyright" style="font-size:28px; "></i> <span style="font-style:normal;">2018</span></div>
+    </div>
     <!-- back to top button -->
     <button onclick="topFunction()" id="back-to-top" title="Go to top">
         <i class="fa fa-chevron-up"></i>
