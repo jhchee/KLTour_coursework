@@ -283,93 +283,51 @@ blank {
 }
 /* return to top button */
 
-.comment {
-  /* font-family: 'Open Sans', 'sans-serif'; */
-  color: white;
-  background: red;
-  overflow: hidden;
-  /* position: absolute; */
+.promo-section {
+  background: #f1f1f1;
 }
 
-.item-1,
-.item-2,
-.item-3 {
-  /* position: absolute; */
-  display: block;
-  top: 2em;
-
-  width: 60%;
-
-  font-size: 2em;
-
-  animation-duration: 20s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+.card-holder {
+  display: flex;
+  justify-content: center;
 }
 
-.item-1 {
-  animation-name: anim-1;
+.promo-card {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.733);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 10px;
+  margin-bottom: 20px;
+  background: white;
+  width: 325px;
+  max-width: 325px;
 }
 
-.item-2 {
-  animation-name: anim-2;
+.promo-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.item-3 {
-  animation-name: anim-3;
+.fafa-symbol {
+  font-size: 95px;
+  margin-top: 30px;
+  text-align: center;
+  color:red;
 }
 
-@keyframes anim-1 {
-  0%,
-  8.3% {
-    left: -100%;
-    opacity: 0;
-  }
-  8.3%,
-  25% {
-    left: 25%;
-    opacity: 1;
-  }
-  33.33%,
-  100% {
-    left: 110%;
-    opacity: 0;
-  }
+.promote_desp {
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 
-@keyframes anim-2 {
-  0%,
-  33.33% {
-    left: -100%;
-    opacity: 0;
-  }
-  41.63%,
-  58.29% {
-    left: 25%;
-    opacity: 1;
-  }
-  66.66%,
-  100% {
-    left: 110%;
-    opacity: 0;
-  }
+.promote_desp h5 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-@keyframes anim-3 {
-  0%,
-  66.66% {
-    left: -100%;
-    opacity: 0;
-  }
-  74.96%,
-  91.62% {
-    left: 25%;
-    opacity: 1;
-  }
-  100% {
-    left: 110%;
-    opacity: 0;
-  }
+.promote_desp p {
+  margin-bottom: 30px;
 }
-
-

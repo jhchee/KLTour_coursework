@@ -77,62 +77,77 @@
         <div class="caption2">Malaysia's Most Iconic City<span class="blinking-cursor">|</span></div>
     </div>
 
-    <div class="description1">
-        <h1>Do You Know?</h1>
-        <p>
-        Kuala Lumpur is the capital city of Malaysia, boasting gleaming skyscrapers, 
-        colonial architecture, charming locals, and a myriad of natural attractions. 
-        Divided into numerous districts, its main hub is called the Golden Triangle which comprises 
-        <b>Bukit Bintang</b>, <b>KLCC</b> and <b>Chinatown</b>. KL is widely recognised for numerous
-         landmarks, including <b>Petronas Twin Towers</b> (the world’s tallest twin skyscrapers),
-         <b>Petaling Street flea market</b>, and <b>Batu Caves</b>, which is over 400 million years
-          old. With frequent sales events throughout the year, expansive shopping malls 
-          like <b>Pavilion KL</b> and <b>Suria KLCC</b> are also among the biggest tourist attractions 
-          in the city, hosting a wide range of upmarket labels from all over the world. 
-          Plus, if you need more reason to love Kuala Lumpur, there is the abundance of 
-          gastronomic delights – with thousands of hawker stalls, cafes, and restaurants 
-          serving every imaginable type of delicacies. Not convinced yet? Read our 10 Must See and Do list!
-        </p>
+    <div class="promo-section">
+        <div class="card-holder">
+            <div class="promo-card">
+                <div class="fafa-symbol">
+                    <i class="fa fa-list-ul"></i>
+                </div>
+                <div class="promote_desp">
+                    <h5><b>Best package</b></h5> 
+                    <p>Packages that compiled by experienced traveller, satisfaction ensured.</p> 
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="fafa-symbol">
+                <i class="fa fa-flash"></i>
+                </div>
+                <div class="promote_desp">
+                    <h5><b>Fast</b></h5> 
+                    <p>Lightning fast transaction, get your deal in a blink*.</p> 
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="fafa-symbol" style="margin-top:35px;">
+                    <i class="fa fa-cutlery"></i>
+                </div>
+                <div class="promote_desp">
+                    <h5><b>Variety of snacks</b></h5> 
+                    <p>Variety of snacks and drinks for you to choose from, no worry for hungry journey.</p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card-holder">
+            <div class="promo-card">
+                <div class="fafa-symbol">
+                    <i class="fa fa-thumbs-o-up"></i>
+                </div>
+                <div class="promote_desp">
+                    <h5><b>Superb deal</b></h5> 
+                    <p>While keeping the high quality of the tour, we lower the cost down so you can have the most affordable and yet enjoyable tour.</p> 
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="fafa-symbol">
+                <i class="fa fa-ticket"></i>
+                </div>
+                <div class="promote_desp">
+                    <h5><b>No hassle</b></h5> 
+                    <p>Our system records your purchase history and details so it won't a hassle during the tour.</p> 
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="fafa-symbol" style="margin-top:35px;">
+                    <i class="fa fa-smile-o"></i>
+                </div>
+                <div class="promote_desp">
+                    <h5><b>Satisfied customer</b></h5> 
+                    <p>Of all customer we served, they rank our services the best</p> 
+                </div>
+            </div>
+            
+
+            
+        </div>
+        
+        
+
+
+
+
     </div>
-
-    <div class="parallax-img"></div>
-    <div class="blank"></div>
-    <div class="parallax-img"></div>
-
-    <div class="description1">
-        <h1>What To Do?</h1>
-        <p>
-            The most popular and iconic attractions in Kuala Lumpur 
-            have come to define the city as a tourist destination – 
-            from the unmistakable outline of the <b>Petronas Twin Towers</b> to 
-            the colossal standing Buddha image found outside <b>Batu Caves</b>. 
-            However, Kuala Lumpur attractions comprise so much more for 
-            those who want to look deeper into this fascinating city.....
-            from the colourful <b>Petaling Street market</b> in <b>Chinatown</b> Kuala 
-            Lumpur and the famous <b>Sultan Abdul Samad Building</b> in the city’s 
-            colonial quarter, to the indoor <b>Aquaria KLCC oceanarium</b> 
-            and <b>Petrosains Art Gallery</b> in <b>Suria KLCC</b>. There is a lot 
-            of greenery in Kuala Lumpur, with the <b>Lake Gardens</b> home 
-            to popular bird and deer parks you can freely visit, 
-            or you can head to <b>i-City Shah Alam</b> to take cool 
-            photos of its nightly colourful display of LED-lit 
-            attractions. We have covered the traditional, popular 
-            and unconventional Kuala Lumpur attractions on offer, 
-            sorted by location and even theme, making it easy for 
-            you to choose where to visit first.
-        </p>
-    </div>
-
-    <div class="description1">
-        <h1 style="text-align:middle;">Hear What They Said</h1>
-    </div>
-
-    <div class="comment">
-        <p class="item-1">This is your last chance. After this, there is no turning back.</p>
-        <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
-        <p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
-    </div>
-
+    
 
     <!-- back to top button -->
     <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
