@@ -285,7 +285,7 @@ blank {
 /* return to top button */
 
 .promo-section {
-  background: #f1f1f1;
+  background: #f1f1f156;
 }
 
 .card-holder {
@@ -361,22 +361,27 @@ blank {
   font-size: 30px;
 }
 
-.popular-package {
+.popular-places {
   height: 600px;
 }
 
-.package-card {
+.places-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 23%;
-  height: 325px;
+  width: 320px;
+  height: 250px;
   margin: 20px;
 }
 
-.package-card:hover {
+.places-card img {
+  height: 180px;
+  width: 320px;
+}
+
+.places-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.package-word {
-  padding: 2px 16px;
+.places-word {
+  text-align: center;
 }
