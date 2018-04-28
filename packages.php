@@ -81,12 +81,14 @@
             <br>
             <div class="card">
                 <div class="container">
-                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <img src="images/tour/11.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
                         <div class="text">Hello World</div>
                     </div>
-                    <a href="1.php" title = "click for more details">Find more</a>
-                    <p style="float:left;">Hello</p>
+                    <div class="card-portray">
+                        <a href="1.php" title = "click for more details">Find more</a>
+                        <p id="package-title">Landmark Tour</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,12 +96,14 @@
             <br>
             <div class="card">
                 <div class="container">
-                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <img src="images/tour/24.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
                         <div class="text">Hello World</div>
                     </div>
-                    <a href="2.php" title = "click for more details">Find more</a>
-                    <p style="float:left;">Hello</p>
+                    <div class="card-portray">
+                        <a href="2.php" title = "click for more details">Find more</a>
+                        <p id="package-title">Cultural Tour</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,12 +114,14 @@
             <br>
             <div class="card">
                 <div class="container">
-                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <img src="images/tour/32.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
                         <div class="text">Hello World</div>
                     </div>
-                    <a href="3.php" title = "click for more details">Find more</a>
-                    <p style="float:left;">Hello</p>
+                    <div class="card-portray">
+                        <a href="3.php" title = "click for more details">Find more</a>
+                        <p id="package-title">Natural Tour</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,12 +129,14 @@
             <br>
             <div class="card">
                 <div class="container">
-                    <img src="http://placehold.it/200x200.jpg" alt="Avatar" class="image">
+                    <img src="images/tour/42.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
                         <div class="text">Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World</div>
                     </div>
-                    <a href="4.php" title = "click for more details">Find more</a>
-                    <p style="float:left;">Hello</p>
+                    <div class="card-portray">
+                        <a href="4.php" title = "click for more details">Find more</a>
+                        <p id="package-title">Modern Tour</p>
+                    </div>
                 </div>
             </div>
         </div>
