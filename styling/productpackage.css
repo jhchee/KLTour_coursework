@@ -1,7 +1,7 @@
 /* package page */
 .product-detail {
   display: block;
-  margin-top: 7%;
+  margin-top: 6%;
   margin-left: 57%;
   max-width: 800px;
   position: fixed;
@@ -154,10 +154,6 @@ meal-button input[type="radio"]:checked + label {
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-  /* border-radius: 5px 5px 0 0; */
 }
 
 .card-container {

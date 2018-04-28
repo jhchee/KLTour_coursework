@@ -17,6 +17,8 @@
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
+  height: 60px;
+  overflow: hidden;
 }
 
 /* Next & previous buttons */
@@ -87,4 +89,9 @@
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.mySlides img {
+  height: 500px;
+  overflow: hidden;
 }

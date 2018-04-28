@@ -246,37 +246,42 @@
 
                 <!-- Full-width images with number text -->
                 <div class="mySlides">
-                    <div class="numbertext">1 / 7</div>
-                    <img src="images/tour/11.jpg" style="width:100%">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/tour/21.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">2 / 7</div>
-                    <img src="images/tour/12.jpg" style="width:100%">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/tour/22.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">3 / 7</div>
-                    <img src="images/tour/13.jpg" style="width:100%">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/tour/23.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">4 / 7</div>
-                    <img src="images/tour/14.jpg" style="width:100%">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/tour/24.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">5 / 7</div>
-                    <img src="images/tour/15.jpg" style="width:100%">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/tour/25.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">6 / 7</div>
-                    <img src="images/tour/16.jpg" style="width:100%">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/tour/26.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">7 / 7</div>
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/tour/27.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 /8</div>
                     <iframe width="99.9%" height="500" src="https://www.youtube.com/embed/Wc1C_egTh_c?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
 
@@ -292,25 +297,28 @@
                 <!-- Thumbnail images -->
                 <div class="row">
                 <div class="column">
-                        <img class="demo cursor" src="images/tour/11.jpg" style="width:100%" onclick="currentSlide(1)" alt="Petronas Twin Tower">
+                        <img class="demo cursor" src="images/tour/21.jpg" style="width:100%" onclick="currentSlide(1)" alt="Petaling street">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/12.jpg" style="width:100%" onclick="currentSlide(2)" alt="Petronas Twin Tower">
+                        <img class="demo cursor" src="images/tour/22.jpg" style="width:100%" onclick="currentSlide(2)" alt="Petaling street">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/13.jpg" style="width:100%" onclick="currentSlide(3)" alt="Kuala Lumpur Tower">
+                        <img class="demo cursor" src="images/tour/23.jpg" style="width:100%" onclick="currentSlide(3)" alt="Batu Caves">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/14.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kuala Lumpur Tower">
+                        <img class="demo cursor" src="images/tour/24.jpg" style="width:100%" onclick="currentSlide(4)" alt="Batu Caves">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/15.jpg" style="width:100%" onclick="currentSlide(5)" alt="Merdeka Square">
+                        <img class="demo cursor" src="images/tour/25.jpg" style="width:100%" onclick="currentSlide(5)" alt="Thean Hou Temple">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/16.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sultan Abdul Samad Building">
+                        <img class="demo cursor" src="images/tour/26.jpg" style="width:100%" onclick="currentSlide(6)" alt="Thean Hou Temple">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="https://img.youtube.com/vi/Wc1C_egTh_c/hqdefault.jpg" style="width:100%" onclick="currentSlide(7)" alt="Verdict about Kuala Lumpur">
+                        <img class="demo cursor" src="images/tour/27.jpg" style="width:100%" onclick="currentSlide(7)" alt="Sri Maha Mariamman Temple">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://img.youtube.com/vi/Wc1C_egTh_c/hqdefault.jpg" style="width:100%" onclick="currentSlide(8)" alt="Verdict about Kuala Lumpur">
                     </div>
                 </div>
             </div>
@@ -379,57 +387,59 @@
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
     <div class="box" data-aos="fade-right">
-    <h1>Kuala Lumpur Landmarks tour!</h1>
+        <h1>Kuala Lumpur Cultural tour!</h1>
     </div>
     <div class="box" data-aos="flip-left">
-        <h3>Petronas Twin Towers</h3>
+        <h3>Petaling street</h3>
         <p>
-        No trip to KL would be complete without a visit to the world's tallest twin towers.
-        The skyscrapers are utterly stunning, particularly when illuminated at night.
-        Visitors start with a tour of the interactive displays which highlight 
-        the creation of the towers from conception to completion. 
-        Then you can take the high-speed elevators up 170 meters to the Skybridge, 
-        which connects the two towers. This is the highest two storey bridge in the world!
-    </p>
+        Petaling Street is a famous shopping area in Kuala Lumpur’s China Town. 
+        This is the place to come for great ethnic food, cheap eats, bargain 
+        shopping, groceries, fresh produce, cheap clothing, unusual souvenirs 
+        and interesting Chinese items. It is a shopaholic’s Mecca, not as 
+        glamorous as a shopping mall but with much more character. Not only 
+        the one street but the entire surrounding alleys and lanes are alive 
+        with stores and pop up stalls. Shoppers are greeted by a traditional 
+        Chinese gate at the entrance to the street. When shopping on Petaling 
+        Street remember to bargain and that all that glitters is not gold!
+        </p>
     </div>
     <div class="box" data-aos="flip-up">
-         <h3>Menara Kuala Lumpur</h3>
+          <h3>Batu Caves</h3>
         <p>
-        Menara Kuala Lumpur also known as Kl Tower, 
-        the tallest Telecommunication Tower in South East Asia & the 7th tallest in the world, 
-        was built to improve the quality of telecommunications and broadcasting transmissions. 
-        It has become a significant landmark and symbol that identifies Malaysia as a 
-        great tourist destination of the millennium and at the same time a testimony of 
-        Malaysia’s capability in the building of high technology facilities. 
-        Located atop Bukit Nanas at a breathtaking height of 421 meters,
-        KL Tower was built blending the tower seamlessly with nature. 
-        It offers experiences such as viewing, dining, nature, adventure, event and shopping.
-        In fact, KL Tower is the only tower in the world located within a forest! 
+        Explore the culture and traditions of Malaysia 
+        on this three-hour Batu Caves tour from Kuala Lumpur.
+        Spend the afternoon visiting these famed natural caverns
+        with your expert local guide and wander the impressive
+        grounds of the Batu Caves, where you’ll gain insight and 
+        understanding of the religious roots of this incredible 
+        and diverse nation. Drive through Little India, learn 
+        about the art of batik and pewter smithing and enjoy 
+        round-trip transportation and hotel pick up and drop off.
         </p>
     </div>
     <div class="box" data-aos="flip-right">
-        <h3>Merdeka Square</h3>
+        <h3>Thean Hou Temple</h3>
         <p>
-            Also known as Independence Square or Dataran Merdeka 
-            this is a centrally located public square close to the 
-            Gombak River and the Jamek Mosque. Many of the buildings 
-            facing on to the square played a role in Kuala Lumpur history. 
-            In the square you can see the 100 meter high flag pole (the tallest in the world) 
-            where the Malaysian flag was hoisted on August 31st 1957 when 
-            the country gained independence from the British. 
-            The square is also the site of the Merdeka Day Parade 
-            to celebrate Malaysia’s independence each year on August 31st.
+        This ornate Chinese temple dedicated to the Queen of Heaven, 
+        Thean Hou, protectorate of people who make their living from the sea. 
+        The temple borrows from Buddhist, Taoist and Confucian traditions. 
+        Some visitors believe the panoramic views of KL alone make 
+        the trip up the hill worthwhile.
         </p>
     </div>
     <div class="box" data-aos="slide-right" id="anchoring_box">
-        <h3>Sultan Abdul Samad Building</h3>
+        <h3>Sri Maha Mariamman Temple</h3>
         <p>
-            By far one of the most stunning buildings in the city. 
-           This magnificent architectural gem is located on Merdeka Square. 
-           It was constructed in 1897; named in honor of the Sultan of Selangor at that time. 
-           The building was originally home to the secretariat of the colonial 
-           British administration and later housed the supreme courts of Malaysia. 
-           Today it houses the Ministry of Information, Communications and Culture.
+        South of Jalan Hang Lekir, tucked away on Jalan Tun HS Lee, 
+        is the extravagantly decorated Sri Mahamariamman Temple. 
+        Incorporating Spanish and Italian tiles, precious stones 
+        and gold in its design, KL’s main Hindu temple is an incongruous 
+        sight situated between two Buddhist temples at the edge of Chinatown. 
+        This large and elaborate Hindu temple was founded by Tamil immigrants, 
+        from southern India, who arrived in Malaya as contract labourers 
+        to build the railways and roads or work in the rubber plantations. 
+        Construction of the temple began in 1873 with plenty of ongoing 
+        restoration and embellishment occurring over the years.
         </p>
     </div>
 </div>

@@ -246,37 +246,42 @@
 
                 <!-- Full-width images with number text -->
                 <div class="mySlides">
-                    <div class="numbertext">1 / 7</div>
-                    <img src="images/tour/11.jpg" style="width:100%">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/tour/31.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">2 / 7</div>
-                    <img src="images/tour/12.jpg" style="width:100%">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/tour/32.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">3 / 7</div>
-                    <img src="images/tour/13.jpg" style="width:100%">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/tour/33.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">4 / 7</div>
-                    <img src="images/tour/14.jpg" style="width:100%">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/tour/34.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">5 / 7</div>
-                    <img src="images/tour/15.jpg" style="width:100%">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/tour/35.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">6 / 7</div>
-                    <img src="images/tour/16.jpg" style="width:100%">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/tour/36.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">7 / 7</div>
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/tour/37.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
                     <iframe width="99.9%" height="500" src="https://www.youtube.com/embed/Wc1C_egTh_c?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
 
@@ -291,26 +296,29 @@
 
                 <!-- Thumbnail images -->
                 <div class="row">
-                <div class="column">
-                        <img class="demo cursor" src="images/tour/11.jpg" style="width:100%" onclick="currentSlide(1)" alt="Petronas Twin Tower">
+                    <div class="column">
+                        <img class="demo cursor" src="images/tour/31.jpg" style="width:100%" onclick="currentSlide(1)" alt="Perdana Botanical Garden">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/12.jpg" style="width:100%" onclick="currentSlide(2)" alt="Petronas Twin Tower">
+                        <img class="demo cursor" src="images/tour/32.jpg" style="width:100%" onclick="currentSlide(2)" alt="Perdana Botanical Garden">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/13.jpg" style="width:100%" onclick="currentSlide(3)" alt="Kuala Lumpur Tower">
+                        <img class="demo cursor" src="images/tour/33.jpg" style="width:100%" onclick="currentSlide(3)" alt="Kuala Lumpur Bird Park">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/14.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kuala Lumpur Tower">
+                        <img class="demo cursor" src="images/tour/34.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kuala Lumpur Bird Park">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/15.jpg" style="width:100%" onclick="currentSlide(5)" alt="Merdeka Square">
+                        <img class="demo cursor" src="images/tour/35.jpg" style="width:100%" onclick="currentSlide(5)" alt="Aquaria KLCC">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/16.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sultan Abdul Samad Building">
+                        <img class="demo cursor" src="images/tour/36.jpg" style="width:100%" onclick="currentSlide(6)" alt="Aquaria KLCC">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="https://img.youtube.com/vi/Wc1C_egTh_c/hqdefault.jpg" style="width:100%" onclick="currentSlide(7)" alt="Verdict about Kuala Lumpur">
+                        <img class="demo cursor" src="images/tour/37.jpg" style="width:100%" onclick="currentSlide(7)" alt="Zoo Negara">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://img.youtube.com/vi/Wc1C_egTh_c/hqdefault.jpg" style="width:100%" onclick="currentSlide(8)" alt="Verdict about Kuala Lumpur">
                     </div>
                 </div>
             </div>
@@ -379,57 +387,70 @@
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
     <div class="box" data-aos="fade-right">
-    <h1>Kuala Lumpur Landmarks tour!</h1>
+        <h1>Kuala Lumpur Cultural tour!</h1>
     </div>
     <div class="box" data-aos="flip-left">
-        <h3>Petronas Twin Towers</h3>
+    <h3>Perdana Botanical Garden</h3>
         <p>
-        No trip to KL would be complete without a visit to the world's tallest twin towers.
-        The skyscrapers are utterly stunning, particularly when illuminated at night.
-        Visitors start with a tour of the interactive displays which highlight 
-        the creation of the towers from conception to completion. 
-        Then you can take the high-speed elevators up 170 meters to the Skybridge, 
-        which connects the two towers. This is the highest two storey bridge in the world!
-    </p>
-    </div>
-    <div class="box" data-aos="flip-up">
-         <h3>Menara Kuala Lumpur</h3>
-        <p>
-        Menara Kuala Lumpur also known as Kl Tower, 
-        the tallest Telecommunication Tower in South East Asia & the 7th tallest in the world, 
-        was built to improve the quality of telecommunications and broadcasting transmissions. 
-        It has become a significant landmark and symbol that identifies Malaysia as a 
-        great tourist destination of the millennium and at the same time a testimony of 
-        Malaysia’s capability in the building of high technology facilities. 
-        Located atop Bukit Nanas at a breathtaking height of 421 meters,
-        KL Tower was built blending the tower seamlessly with nature. 
-        It offers experiences such as viewing, dining, nature, adventure, event and shopping.
-        In fact, KL Tower is the only tower in the world located within a forest! 
+        This attraction was formerly known as the Kuala Lumpur Lake Gardens 
+        and the Taman Tasik Perdana. It is located in Heritage Park of Kuala 
+        Lumpur forming an important green oasis in the urban jungle. The garden 
+        was originally created as a recreational park in 1888 but later many 
+        tropical plants were added and the park became a botanical garden. 
+        Some areas of the gardens give visitors a sense of walking though a 
+        tropical rainforest in the city center. A large lake sits at the heart 
+        of the park and divides into two streams going further into the park. 
+        You can find a forest tree collection, Plumeria tree collection, fernarium, 
+        Zingiberales collection, Heliconia Garden, a collection of unusual plants, 
+        a topiary, rare fruit tree collection, a sunken garden and an herb garden. 
+        There is also a beautiful waterfall, fish ponds, conservatory, 
+        Cycad Island, a deer park and orchid garden.
         </p>
     </div>
-    <div class="box" data-aos="flip-right">
-        <h3>Merdeka Square</h3>
+    <div class="box" data-aos="flip-up">
+          <h3>Kuala Lumpur Bird Park</h3>
         <p>
-            Also known as Independence Square or Dataran Merdeka 
-            this is a centrally located public square close to the 
-            Gombak River and the Jamek Mosque. Many of the buildings 
-            facing on to the square played a role in Kuala Lumpur history. 
-            In the square you can see the 100 meter high flag pole (the tallest in the world) 
-            where the Malaysian flag was hoisted on August 31st 1957 when 
-            the country gained independence from the British. 
-            The square is also the site of the Merdeka Day Parade 
-            to celebrate Malaysia’s independence each year on August 31st.
+        The place to see Malaysia’s amazing feathered friends is here at 
+        Kuala Lumpur Bird Park. The park is set within a tropical paradise 
+        in Lake Gardens Park . The park has the largest free-flight walk-through 
+        aviary in the world and covers 20.9 acres. The park has various recreated 
+        natural habitats for the different birds. The free-flight aviary has 
+        lush rainforest vegetation and there are other mini-aviaries like the 
+        Love Aviary with love birds; Brahminy Land home to Brahminy Kites birds 
+        of prey; the Waterfall Aviary featuring a waterfall and water birds as well 
+        as an Oriental Birds Aviary. The Flightless Birds section is home to 
+        ostriches, emus and cassowary birds.
+    </p>
+    </div>
+    <div class="box" data-aos="flip-right">
+        <h3>Aquaria KLCC</h3>
+        <p>
+        Located on the concourse level of the Kuala Lumpur Convention Centre in 
+        the middle of the Golden Triangle, Aquaria KLCC houses some 5,000 aquatic 
+        and marine creatures representing more than 150 species. 
+        The 60,000-square-foot (5,574-square-meter) aquarium explores 
+        the marine and freshwater flora and fauna of the Malaysian region and the world. 
+        Highlights include a 295-foot (90-meter) glass tunnel with a moving walkway, 
+        where visitors pass beneath giant stingrays, sand tiger sharks, 
+        sea turtles and schools of fish, as well as a wave tank and simulated 
+        glass bottom boat. Throughout the day, the oceanarium’s team of scuba 
+        divers drop into the tanks for interactive animal feeding shows. 
+        Those who want a closer look at the animals can sign up for Dive 
+        with Sharks or Cage Rage experiences!
         </p>
     </div>
     <div class="box" data-aos="slide-right" id="anchoring_box">
-        <h3>Sultan Abdul Samad Building</h3>
+        <h3>Zoo Negara</h3>
         <p>
-            By far one of the most stunning buildings in the city. 
-           This magnificent architectural gem is located on Merdeka Square. 
-           It was constructed in 1897; named in honor of the Sultan of Selangor at that time. 
-           The building was originally home to the secretariat of the colonial 
-           British administration and later housed the supreme courts of Malaysia. 
-           Today it houses the Ministry of Information, Communications and Culture.
+        Zoo Negara was established in 1963 in Ampang, a town which is about 10-15 
+        km away from the city of Kuala Lumpur. It has about 5,500 animals from over 
+        400 species for you to discover. This place is a popular attraction for the 
+        locals with small children especially during the weekends and public holidays. 
+        Many parents with young children find it an educational place to bring their children. 
+        The main attraction of the zoo is the Multi-Animal Show which is on twice 
+        daily at 11am and 3pm. This show features performances from sea lions and other 
+        animals at the open-air amphitheatre which is located near the Hornbill Centre. 
+        Don't miss out!
         </p>
     </div>
 </div>

@@ -28,7 +28,7 @@
             <img src="images/KL Tour.png" alt="KLTour-logo" height="29" width="80">
         </a>
         <a href="homepage.php">Home</a>
-        <a href="package1.php" class="active">Packages</a>
+        <a href="packages.php" class="active">Packages</a>
         <a href="contact.php">Contact</a>
 
         <div class="login-signup">
@@ -66,7 +66,7 @@
     </div>
 
     <!-- food catalogue -->
-    <div id="overlay-food" style="overflow:scroll; overflow-x:hidden;">
+    <div id="overlay-food" style="overflow:scroll;">
         <div class="food-form">
             <form action="php_snippets/createpackage.php" method="post" target="dummyframe">
                 <div class="grid-container">
@@ -232,11 +232,12 @@
                     </div>
                 </div>
         </div>
-        <a id="close-food" onclick="emptyfood()">Proceed</a>
+        <a id="close-food" onclick="emptyfood()">Close</a>
     </div>
     <!-- <script src="scripting/quantity.js"></script> -->
 
-
+    <div style="margin-left: 10px;">
+        
     <div class="info">
         <!-- slideshow -->
         <div class="slideshow">
@@ -246,42 +247,42 @@
                 <!-- Full-width images with number text -->
                 <div class="mySlides">
                     <div class="numbertext">1 / 8</div>
-                    <img src="images/41.jpg" style="width:100%">
+                    <img src="images/tour/41.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">2 / 8</div>
-                    <img src="images/42.jpg" style="width:100%">
+                    <img src="images/tour/42.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">3 / 8</div>
-                    <img src="images/43.jpg" style="width:100%">
+                    <img src="images/tour/43.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">4 / 8</div>
-                    <img src="images/44.jpg" style="width:100%">
+                    <img src="images/tour/44.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">5 / 8</div>
-                    <img src="images/45.jpg" style="width:100%">
+                    <img src="images/tour/45.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">6 / 8</div>
-                    <img src="images/46.jpg" style="width:100%">
+                    <img src="images/tour/46.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">7 / 8</div>
-                    <img src="images/47.jpg" style="width:100%">
+                    <img src="images/tour/47.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">8 / 8</div>
-                    <iframe width="685" height="360" src="https://www.youtube.com/embed/Wc1C_egTh_c?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="99.9%" height="500" src="https://www.youtube.com/embed/Wc1C_egTh_c?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -296,25 +297,25 @@
                 <!-- Thumbnail images -->
                 <div class="row">
                     <div class="column">
-                        <img class="demo cursor" src="images/41.jpg" style="width:100%" onclick="currentSlide(1)" alt="Suria KLCC">
+                        <img class="demo cursor" src="images/tour/41.jpg" style="width:100%" onclick="currentSlide(1)" alt="Suria KLCC">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/42.jpg" style="width:100%" onclick="currentSlide(2)" alt="Pavilion KL">
+                        <img class="demo cursor" src="images/tour/42.jpg" style="width:100%" onclick="currentSlide(2)" alt="Pavilion KL">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/43.jpg" style="width:100%" onclick="currentSlide(3)" alt="Pavilion KL">
+                        <img class="demo cursor" src="images/tour/43.jpg" style="width:100%" onclick="currentSlide(3)" alt="Pavilion KL">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/44.jpg" style="width:100%" onclick="currentSlide(4)" alt="TREC KL">
+                        <img class="demo cursor" src="images/tour/44.jpg" style="width:100%" onclick="currentSlide(4)" alt="TREC KL">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/45.jpg" style="width:100%" onclick="currentSlide(5)" alt="TREC KL">
+                        <img class="demo cursor" src="images/tour/45.jpg" style="width:100%" onclick="currentSlide(5)" alt="TREC KL">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/46.jpg" style="width:100%" onclick="currentSlide(6)" alt="Jalan Alor Food Hunt">
+                        <img class="demo cursor" src="images/tour/46.jpg" style="width:100%" onclick="currentSlide(6)" alt="Jalan Alor Food Hunt">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/47.jpg" style="width:100%" onclick="currentSlide(7)" alt="Jalan Alor Food Hunt">
+                        <img class="demo cursor" src="images/tour/47.jpg" style="width:100%" onclick="currentSlide(7)" alt="Jalan Alor Food Hunt">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="https://img.youtube.com/vi/Wc1C_egTh_c/hqdefault.jpg" style="width:100%" onclick="currentSlide(8)" alt="Verdict about Kuala Lumpur">
@@ -326,7 +327,7 @@
         
         <div style="width:10%;"></div>
         <div class="product-detail">
-            <h1>Shopping Spree</h1>
+            <h1>Modern Tour</h1>
             <h4 style="font-weight:100;">Price: RM 80</h4>
             <div style="height:2px;"></div>
             <h3>Time</h3>
@@ -364,7 +365,7 @@
                     </ul>
                 </div>
                 <div style="height:60px;"></div>
-                <h3>Meal (extra charge +RM10)</h3>
+                <h3>Meal</h3>
                 <div class="meal-button" style="margin-left:74px;">
                     <ul>
                         <input type="radio" id="with-meal" name="package_meal" value="1"></input>
@@ -382,7 +383,7 @@
             </form>
         </div>
     </div>
-    <!-- <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe> -->
+    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
 
@@ -457,7 +458,7 @@
         </p>
     </div>
 </div>
-
+</div>
     <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
     <?php if(isset($_GET['Main_order_ID'])){

@@ -98,7 +98,7 @@
                     <div class="overlay2">
                         <div class="text">Hello World</div>
                     </div>
-                    <a href="" title = "click for more details">Find more</a>
+                    <a href="2.php" title = "click for more details">Find more</a>
                     <p style="float:left;">Hello</p>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                     <div class="overlay2">
                         <div class="text">Hello World</div>
                     </div>
-                    <a href="" title = "click for more details">Find more</a>
+                    <a href="3.php" title = "click for more details">Find more</a>
                     <p style="float:left;">Hello</p>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                     <div class="overlay2">
                         <div class="text">Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World</div>
                     </div>
-                    <a href="" title = "click for more details">Find more</a>
+                    <a href="4.php" title = "click for more details">Find more</a>
                     <p style="float:left;">Hello</p>
                 </div>
             </div>
