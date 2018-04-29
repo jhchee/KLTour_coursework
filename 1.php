@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="styling/style.css">
     <link rel="stylesheet" href="styling/slideshow.css">
     <link rel="stylesheet" href="styling/productpackage.css">
-    <!-- include css stylesheet-->
-    <link rel="stylesheet" type="text/css" href="styling/1234.css">
-    <!-- include styling aos -->
-    <link rel="stylesheet" href="aos/aos.css">
-    <!-- include personalised script -->
-    <title>Home</title>
+    <title>Package 1</title>
 </head>
 
 <body>
@@ -58,7 +53,7 @@
     
 
 
-        <!-- login/signup form -->
+    <!-- login/signup form -->
     <div id="overlay" onclick="close_form()">
         <div id="login">
             <embed src="login.html">
@@ -246,37 +241,41 @@
 
                 <!-- Full-width images with number text -->
                 <div class="mySlides">
-                    <div class="numbertext">1 / 7</div>
+                    <div class="numbertext">1 / 8</div>
                     <img src="images/tour/11.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">2 / 7</div>
+                    <div class="numbertext">2 / 8</div>
                     <img src="images/tour/12.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">3 / 7</div>
+                    <div class="numbertext">3 / 8</div>
                     <img src="images/tour/13.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">4 / 7</div>
+                    <div class="numbertext">4 / 8</div>
                     <img src="images/tour/14.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">5 / 7</div>
+                    <div class="numbertext">5 / 8</div>
                     <img src="images/tour/15.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">6 / 7</div>
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/tour/16.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
                     <img src="images/tour/16.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">7 / 7</div>
+                    <div class="numbertext">8 / 8</div>
                     <iframe width="99.9%" height="500" src="https://www.youtube.com/embed/Wc1C_egTh_c?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
 
@@ -310,7 +309,10 @@
                         <img class="demo cursor" src="images/tour/16.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sultan Abdul Samad Building">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="https://img.youtube.com/vi/Wc1C_egTh_c/hqdefault.jpg" style="width:100%" onclick="currentSlide(7)" alt="Verdict about Kuala Lumpur">
+                        <img class="demo cursor" src="images/tour/16.jpg" style="width:100%" onclick="currentSlide(7)" alt="Sultan Abdul Samad Building">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://img.youtube.com/vi/Wc1C_egTh_c/hqdefault.jpg" style="width:100%" onclick="currentSlide(8)" alt="Verdict about Kuala Lumpur">
                     </div>
                 </div>
             </div>
@@ -319,7 +321,7 @@
         
         <div style="width:10%;"></div>
         <div class="product-detail">
-            <h1>Cultural Tour</h1>
+            <h1>Landmarks Tour</h1>
             <h4 style="font-weight:100;">Price: RM 80</h4>
             <div style="height:2px;"></div>
             <h3>Time</h3>
@@ -378,91 +380,91 @@
     <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
-    <div class="box" data-aos="fade-right">
-    <h1>Kuala Lumpur Landmarks tour!</h1>
-    </div>
-    <div class="box" data-aos="flip-left">
-        <h3>Petronas Twin Towers</h3>
+        <h1>Kuala Lumpur Landmarks Tour</h1>
         <p>
-        No trip to KL would be complete without a visit to the world's tallest twin towers.
-        The skyscrapers are utterly stunning, particularly when illuminated at night.
-        Visitors start with a tour of the interactive displays which highlight 
-        the creation of the towers from conception to completion. 
-        Then you can take the high-speed elevators up 170 meters to the Skybridge, 
-        which connects the two towers. This is the highest two storey bridge in the world!
-    </p>
-    </div>
-    <div class="box" data-aos="flip-up">
-         <h3>Menara Kuala Lumpur</h3>
-        <p>
-        Menara Kuala Lumpur also known as Kl Tower, 
-        the tallest Telecommunication Tower in South East Asia & the 7th tallest in the world, 
-        was built to improve the quality of telecommunications and broadcasting transmissions. 
-        It has become a significant landmark and symbol that identifies Malaysia as a 
-        great tourist destination of the millennium and at the same time a testimony of 
-        Malaysia’s capability in the building of high technology facilities. 
-        Located atop Bukit Nanas at a breathtaking height of 421 meters,
-        KL Tower was built blending the tower seamlessly with nature. 
-        It offers experiences such as viewing, dining, nature, adventure, event and shopping.
-        In fact, KL Tower is the only tower in the world located within a forest! 
+            Immerse in one of the most popular in the world. Surrounded by heritage 
+            culture that last more than 100 years.
         </p>
-    </div>
-    <div class="box" data-aos="flip-right">
-        <h3>Merdeka Square</h3>
-        <p>
-            Also known as Independence Square or Dataran Merdeka 
-            this is a centrally located public square close to the 
-            Gombak River and the Jamek Mosque. Many of the buildings 
-            facing on to the square played a role in Kuala Lumpur history. 
-            In the square you can see the 100 meter high flag pole (the tallest in the world) 
-            where the Malaysian flag was hoisted on August 31st 1957 when 
-            the country gained independence from the British. 
-            The square is also the site of the Merdeka Day Parade 
-            to celebrate Malaysia’s independence each year on August 31st.
-        </p>
-    </div>
-    <div class="box" data-aos="slide-right" id="anchoring_box">
+        <h2>Places</h2>
+        <button class="collapsible">1. Petronas Twin Towers</button>
+        <div class="content">
+            <h3>Petronas Twin Towers</h3>
+            <p>
+                No trip to KL would be complete without a visit to the world's tallest twin towers.
+                The skyscrapers are utterly stunning, particularly when illuminated at night.
+                Visitors start with a tour of the interactive displays which highlight 
+                the creation of the towers from conception to completion. 
+                Then you can take the high-speed elevators up 170 meters to the Skybridge, 
+                which connects the two towers. This is the highest two storey bridge in the world!
+            </p>
+        </div>
+        <button class="collapsible">2. Kuala Lumpur Tower</button>
+        <div class="content">
+            <h3>Kuala Lumpur Tower</h3>
+            <p>
+                Menara Kuala Lumpur also known as Kl Tower, 
+                the tallest Telecommunication Tower in South East Asia & the 7th tallest in the world, 
+                was built to improve the quality of telecommunications and broadcasting transmissions. 
+                It has become a significant landmark and symbol that identifies Malaysia as a 
+                great tourist destination of the millennium and at the same time a testimony of 
+                Malaysia’s capability in the building of high technology facilities. 
+                Located atop Bukit Nanas at a breathtaking height of 421 meters,
+                KL Tower was built blending the tower seamlessly with nature. 
+                It offers experiences such as viewing, dining, nature, adventure, event and shopping.
+                In fact, KL Tower is the only tower in the world located within a forest!
+            </p>
+        </div>
+        <button class="collapsible">3. Merdeka Square</button>
+        <div class="content">
+            <h3>Merdeka Square</h3>
+            <p>
+                Also known as Independence Square or Dataran Merdeka 
+                this is a centrally located public square close to the 
+                Gombak River and the Jamek Mosque. Many of the buildings 
+                facing on to the square played a role in Kuala Lumpur history. 
+                In the square you can see the 100 meter high flag pole (the tallest in the world) 
+                where the Malaysian flag was hoisted on August 31st 1957 when 
+                the country gained independence from the British. 
+                The square is also the site of the Merdeka Day Parade 
+                to celebrate Malaysia’s independence each year on August 31st.
+            </p>
+        </div>
+        <button class="collapsible">4. Sultan Abdul Samad Building</button>
+        <div class="content">
         <h3>Sultan Abdul Samad Building</h3>
-        <p>
-            By far one of the most stunning buildings in the city. 
-           This magnificent architectural gem is located on Merdeka Square. 
-           It was constructed in 1897; named in honor of the Sultan of Selangor at that time. 
-           The building was originally home to the secretariat of the colonial 
-           British administration and later housed the supreme courts of Malaysia. 
-           Today it houses the Ministry of Information, Communications and Culture.
-        </p>
+            <p>
+                By far one of the most stunning buildings in the city. 
+                This magnificent architectural gem is located on Merdeka Square. 
+                It was constructed in 1897; named in honor of the Sultan of Selangor at that time. 
+                The building was originally home to the secretariat of the colonial 
+                British administration and later housed the supreme courts of Malaysia. 
+                Today it houses the Ministry of Information, Communications and Culture.
+            </p>
+        </div>
     </div>
 </div>
-    <div id="snackbar">Added to cart</div>
-    <script src="scripting/package.js"></script>
-    <?php if(isset($_GET['Main_order_ID'])){
-    echo '<script>',
-     'var i = document.getElementById("addtocart");',
-     'i.classList.add("changebutton");',
-     'i.innerHTML="CHANGE PACKAGE";',
-     'document.getElementById("action").innerHTML="Change";',
-     'document.getElementById("snackbar").innerHTML="PACKAGE CHANGED";',
-     '</script>';
-} 
-?>
-
-<!-- back to top button -->
-    <div class="box"
-        id="anchoring_box"
-        data-aos="slide-left"
-        data-aos-anchor="trigger-right">
-        <button onclick="topFunction()" id="back-to-top" title="Go to top">
-        <i class="fa fa-chevron-up"></i>
-    </button>
+    <div>
+        <br><br>
     </div>
 
-    <script src="aos/aos.js"></script>
-<script type="text/javascript">
-    AOS.init({
-        duration:3000
-    });
-</script>
+    <div id="snackbar">Added to cart</div>
+    <script src="scripting/package.js"></script>
+    <?php 
+        if(isset($_GET['Main_order_ID'])){
+        echo '<script>',
+        'var i = document.getElementById("addtocart");',
+        'i.classList.add("changebutton");',
+        'i.innerHTML="CHANGE PACKAGE";',
+        'document.getElementById("action").innerHTML="Change";',
+        'document.getElementById("snackbar").innerHTML="PACKAGE CHANGED";',
+        '</script>';
+        } 
+    ?>
 
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">
+        <i class="fa fa-chevron-up"></i>
+    </button>
 
 </body>
 

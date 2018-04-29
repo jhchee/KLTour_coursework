@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="styling/style.css">
     <link rel="stylesheet" href="styling/slideshow.css">
     <link rel="stylesheet" href="styling/productpackage.css">
-    <!-- include css stylesheet-->
-    <link rel="stylesheet" type="text/css" href="styling/1234.css">
-    <!-- include styling aos -->
-    <link rel="stylesheet" href="aos/aos.css">
-    <!-- include personalised script -->
-    <title>Home</title>
+    <title>Package 3</title>
 </head>
 
 <body>
@@ -387,73 +382,86 @@
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
     <div class="box" data-aos="fade-right">
-        <h1>Kuala Lumpur Cultural tour!</h1>
-    </div>
-    <div class="box" data-aos="flip-left">
-    <h3>Perdana Botanical Garden</h3>
+    <h1>Kuala Lumpur Natural Tour</h1>
         <p>
-        This attraction was formerly known as the Kuala Lumpur Lake Gardens 
-        and the Taman Tasik Perdana. It is located in Heritage Park of Kuala 
-        Lumpur forming an important green oasis in the urban jungle. The garden 
-        was originally created as a recreational park in 1888 but later many 
-        tropical plants were added and the park became a botanical garden. 
-        Some areas of the gardens give visitors a sense of walking though a 
-        tropical rainforest in the city center. A large lake sits at the heart 
-        of the park and divides into two streams going further into the park. 
-        You can find a forest tree collection, Plumeria tree collection, fernarium, 
-        Zingiberales collection, Heliconia Garden, a collection of unusual plants, 
-        a topiary, rare fruit tree collection, a sunken garden and an herb garden. 
-        There is also a beautiful waterfall, fish ponds, conservatory, 
-        Cycad Island, a deer park and orchid garden.
+            Immerse in one of the most popular in the world. Surrounded by heritage 
+            culture that last more than 100 years.
         </p>
-    </div>
-    <div class="box" data-aos="flip-up">
-          <h3>Kuala Lumpur Bird Park</h3>
-        <p>
-        The place to see Malaysia’s amazing feathered friends is here at 
-        Kuala Lumpur Bird Park. The park is set within a tropical paradise 
-        in Lake Gardens Park . The park has the largest free-flight walk-through 
-        aviary in the world and covers 20.9 acres. The park has various recreated 
-        natural habitats for the different birds. The free-flight aviary has 
-        lush rainforest vegetation and there are other mini-aviaries like the 
-        Love Aviary with love birds; Brahminy Land home to Brahminy Kites birds 
-        of prey; the Waterfall Aviary featuring a waterfall and water birds as well 
-        as an Oriental Birds Aviary. The Flightless Birds section is home to 
-        ostriches, emus and cassowary birds.
-    </p>
-    </div>
-    <div class="box" data-aos="flip-right">
-        <h3>Aquaria KLCC</h3>
-        <p>
-        Located on the concourse level of the Kuala Lumpur Convention Centre in 
-        the middle of the Golden Triangle, Aquaria KLCC houses some 5,000 aquatic 
-        and marine creatures representing more than 150 species. 
-        The 60,000-square-foot (5,574-square-meter) aquarium explores 
-        the marine and freshwater flora and fauna of the Malaysian region and the world. 
-        Highlights include a 295-foot (90-meter) glass tunnel with a moving walkway, 
-        where visitors pass beneath giant stingrays, sand tiger sharks, 
-        sea turtles and schools of fish, as well as a wave tank and simulated 
-        glass bottom boat. Throughout the day, the oceanarium’s team of scuba 
-        divers drop into the tanks for interactive animal feeding shows. 
-        Those who want a closer look at the animals can sign up for Dive 
-        with Sharks or Cage Rage experiences!
-        </p>
-    </div>
-    <div class="box" data-aos="slide-right" id="anchoring_box">
+        <h2>Places</h2>
+        <button class="collapsible">1. Perdana Botanical Garden</button>
+        <div class="content">
+            <h3>Perdana Botanical Garden</h3>
+            <p>
+                This attraction was formerly known as the Kuala Lumpur Lake Gardens 
+                and the Taman Tasik Perdana. It is located in Heritage Park of Kuala 
+                Lumpur forming an important green oasis in the urban jungle. The garden 
+                was originally created as a recreational park in 1888 but later many 
+                tropical plants were added and the park became a botanical garden. 
+                Some areas of the gardens give visitors a sense of walking though a 
+                tropical rainforest in the city center. A large lake sits at the heart 
+                of the park and divides into two streams going further into the park. 
+                You can find a forest tree collection, Plumeria tree collection, fernarium, 
+                Zingiberales collection, Heliconia Garden, a collection of unusual plants, 
+                a topiary, rare fruit tree collection, a sunken garden and an herb garden. 
+                There is also a beautiful waterfall, fish ponds, conservatory, 
+                Cycad Island, a deer park and orchid garden.
+            </p>
+        </div>
+        <button class="collapsible">2. Kuala Lumpur Bird Park</button>
+        <div class="content">
+            <h3>Kuala Lumpur Bird Park</h3>
+            <p>
+                The place to see Malaysia’s amazing feathered friends is here at 
+                Kuala Lumpur Bird Park. The park is set within a tropical paradise 
+                in Lake Gardens Park . The park has the largest free-flight walk-through 
+                aviary in the world and covers 20.9 acres. The park has various recreated 
+                natural habitats for the different birds. The free-flight aviary has 
+                lush rainforest vegetation and there are other mini-aviaries like the 
+                Love Aviary with love birds; Brahminy Land home to Brahminy Kites birds 
+                of prey; the Waterfall Aviary featuring a waterfall and water birds as well 
+                as an Oriental Birds Aviary. The Flightless Birds section is home to 
+                ostriches, emus and cassowary birds.
+            </p>
+        </div>
+        <button class="collapsible">3. Aquaria KLCC</button>
+        <div class="content">
+            <h3>Aquaria KLCC</h3>
+            <p>
+                Located on the concourse level of the Kuala Lumpur Convention Centre in 
+                the middle of the Golden Triangle, Aquaria KLCC houses some 5,000 aquatic 
+                and marine creatures representing more than 150 species. 
+                The 60,000-square-foot (5,574-square-meter) aquarium explores 
+                the marine and freshwater flora and fauna of the Malaysian region and the world. 
+                Highlights include a 295-foot (90-meter) glass tunnel with a moving walkway, 
+                where visitors pass beneath giant stingrays, sand tiger sharks, 
+                sea turtles and schools of fish, as well as a wave tank and simulated 
+                glass bottom boat. Throughout the day, the oceanarium’s team of scuba 
+                divers drop into the tanks for interactive animal feeding shows. 
+                Those who want a closer look at the animals can sign up for Dive 
+                with Sharks or Cage Rage experiences!
+            </p>
+        </div>
+        <button class="collapsible">4. Zoo Negara</button>
+        <div class="content">
         <h3>Zoo Negara</h3>
         <p>
-        Zoo Negara was established in 1963 in Ampang, a town which is about 10-15 
-        km away from the city of Kuala Lumpur. It has about 5,500 animals from over 
-        400 species for you to discover. This place is a popular attraction for the 
-        locals with small children especially during the weekends and public holidays. 
-        Many parents with young children find it an educational place to bring their children. 
-        The main attraction of the zoo is the Multi-Animal Show which is on twice 
-        daily at 11am and 3pm. This show features performances from sea lions and other 
-        animals at the open-air amphitheatre which is located near the Hornbill Centre. 
-        Don't miss out!
+            Zoo Negara was established in 1963 in Ampang, a town which is about 10-15 
+            km away from the city of Kuala Lumpur. It has about 5,500 animals from over 
+            400 species for you to discover. This place is a popular attraction for the 
+            locals with small children especially during the weekends and public holidays. 
+            Many parents with young children find it an educational place to bring their children. 
+            The main attraction of the zoo is the Multi-Animal Show which is on twice 
+            daily at 11am and 3pm. This show features performances from sea lions and other 
+            animals at the open-air amphitheatre which is located near the Hornbill Centre. 
+            Don't miss out!
         </p>
+        </div>
     </div>
 </div>
+    <div>
+        <br><br>
+    </div>
+    
     <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
     <?php if(isset($_GET['Main_order_ID'])){
@@ -467,22 +475,11 @@
 } 
 ?>
 
-<!-- back to top button -->
-    <div class="box"
-        id="anchoring_box"
-        data-aos="slide-left"
-        data-aos-anchor="trigger-right">
-        <button onclick="topFunction()" id="back-to-top" title="Go to top">
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">
         <i class="fa fa-chevron-up"></i>
     </button>
-    </div>
 
-    <script src="aos/aos.js"></script>
-<script type="text/javascript">
-    AOS.init({
-        duration:3000
-    });
-</script>
 
 
 </body>

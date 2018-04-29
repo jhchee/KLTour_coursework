@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="styling/style.css">
     <link rel="stylesheet" href="styling/slideshow.css">
     <link rel="stylesheet" href="styling/productpackage.css">
-    <!-- include css stylesheet-->
-    <link rel="stylesheet" type="text/css" href="styling/1234.css">
-    <!-- include styling aos -->
-    <link rel="stylesheet" href="aos/aos.css">
-    <!-- include personalised script -->
-    <title>Home</title>
+    <title>Package 4</title>
 </head>
 
 <body>
@@ -386,79 +381,88 @@
     <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
-
-        <div class="box" data-aos="fade-right">
-        <h1>Kuala Lumpur Modern tour!</h1>
-    </div>
-    <div class="box" data-aos="flip-left">
-         <h3>Suria KLCC</h3>
+    <h1>Kuala Lumpur Modern Tour</h1>
         <p>
-       Suria KLCC shopping centre is an imposing six-storey building at the foot 
-       of the Petronas Twin Towers in Kuala Lumpur city centre. Created in 1999, 
-       it was soon the talk of the town because it introduced a new level of 
-       style to the city with its wide array of haute couture stores. 
-       Despite its modern design, Suria KLCC features little touches reminiscent 
-       of classic European malls, including plenty of greenery, white 
-       geometric-patterned marble floors, with exposed glass panels that 
-       let in natural light. Whilst some stores have high ceilings and huge arches 
-       along with impressive columns, others have low ceilings and no arches 
-       but plenty of their own stylish charm.
+            Immerse in one of the most popular in the world. Surrounded by heritage 
+            culture that last more than 100 years.
         </p>
-    </div>
-    <div class="box" data-aos="flip-up">
-          <h3>Pavilion KL</h3>
-        <p>
-        Pavilion Kuala Lumpur is KL’s haute couture shopping Mecca. 
-        It takes a lot to stand out in the city’s mallscape but this shopping centre, 
-        which occupies prime real estate along Jalan Bukit Bintang, 
-        does just that. Keeping the city’s fashionistas looking polished, 
-        this KL staple is the perfect example of how extravagant some malls can be. 
-        It features almost the same staggering square footage as Mid Valley Megamall 
-        and 1 Utama and the 1.37 million-sqft white marble complex is a combination 
-        of indoor and outdoor shopping venues. It resembles an oversized Grecian 
-        temple with post modern pillars, but instead of torches and an altar with 
-        a statue of Zeus, it houses over 450 snazzy stores. With hip dining options, 
-        big-box retailers and access to both international designer labels and 
-        local specialty retailers, Pavilion KL is a favourite among KL-ites. 
-        Popular no matter the day of the week or time of day.
-    </p>
-    </div>
-    <div class="box" data-aos="flip-right">
-        <h3>TREC KL</h3>
-        <p>
-        TREC Kuala Lumpur (Taste, Relish Experience, Celebrate) is the city’s 
-        largest entertainment centre, featuring an array of restaurants, 
-        bars, pubs, lounges, cafes, and clubs under one roof. 
-        Spanning over 28,000 square metres, this dining and nightlife hub is set along Jalan Tun Razak, 
-        with expansive views of the Royal Selangor Golf Club, Petronas Twin Towers, and Menara KL Tower. 
-        TREC Kuala Lumpur is also the new home of Asia’s most popular super nightclub Zouk KL. 
-        Boasting 11 nightlife concepts under one roof, seasoned clubbers will recognise 
-        some of Zouk KL’s original nightlife concepts such as Zouk Main Room, Phuture, and Velvet Underground, 
-        as well as exclusive members’ areas, al fresco dining spaces, bars, 
-        club rooms, lounges, and a balcony deck. Accessible within a ten-minute drive from Pavilion KL 
-        and Starhill Gallery, read on to discover TREC Kuala Lumpur’s most popular nightlife and dining venues.
-        </p>
-    </div>
-    <div class="box" data-aos="slide-right" id="anchoring_box">
+        <h2>Places</h2>
+        <button class="collapsible">1. Suria KLCC</button>
+        <div class="content">
+            <h3>Suria KLCC</h3>
+            <p>
+                Suria KLCC shopping centre is an imposing six-storey building at the foot 
+                of the Petronas Twin Towers in Kuala Lumpur city centre. Created in 1999, 
+                it was soon the talk of the town because it introduced a new level of 
+                style to the city with its wide array of haute couture stores. 
+                Despite its modern design, Suria KLCC features little touches reminiscent 
+                of classic European malls, including plenty of greenery, white 
+                geometric-patterned marble floors, with exposed glass panels that 
+                let in natural light. Whilst some stores have high ceilings and huge arches 
+                along with impressive columns, others have low ceilings and no arches 
+                but plenty of their own stylish charm.
+            </p>
+        </div>
+        <button class="collapsible">2. Pavilion KL</button>
+        <div class="content">
+            <h3>Pavilion KL</h3>
+            <p>
+                Pavilion Kuala Lumpur is KL’s haute couture shopping Mecca. 
+                It takes a lot to stand out in the city’s mallscape but this shopping centre, 
+                which occupies prime real estate along Jalan Bukit Bintang, 
+                does just that. Keeping the city’s fashionistas looking polished, 
+                this KL staple is the perfect example of how extravagant some malls can be. 
+                It features almost the same staggering square footage as Mid Valley Megamall 
+                and 1 Utama and the 1.37 million-sqft white marble complex is a combination 
+                of indoor and outdoor shopping venues. It resembles an oversized Grecian 
+                temple with post modern pillars, but instead of torches and an altar with 
+                a statue of Zeus, it houses over 450 snazzy stores. With hip dining options, 
+                big-box retailers and access to both international designer labels and 
+                local specialty retailers, Pavilion KL is a favourite among KL-ites. 
+                Popular no matter the day of the week or time of day.
+            </p>
+        </div>
+        <button class="collapsible">3. TREC KL</button>
+        <div class="content">
+            <h3>TREC KL</h3>
+            <p>
+                TREC Kuala Lumpur (Taste, Relish Experience, Celebrate) is the city’s 
+                largest entertainment centre, featuring an array of restaurants, 
+                bars, pubs, lounges, cafes, and clubs under one roof. 
+                Spanning over 28,000 square metres, this dining and nightlife hub is set along Jalan Tun Razak, 
+                with expansive views of the Royal Selangor Golf Club, Petronas Twin Towers, and Menara KL Tower. 
+                TREC Kuala Lumpur is also the new home of Asia’s most popular super nightclub Zouk KL. 
+                Boasting 11 nightlife concepts under one roof, seasoned clubbers will recognise 
+                some of Zouk KL’s original nightlife concepts such as Zouk Main Room, Phuture, and Velvet Underground, 
+                as well as exclusive members’ areas, al fresco dining spaces, bars, 
+                club rooms, lounges, and a balcony deck. Accessible within a ten-minute drive from Pavilion KL 
+                and Starhill Gallery, read on to discover TREC Kuala Lumpur’s most popular nightlife and dining venues.
+            </p>
+        </div>
+        <button class="collapsible">4. Jalan Alor Food Hunt</button>
+        <div class="content">
         <h3>Jalan Alor Food Hunt</h3>
-        <p>
-        Hosting a lot of hawker stalls and seafood restaurants, 
-        Jalan Alor is one of the most famous roads in Kuala Lumpur for food. 
-        Located just behind Jalan Bukit Bintang and a short walk away from Changkat Bukit Bintang, 
-        it is a favourite after-clubbing dining spot in the Golden Triangle area. 
-        Though the seafood at the air-conditioned restaurants is really good and inexpensive, 
-        we highly recommend the hawker food. KL being an immigrant city, 
-        the variety of food available is amazing and in Jalan Alor the barbecued meats, 
-        noodles and desserts are some of the best (and cheapest) in the city. Most of these 
-        dishes cannot be found in fashion-conscious restaurants – and even if they are, 
-        they are rarely as tasty, so hawker stalls are a favourite on the city’s foodie scene. 
-        Called the cultural hearth of the city’s local cuisine, tourists 
-        rarely venture here largely because of its ‘hidden’ location. 
-        Definitely a must go spot for foodie!
-        </p>
+            <p>
+                Hosting a lot of hawker stalls and seafood restaurants, 
+                Jalan Alor is one of the most famous roads in Kuala Lumpur for food. 
+                Located just behind Jalan Bukit Bintang and a short walk away from Changkat Bukit Bintang, 
+                it is a favourite after-clubbing dining spot in the Golden Triangle area. 
+                Though the seafood at the air-conditioned restaurants is really good and inexpensive, 
+                we highly recommend the hawker food. KL being an immigrant city, 
+                the variety of food available is amazing and in Jalan Alor the barbecued meats, 
+                noodles and desserts are some of the best (and cheapest) in the city. Most of these 
+                dishes cannot be found in fashion-conscious restaurants – and even if they are, 
+                they are rarely as tasty, so hawker stalls are a favourite on the city’s foodie scene. 
+                Called the cultural hearth of the city’s local cuisine, tourists 
+                rarely venture here largely because of its ‘hidden’ location. 
+                Definitely a must go spot for foodie!            
+            </p>
+        </div>
     </div>
 </div>
-</div>
+    <div>
+        <br><br>
+    </div>
     <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
     <?php if(isset($_GET['Main_order_ID'])){

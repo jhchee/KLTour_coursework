@@ -1,18 +1,3 @@
-window.addEventListener("scroll", notsticky);
-function notsticky() {
-  if (window.pageYOffset >= 500) {
-    var i = document.getElementsByClassName("product-detail");
-    for (var a = 0; a < i.length; a += 1) {
-      i[a].style.display = "none";
-    }
-  } else {
-    var j = document.getElementsByClassName("product-detail");
-    for (var a = 0; a < j.length; j += 1) {
-      j[a].style.display = "block";
-    }
-  }
-}
-
 $(document).ready(function() {
   $("#close-food").click(function() {
     $("#overlay-food").hide();
@@ -84,4 +69,17 @@ var numberSpinner = (function() {
   });
 })();
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+    content.style.maxHeight = null;
+    } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+    } 
+});
+}     
 

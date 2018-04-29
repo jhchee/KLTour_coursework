@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="styling/style.css">
     <link rel="stylesheet" href="styling/slideshow.css">
     <link rel="stylesheet" href="styling/productpackage.css">
-    <!-- include css stylesheet-->
-    <link rel="stylesheet" type="text/css" href="styling/1234.css">
-    <!-- include styling aos -->
-    <link rel="stylesheet" href="aos/aos.css">
-    <!-- include personalised script -->
-    <title>Home</title>
+    <title>Package 2</title>
 </head>
 
 <body>
@@ -390,59 +385,73 @@
         <h1>Kuala Lumpur Cultural tour!</h1>
     </div>
     <div class="box" data-aos="flip-left">
-        <h3>Petaling street</h3>
-        <p>
-        Petaling Street is a famous shopping area in Kuala Lumpur’s China Town. 
-        This is the place to come for great ethnic food, cheap eats, bargain 
-        shopping, groceries, fresh produce, cheap clothing, unusual souvenirs 
-        and interesting Chinese items. It is a shopaholic’s Mecca, not as 
-        glamorous as a shopping mall but with much more character. Not only 
-        the one street but the entire surrounding alleys and lanes are alive 
-        with stores and pop up stalls. Shoppers are greeted by a traditional 
-        Chinese gate at the entrance to the street. When shopping on Petaling 
-        Street remember to bargain and that all that glitters is not gold!
+    <p>
+            Immerse in one of the most popular in the world. Surrounded by heritage 
+            culture that last more than 100 years.
         </p>
-    </div>
-    <div class="box" data-aos="flip-up">
-          <h3>Batu Caves</h3>
-        <p>
-        Explore the culture and traditions of Malaysia 
-        on this three-hour Batu Caves tour from Kuala Lumpur.
-        Spend the afternoon visiting these famed natural caverns
-        with your expert local guide and wander the impressive
-        grounds of the Batu Caves, where you’ll gain insight and 
-        understanding of the religious roots of this incredible 
-        and diverse nation. Drive through Little India, learn 
-        about the art of batik and pewter smithing and enjoy 
-        round-trip transportation and hotel pick up and drop off.
-        </p>
-    </div>
-    <div class="box" data-aos="flip-right">
-        <h3>Thean Hou Temple</h3>
-        <p>
-        This ornate Chinese temple dedicated to the Queen of Heaven, 
-        Thean Hou, protectorate of people who make their living from the sea. 
-        The temple borrows from Buddhist, Taoist and Confucian traditions. 
-        Some visitors believe the panoramic views of KL alone make 
-        the trip up the hill worthwhile.
-        </p>
-    </div>
-    <div class="box" data-aos="slide-right" id="anchoring_box">
+        <h2>Places</h2>
+        <button class="collapsible">1. Petaling street</button>
+        <div class="content">
+            <h3>Petaling street</h3>
+            <p>
+                Petaling Street is a famous shopping area in Kuala Lumpur’s China Town. 
+                This is the place to come for great ethnic food, cheap eats, bargain 
+                shopping, groceries, fresh produce, cheap clothing, unusual souvenirs 
+                and interesting Chinese items. It is a shopaholic’s Mecca, not as 
+                glamorous as a shopping mall but with much more character. Not only the 
+                one street but the entire surrounding alleys and lanes are alive with stores 
+                and pop up stalls. Shoppers are greeted by a traditional Chinese gate at the 
+                entrance to the street. When shopping on Petaling Street remember to bargain 
+                and that all that glitters is not gold!            
+            </p>
+        </div>
+        <button class="collapsible">2. Batu Caves</button>
+        <div class="content">
+            <h3>Batu Caves</h3>
+            <p>
+                Explore the culture and traditions of Malaysia on this 
+                three-hour Batu Caves tour from Kuala Lumpur. Spend the 
+                afternoon visiting these famed natural caverns with your expert 
+                local guide and wander the impressive grounds of the Batu Caves, 
+                where you’ll gain insight and understanding of the religious 
+                roots of this incredible and diverse nation. Drive through 
+                Little India, learn about the art of batik and pewter smithing 
+                and enjoy round-trip transportation and hotel pick up and drop off.
+            </p>
+        </div>
+        <button class="collapsible">3. Thean Hou Temple</button>
+        <div class="content">
+            <h3>Thean Hou Temple</h3>
+            <p>
+                This ornate Chinese temple dedicated to the Queen of Heaven, 
+                Thean Hou, protectorate of people who make their living from 
+                the sea. The temple borrows from Buddhist, Taoist and Confucian 
+                traditions. Some visitors believe the panoramic views of KL 
+                alone make the trip up the hill worthwhile.
+            </p>
+        </div>
+        <button class="collapsible">4. Sri Maha Mariamman Temple</button>
+        <div class="content">
         <h3>Sri Maha Mariamman Temple</h3>
-        <p>
-        South of Jalan Hang Lekir, tucked away on Jalan Tun HS Lee, 
-        is the extravagantly decorated Sri Mahamariamman Temple. 
-        Incorporating Spanish and Italian tiles, precious stones 
-        and gold in its design, KL’s main Hindu temple is an incongruous 
-        sight situated between two Buddhist temples at the edge of Chinatown. 
-        This large and elaborate Hindu temple was founded by Tamil immigrants, 
-        from southern India, who arrived in Malaya as contract labourers 
-        to build the railways and roads or work in the rubber plantations. 
-        Construction of the temple began in 1873 with plenty of ongoing 
-        restoration and embellishment occurring over the years.
-        </p>
+            <p>
+                South of Jalan Hang Lekir, tucked away on Jalan Tun HS Lee, 
+                is the extravagantly decorated Sri Mahamariamman Temple. 
+                Incorporating Spanish and Italian tiles, precious stones 
+                and gold in its design, KL’s main Hindu temple is an 
+                incongruous sight situated between two Buddhist temples 
+                at the edge of Chinatown. This large and elaborate Hindu 
+                temple was founded by Tamil immigrants, from southern India, 
+                who arrived in Malaya as contract labourers to build the 
+                railways and roads or work in the rubber plantations. Construction 
+                of the temple began in 1873 with plenty of ongoing restoration and 
+                embellishment occurring over the years.
+            </p>
+        </div>
     </div>
 </div>
+    <div>
+        <br><br>
+    </div>
     <div id="snackbar">Added to cart</div>
     <script src="scripting/package.js"></script>
     <?php if(isset($_GET['Main_order_ID'])){
@@ -456,23 +465,10 @@
 } 
 ?>
 
-<!-- back to top button -->
-    <div class="box"
-        id="anchoring_box"
-        data-aos="slide-left"
-        data-aos-anchor="trigger-right">
-        <button onclick="topFunction()" id="back-to-top" title="Go to top">
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">
         <i class="fa fa-chevron-up"></i>
     </button>
-    </div>
-
-    <script src="aos/aos.js"></script>
-<script type="text/javascript">
-    AOS.init({
-        duration:3000
-    });
-</script>
-
 
 </body>
 

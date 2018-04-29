@@ -95,7 +95,7 @@
                                 <input type="text" id="fname" value="<?php echo $full_name; ?>" name="fullname" placeholder="David Johnson" required>
                                 <label for="phone">
                                     <i class="fa fa-mobile-phone" style="font-size:23px" ></i> Phone</label>
-                                <input type="text" id="phone" value="<?php echo $phone; ?>" name="phone" placeholder="0106578941">
+                                <input type="number" id="phone" value="<?php echo $phone; ?>" name="phone" placeholder="0106578941">
                                 <label for="adr">
                                     <i class="fa fa-address-card-o"></i> Address</label>
                                 <input type="text" id="adr" value="<?php echo $address; ?>" name="address" placeholder="No 13, Jalan Damansara 8" required>
