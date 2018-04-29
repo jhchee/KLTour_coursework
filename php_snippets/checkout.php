@@ -30,12 +30,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mysqli_error($db)) {
     }
     else {
-        $checkout = "UPDATE main_order SET Paid=1 WHERE Username='$myusername'";
-        $checking_out = $db ->query($checkout);
-         echo '<script type="text/javascript">',
-         'parent.loader();',
-         'setTimeout(function(){parent.location.reload(true);}, 3000);',
-         '</script>';
+
+        $check_empty = "SELECT * FROM main_order WHERE Username='$myusername' AND Paid=0" ;
+        $checking_empty = $db ->query($check_empty);
+        if ($checking_empty->num_rows > 0) {
+            $checkout = "UPDATE main_order SET Paid=1 WHERE Username='$myusername'";
+            $checking_out = $db ->query($checkout);
+
+            echo '<script type="text/javascript">',
+            'parent.loader();',
+            'setTimeout(function(){parent.location.reload(true);}, 3000);',
+            '</script>';
+        }
+        else {
+            echo '<script>',
+            'parent.emptycart();',
+            '</script>';
+        }
+         
     }
 
 

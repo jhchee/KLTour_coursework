@@ -210,7 +210,7 @@
         </a>
         <br>
         <br>
-        <div id="superme-text">Superme <i class="fa fa-copyright" style="font-size:28px; "></i> <span style="font-style:normal;">2018</span></div>
+        <div id="superme-text"><b>Superme</b> <i class="fa fa-copyright" style="font-size:28px; "></i> <span style="font-style:normal;">2018</span></div>
         
     </div>
 

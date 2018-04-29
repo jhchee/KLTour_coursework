@@ -53,6 +53,21 @@
 
     <div style="padding:1px;"></div>
 
+    <div class="cannotsubmit">
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Error!</strong> There's nothing in the cart.
+        </div>
+        <br>
+    </div>
+    <script>
+        function emptycart() {
+            var i = document.getElementsByClassName("cannotsubmit");
+            for (var j=0; j<i.length; j++){
+                i[j].style.display = "block";
+            }
+        }
+    </script>
     <!-- login/signup form -->
     <div id="overlay" onclick="close_form()">
         <div id="login">

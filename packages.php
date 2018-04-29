@@ -86,7 +86,7 @@
                         <div class="text">Hello World</div>
                     </div>
                     <div class="card-portray">
-                        <a href="1.php" title = "click for more details">Find more</a>
+                        <a href="1.php" title = "click for more details">Learn more</a>
                         <p id="package-title">Landmark Tour</p>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         <div class="text">Hello World</div>
                     </div>
                     <div class="card-portray">
-                        <a href="2.php" title = "click for more details">Find more</a>
+                        <a href="2.php" title = "click for more details">Learn more</a>
                         <p id="package-title">Cultural Tour</p>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                         <div class="text">Hello World</div>
                     </div>
                     <div class="card-portray">
-                        <a href="3.php" title = "click for more details">Find more</a>
+                        <a href="3.php" title = "click for more details">Learn more</a>
                         <p id="package-title">Natural Tour</p>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                         <div class="text">Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World</div>
                     </div>
                     <div class="card-portray">
-                        <a href="4.php" title = "click for more details">Find more</a>
+                        <a href="4.php" title = "click for more details">Learn more</a>
                         <p id="package-title">Modern Tour</p>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
         </a>
         <br>
         <br>
-        <div id="superme-text">Superme <i class="fa fa-copyright" style="font-size:28px; "></i> <span style="font-style:normal;">2018</span></div>
+        <div id="superme-text"><b>Superme</b> <i class="fa fa-copyright" style="font-size:28px; "></i> <span style="font-style:normal;">2018</span></div>
         
     </div>
 
