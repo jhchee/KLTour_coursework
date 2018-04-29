@@ -111,7 +111,19 @@ $foodname_quantity_table = $db ->query($join_food_table);
     <div style="height:5px;"> </div>
     <div>
         <form action="php_snippets/deletepackage.php" method="get">
-            <button name="Main_order_ID" id="deletepackage" type="submit" value="<?php echo $mymainorderID; ?>">Delete Package</button>
+            <button name="Main_order_ID" type="button" id="deletepackage" onclick="delete_package()" value="<?php echo $mymainorderID; ?>">Delete Package</button>
+            <script>
+                function delete_package(){
+                    if (confirm("Are you sure to delete this package, action can't be reverted!")) {
+                        var delete_button = document.getElementById("deletepackage");
+                        delete_button.setAttribute('type', 'submit');
+                        delete_button.submit();
+                    } 
+                    else {
+                        return null;
+                    }
+                }
+            </script>
         </form>
         <form action="<?php echo $base_package . '.php'?>" method="get">
             <button name="Main_order_ID" id="changepackage" type="submit" style="margin-right:20px;" value="<?php echo $mymainorderID; ?>">Change Package</button>

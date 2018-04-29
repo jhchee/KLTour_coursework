@@ -391,6 +391,7 @@ input[type="number"] {
 
 .active1, .collapsible:hover {
   background-color: #00000071;
+  color: white;
 }
 
 .collapsible:after {

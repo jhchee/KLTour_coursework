@@ -323,7 +323,7 @@
         <div style="width:10%;"></div>
         <div class="product-detail">
             <h1>Cultural Tour</h1>
-            <h4 style="font-weight:100;">Price: RM 80</h4>
+            <h4 style="font-weight:100;">Price: RM 90</h4>
             <div style="height:2px;"></div>
             <h3>Time</h3>
 

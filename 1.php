@@ -267,7 +267,7 @@
 
                 <div class="mySlides">
                     <div class="numbertext">6 / 8</div>
-                    <img src="images/tour/16.jpg" style="width:100%">
+                    <img src="images/tour/17.jpg" style="width:100%">
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">7 / 8</div>
@@ -306,7 +306,7 @@
                         <img class="demo cursor" src="images/tour/15.jpg" style="width:100%" onclick="currentSlide(5)" alt="Merdeka Square">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/tour/16.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sultan Abdul Samad Building">
+                        <img class="demo cursor" src="images/tour/17.jpg" style="width:100%" onclick="currentSlide(6)" alt="Merdeka Square">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="images/tour/16.jpg" style="width:100%" onclick="currentSlide(7)" alt="Sultan Abdul Samad Building">
@@ -382,8 +382,21 @@
     <div style="max-width: 55%;">
         <h1>Kuala Lumpur Landmarks Tour</h1>
         <p>
-            Immerse in one of the most popular in the world. Surrounded by heritage 
-            culture that last more than 100 years.
+            A rapidly developing city in Southeast Asia, famous landmarks in Kuala Lumpur 
+            consist of urban high-rises with cutting edge, futuristic designs, rubbing 
+            shoulders with picturesque fairytale-like structures that have stood the 
+            test of time. Featuring Moorish, Malay and Victorian-style edifices, 
+            popular landmarks such as The Sultan Abdul Samad Building at Dataran 
+            Merdeka, Kuala Lumpur Railway Station, and Merdeka Square are well-patronised 
+            by international travellers and photography enthusiasts due to 
+            their intricate style and architecture. Kuala Lumpur’s famous 
+            landmarks also consist of world famous, glamour projects – from 
+            the tallest twin buildings in the world, the Petronas Twin Towers, 
+            to the second-tallest freestanding tower in the world, the Menara 
+            KL Tower. Meanwhile, other tourist destinations with striking designs 
+            in Kuala Lumpur, such as the National Museum, the Istana Negara, 
+            National Visual Arts Gallery, the National Monument, and Kuala Lumpur 
+            City Gallery are also well-worth a visit, and most are easily accessible via taxi.
         </p>
         <h2>Places</h2>
         <button class="collapsible">1. Petronas Twin Towers</button>
