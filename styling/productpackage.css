@@ -395,14 +395,19 @@ input[type="number"] {
 
 .collapsible:after {
   content: '\002B';
-  color: white;
+  color: rgba(0, 0, 0, 0.603);
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
+.collapsible:hover:after {
+  color: white;
+}
+
 .active1:after {
   content: "\2212";
+  color: white;
 }
 
 .content {
