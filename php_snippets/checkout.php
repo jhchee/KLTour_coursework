@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $update_personal_info = "UPDATE user 
-    SET Full_name='$myfullname', Phone=$myphone, Address='$myaddress', City='$mycity', Zip='$myzip', 
+    SET Full_name='$myfullname', Phone=$myphone, Address='$myaddress', City='$mycity', Zip='$myzip', State='$mystate',
     Name_on_card='$mycardname', Payment_card='$mycardnumber', Expire_year='$myexpireyear', Expire_month='$myexpiremonth'   
     WHERE Username='$myusername'";
     $updating_personal_info = $db ->query($update_personal_info);
