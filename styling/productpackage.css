@@ -172,7 +172,7 @@ meal-button input[type="radio"]:checked + label {
   position: absolute;
   display: inline-block;
   color: white;
-  background: rgb(47, 172, 47);
+  background: red;
   font-size: 20px;
   margin-bottom: 5%;
   border-radius: 5px;
@@ -180,6 +180,7 @@ meal-button input[type="radio"]:checked + label {
 
 #close-food:hover {
   cursor: pointer;
+  background: darkred;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
