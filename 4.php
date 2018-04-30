@@ -381,10 +381,15 @@
     <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
-    <h1>Kuala Lumpur Modern Tour</h1>
+        <br>
         <p>
-            Immerse in one of the most popular in the world. Surrounded by heritage 
-            culture that last more than 100 years.
+            Modern KL Tour, as the name sounds, it will be visit to fanciest place
+            and experience exciting nightlife of KL nocturnal city people. From Pavilion Kuala 
+            Lumpur is KL’s haute couture shopping Mecca to TREC Kuala Lumpur 
+            (Taste, Relish Experience, Celebrate) which featuring an array of 
+            restaurants, bars, pubs, lounges, cafes, and clubs under one roof. 
+            And also as a reminder, make sure you have
+            brought decent amount of money because you are going to go on a shopping spree.
         </p>
         <h2>Places</h2>
         <button class="collapsible">1. Suria KLCC</button>

@@ -381,13 +381,16 @@
     <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="z-index:-999; position:absolute;"></iframe>
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
-    <div class="box" data-aos="fade-right">
-        <h1>Kuala Lumpur Cultural tour!</h1>
-    </div>
-    <div class="box" data-aos="flip-left">
-    <p>
-            Immerse in one of the most popular in the world. Surrounded by heritage 
-            culture that last more than 100 years.
+        <br>
+        <p id="package-desc">
+            Discover Kuala Lumpur's rich historical heritage, age-old traditions, 
+            peculiar customs and more on the full day Culture and Heritage Tour. 
+            Experience a diverse mix of cultures that make Kuala Lumpur the 
+            exciting and versatile city that it is and peek into its intricate 
+            and exciting past. On this tour, you will get to visit one of 
+            the largest and oldest Buddhist temples in Malaysia, the oldest 
+            Hindu Temple in Kuala Lumpur. Swing by the Kuala Lumpur Central Market 
+            and explore the bustling Chinatown, the perfect place to polish your bargaining skills.
         </p>
         <h2>Places</h2>
         <button class="collapsible">1. Petaling street</button>

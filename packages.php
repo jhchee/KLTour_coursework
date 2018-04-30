@@ -83,7 +83,12 @@
                 <div class="container">
                     <img src="images/tour/11.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
-                        <div class="text">Hello World</div>
+                        <div class="text">
+                            A rapidly developing city in Southeast Asia, famous landmarks in Kuala Lumpur 
+                            consist of urban high-rises with cutting edge, futuristic designs, rubbing 
+                            shoulders with picturesque fairytale-like structures that have stood the 
+                            test of time. 
+                        </div>
                     </div>
                     <div class="card-portray">
                         <a href="1.php" title = "click for more details">Learn more</a>
@@ -98,7 +103,14 @@
                 <div class="container">
                     <img src="images/tour/24.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
-                        <div class="text">Hello World</div>
+                        <div class="text">
+                            Discover Kuala Lumpur's rich historical heritage, 
+                            age-old traditions, peculiar customs and more on 
+                            the full day Culture and Heritage Tour. Experience 
+                            a diverse mix of cultures that make Kuala 
+                            Lumpur the exciting and versatile city that it 
+                            is and peek into its intricate and exciting past.
+                        </div>
                     </div>
                     <div class="card-portray">
                         <a href="2.php" title = "click for more details">Learn more</a>
@@ -116,7 +128,12 @@
                 <div class="container">
                     <img src="images/tour/32.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
-                        <div class="text">Hello World</div>
+                        <div class="text">
+                            Ever expected greenery in a modern city? KL is also well known for its
+                            natural preserves. Botanic Garden, Bird Park, Aquarium and 
+                            last but not least National Zoo will give you a spectacular view of natural habitat.
+                            Come and immerse in this greenery with us. 
+                        </div>
                     </div>
                     <div class="card-portray">
                         <a href="3.php" title = "click for more details">Learn more</a>
@@ -131,7 +148,15 @@
                 <div class="container">
                     <img src="images/tour/42.jpg" alt="Avatar" class="image">
                     <div class="overlay2">
-                        <div class="text">Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World</div>
+                        <div class="text">
+                            Modern KL Tour, as the name sounds, it will be visit 
+                            to fanciest place and experience exciting nightlife of 
+                            KL nocturnal city people. From Pavilion Kuala Lumpur is KL’s 
+                            haute couture shopping Mecca to TREC Kuala Lumpur (Taste, 
+                            Relish Experience, Celebrate) which featuring an array of 
+                            restaurants, bars, pubs, lounges, cafes, and clubs under one 
+                            roof.
+                        </div>
                     </div>
                     <div class="card-portray">
                         <a href="4.php" title = "click for more details">Learn more</a>

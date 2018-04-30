@@ -382,10 +382,16 @@
     <div style="height:600px;"></div>
     <div style="max-width: 55%;">
     <div class="box" data-aos="fade-right">
-    <h1>Kuala Lumpur Natural Tour</h1>
-        <p>
-            Immerse in one of the most popular in the world. Surrounded by heritage 
-            culture that last more than 100 years.
+        <br>
+        <p id="package-desc">
+            Kuala Lumpur Zoo and Aquarium, spanning over 110 acres around a 
+            central lake, houses 5137 specimens from 476 species of mammals, 
+            birds, reptiles, amphibians and fish from Asia and Africa. 
+            Also known as the Zoo Negara Malaysia, the wildlife sanctuary 
+            is located 13km northeast of Kuala Lumpur beyond Jalan Tun 
+            Razak along Jalan Ulu Klang. Housing a forest, lake and 16 
+            animal exhibits, the zoo is set on such vast grounds that 
+            visitors will need at least three hours to explore in its entirety. 
         </p>
         <h2>Places</h2>
         <button class="collapsible">1. Perdana Botanical Garden</button>
