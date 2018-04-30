@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styling/style.css">
     <!-- include personalised script -->
     <script src="scripting/loginform.js"></script>
-    <title>Home</title>
+    <title>Contact</title>
 </head>
 
 <body>

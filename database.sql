@@ -3,9 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2018 at 05:55 PM
+-- Generation Time: Apr 30, 2018 at 06:42 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
+CREATE DATABASE kltour;
+use kltour;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +21,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `structure`
+-- Database: `kltour`
 --
 
 -- --------------------------------------------------------
@@ -72,8 +74,7 @@ CREATE TABLE `package` (
   `Package_ID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `Package_name` varchar(30) CHARACTER SET utf32 COLLATE utf32_unicode_ci NOT NULL,
   `Time` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `Package_price` float NOT NULL,
-  `Quantity_in_stock` int(11) NOT NULL
+  `Package_price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -85,7 +86,7 @@ CREATE TABLE `package` (
 CREATE TABLE `user` (
   `Username` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `Email` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `Phone` int(11) DEFAULT NULL,
+  `Phone` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Address` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `City` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `State` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -146,13 +147,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `food_order`
 --
 ALTER TABLE `food_order`
-  MODIFY `Food_order_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
+  MODIFY `Food_order_ID` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `main_order`
 --
 ALTER TABLE `main_order`
-  MODIFY `Main_order_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=308;
+  MODIFY `Main_order_ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
@@ -162,16 +163,59 @@ ALTER TABLE `main_order`
 -- Constraints for table `food_order`
 --
 ALTER TABLE `food_order`
-  ADD CONSTRAINT `Has food` FOREIGN KEY (`Food_ID`) REFERENCES `food` (`Food_ID`);
+  ADD CONSTRAINT `Has food` FOREIGN KEY (`Food_ID`) REFERENCES `food` (`Food_ID`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `Has food order` FOREIGN KEY (`Main_order_ID`) REFERENCES `main_order` (`Main_order_ID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `main_order`
 --
 ALTER TABLE `main_order`
   ADD CONSTRAINT `Has order` FOREIGN KEY (`Username`) REFERENCES `user` (`Username`) ON DELETE CASCADE,
-  ADD CONSTRAINT `Package_Details` FOREIGN KEY (`Package_ID`) REFERENCES `package` (`Package_ID`);
-COMMIT;
+  ADD CONSTRAINT `Package_Details` FOREIGN KEY (`Package_ID`) REFERENCES `package` (`Package_ID`) ON UPDATE CASCADE;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+INSERT INTO `package` (`Package_ID`, `Package_name`, `Time`, `Package_price`) VALUES
+('1.1', 'Landmark Tour', '8.00 AM', 80),
+('1.2', 'Landmark Tour', '9.00 AM', 80),
+('1.3', 'Landmark Tour', '10.00 AM', 80),
+('1.4', 'Landmark Tour', '11.00 AM', 80),
+('1.5', 'Landmark Tour', '1.00 PM', 80),
+('1.6', 'Landmark Tour', '2.00 PM', 80),
+('2.1', 'Cultural Tour', '8.00 AM', 90),
+('2.2', 'Cultural Tour', '9.00 AM', 90),
+('2.3', 'Cultural Tour', '10.00 AM', 90),
+('2.4', 'Cultural Tour', '11.00 AM', 90),
+('2.5', 'Cultural Tour', '1.00 PM', 90),
+('2.6', 'Cultural Tour', '2.00 PM', 90),
+('3.1', 'Nature Tour', '8.00 AM', 120),
+('3.2', 'Nature Tour', '9.00 AM', 120),
+('3.3', 'Nature Tour', '10.00 AM', 120),
+('3.4', 'Nature Tour', '11.00 AM', 120),
+('3.5', 'Nature Tour', '1.00 PM', 120),
+('3.6', 'Nature Tour', '2.00 PM', 120),
+('4.1', 'Modern Tour', '8.00 AM', 130),
+('4.2', 'Modern Tour', '9.00 AM', 130),
+('4.3', 'Modern Tour', '10.00 AM', 130),
+('4.4', 'Modern Tour', '10.00 AM', 130),
+('4.5', 'Modern Tour', '1.00 PM', 130),
+('4.6', 'Modern Tour', '2.00 PM', 130);
+
+
+
+INSERT INTO `food` (`Food_ID`, `Food_name`, `Price`) VALUES
+(1, 'Twisties', 1.2),
+(2, 'London Choco Roll', 1.6),
+(3, 'Tiger Biscuit', 2.6),
+(4, 'Snickers Bar', 3),
+(5, 'Kitkat', 3.2),
+(6, 'Mamee Noodles', 1.5),
+(7, 'Rice Cracker', 3.3),
+(8, 'Lipton Green Tea', 2.7),
+(9, 'Coca-cola', 2.5),
+(10, 'Mineral Water', 1.1);
+
+COMMIT;
