@@ -33,7 +33,7 @@
 
         <div class="dropdown" style="display: block;">
             <button class="dropbtn">
-                <?php session_start(); echo $_SESSION['login_user'];?>
+            <?php session_start(); if(!isset($_SESSION['login_user'])){header('Location:homepage.php'); } else{echo $_SESSION['login_user'];}?>
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
