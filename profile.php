@@ -84,7 +84,7 @@
         <div class="row">
             <div class="col-75">
                 <div class="container">
-                    <form action="php_snippets/checkout.php" method="post" target="dummyframe">
+                    <form action="php_snippets/update.php" method="post" target="dummyframe">
                         <div class="row">
                             <div class="col-50">
                                 <h3>Billing Address</h3>
