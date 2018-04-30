@@ -64,9 +64,9 @@
     
     <!-- loader -->
     <div id="loader-box">
+        <div id="loader"></div>
         <div id="message" style="margin-left:5%; margin-top:72%; display:none;">Updating...</div>
     </div>
-    <div id="loader"></div>
     
 
     <!-- user details -->

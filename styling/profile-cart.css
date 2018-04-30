@@ -155,10 +155,7 @@ hr {
 #loader {
     display: none;
     position: absolute;
-    left: 50%;
-    top: 50%;
     z-index: 1000;
-    margin: -75px 0 0 -75px;
     border: 3px solid #f3f3f3;
     border-radius: 50%;
     border-top: 3px solid red;
@@ -166,6 +163,8 @@ hr {
     height: 50px;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
+    margin-top: 31%;
+    margin-left: 37%;
 }
   
 @-webkit-keyframes spin {
